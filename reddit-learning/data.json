@@ -1,1 +1,87 @@
-
+{
+  "updated_at": "2026-09-12T12:07:05+08:00",
+  "library_totals": {
+    "posts": 21,
+    "comments": 32,
+    "communities": 18,
+    "p0_first_round_complete": true
+  },
+  "runs": [
+    {
+      "date": "2026-09-12",
+      "observed_at": "2026-09-12 12:07",
+      "timezone": "Asia/Shanghai",
+      "summary": "创作者变现的可信度来自收入口径、失败风险与可追踪价值；效率内容更适合用一个可复现动作和观察边界，而不是泛化清单。",
+      "counts": {
+        "candidates": 39,
+        "deep_posts": 7,
+        "comments": 12,
+        "profiles": 8,
+        "duplicates_skipped": 2,
+        "irrelevant_skipped": 6,
+        "failed": 0
+      },
+      "coverage": [
+        "r/selfhosted",
+        "r/Substack",
+        "r/patreon",
+        "r/Blogging",
+        "r/ContentCreators",
+        "r/productivity",
+        "r/PersonalKnowledgeMgmt",
+        "Buildin AI 全站搜索"
+      ],
+      "findings": [
+        {
+          "title": "创作者收入要先解释口径",
+          "detail": "Substack 高赞回复主动区分月付、年付与终身会员；Blogging 长复盘同时给文章数、季节性、单页占比和迁站事故。",
+          "evidence": ["1vzbn6c", "p63xp06", "1vy7j6g"]
+        },
+        {
+          "title": "首单不等于长期增长模型",
+          "detail": "Patreon 的首个 15 美元 patron 能引发强共情，但长期结果仍取决于持续受众增长、留存与渠道。",
+          "evidence": ["1w6cy6p", "p7m8tzo"]
+        },
+        {
+          "title": "定价争论应转向可证明价值",
+          "detail": "创作者报价需要拆开制作、受众分发、授权范围、受众匹配和可追踪销售；粉丝数本身不是转化证据。",
+          "evidence": ["1w0wxzn", "p6ghyit", "p6gk900"]
+        },
+        {
+          "title": "一个可复现动作胜过效率清单",
+          "detail": "“假通勤”用原摩擦、失败尝试、21 分钟、15 个工作日和雨天例外建立可信边界，评论再补遛狗与反方向走的变体。",
+          "evidence": ["1w4xwx4", "p7b0q7a", "p7b2vt5"]
+        },
+        {
+          "title": "高相关不等于高接受度",
+          "detail": "“vault 是 agent 文件系统”与 Buildin 方向高度相关，但在 r/PersonalKnowledgeMgmt 只有 2 分、0 评论，只能作为选题假设。",
+          "evidence": ["1vzmmzf"]
+        }
+      ],
+      "rule_changes": [
+        "r/selfhosted：工具展示与新项目受固定日期或集中帖规则限制。",
+        "r/patreon：禁止活动链接、广告、比较问题、调查和市场研究。",
+        "r/ContentCreators：禁止买卖或提供付费服务。",
+        "r/Blogging：反推广并单列 AI-Generated Content 规则。",
+        "r/productivity：禁止广告、listicle、孤立链接、AI 生成帖和 SEO farming。"
+      ],
+      "limitations": [
+        "互动数是采集时页面快照，会继续变化。",
+        "收入、流量、订阅、报价与系统稳定性均为用户自述，未独立审计。",
+        "PersonalKnowledgeMgmt 无评论样本；与 PKMS 不能合并判断。",
+        "Buildin.AI 搜索前排是词形误匹配，本轮确认品牌帖子为 0；这不证明历史绝无提及。"
+      ],
+      "next_queue": [
+        "r/ChatGPT",
+        "r/automation",
+        "r/nocode",
+        "r/Entrepreneur",
+        "r/startups",
+        "r/ProductManagement",
+        "r/GrowthHacking",
+        "r/privacy"
+      ],
+      "source_record": "学习增长/运行记录/2026-09-12.md"
+    }
+  ]
+}
