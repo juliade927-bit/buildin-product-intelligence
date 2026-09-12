@@ -15,9 +15,8 @@ header .page{padding-bottom:0}
 header h1{font-size:26px;font-weight:700;letter-spacing:.5px}
 header .subtitle{font-size:13px;opacity:.85;margin-top:6px}
 header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;flex-wrap:wrap;padding-bottom:16px}
-.tabs{display:flex;gap:0;background:rgba(255,255,255,.1);border-radius:10px 10px 0 0;padding:0 8px;flex-wrap:wrap}
-.tab{padding:12px 20px;font-size:14px;font-weight:600;color:rgba(255,255,255,.7);cursor:pointer;border-bottom:3px solid transparent;transition:all .2s;user-select:none}
-.tab:hover{color:#fff}
+.tabs{display:flex;gap:0;background:rgba(255,255,255,.1);border-radius:10px 10px 0 0;padding:0 8px;flex-wrap:wrap}.tab,.tab-link{padding:12px 20px;font-size:14px;font-weight:600;color:rgba(255,255,255,.7);cursor:pointer;border-bottom:3px solid transparent;transition:all .2s;user-select:none}
+.tab-link{text-decoration:none}.tab:hover,.tab-link:hover{color:#fff}
 .tab.active{color:#fff;border-bottom-color:#fff;background:rgba(255,255,255,.1)}
 .tab-content{display:none;padding-top:24px}
 .tab-content.active{display:block}
@@ -319,7 +318,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 <div class="tab" data-tab="reviews">用户真实反馈</div>
 <div class="tab" data-tab="highvalue">Reddit高赞帖分析</div>
 <div class="tab" data-tab="strategy">Reddit内容策略</div>
-<div class="tab" data-tab="posttype">帖子类型分析</div>
+<div class="tab" data-tab="posttype">帖子类型分析</div><a class="tab-link" href="./reddit-learning/">Reddit 每日学习 ↗</a>
 </div></header>
 <div class="page">
 <div class="tab-content active" id="tab-overview">
