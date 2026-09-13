@@ -1193,3 +1193,67 @@ window.EXPANDED_REDDIT_COMMUNITIES = [
     "source_checked_at": "未重新核验（沿用 index.html 原始记录；整理于 2026-09-09）"
   }
 ];
+
+// 2026-09-13 用户确认的目标社区矩阵。对既有档案做分层覆盖，并补齐缺失社区；
+// 画像、匹配度、流量潜力与风险属于运营判断，不替代发帖前的实时版规核验。
+(function syncConfirmedCommunityMatrix(){
+  var rows = [
+    ["selfhosted","第一梯队","B-数据主权团队","私有化部署、数据主权、自托管","高","高（意向精准）","高（推广帖易被删）"],
+    ["Notion","第一梯队","C-Notion迁移用户","Notion迁移、替代品、数据所有权","高","高（流量大）","高（反推广）"],
+    ["AI_Agents","第一梯队","D-Agent-native开发者","MCP、Agent memory、多Agent工作流","高","高增长","中（反spam、低质量）"],
+    ["ClaudeAI","第一梯队","D-Agent-native开发者","Claude使用、Agent集成、工作流","高","高增长","中（展示需教育性）"],
+    ["ClaudeCode","第一梯队","D-Agent-native开发者","Claude Code、CLI、Agent开发","高","高增长","中"],
+    ["Substack","第一梯队","A-知识创作者","付费Newsletter、会员内容、创作者变现","高","高","中（限制自推广）"],
+    ["ContentCreators","第一梯队","A-知识创作者","内容创作、变现、多平台运营","高","高","中高（禁止买卖/付费服务与spam）"],
+    ["Blogging","第一梯队","A-知识创作者","博客写作、内容发布、SEO","中高","中高","中高（禁止推广、联盟链接、单列AI内容规则）"],
+    ["PKMS","第二梯队","C-Notion迁移用户","个人知识管理、PKM方法论","中高","中高","低"],
+    ["ObsidianMD","第二梯队","C-Notion迁移用户","Obsidian、本地优先、插件生态","中高","中高","低"],
+    ["LocalLLaMA","第二梯队","D-Agent-native开发者","本地LLM、开源模型、AI集成","中高","中高","中（要求先搜索、反低质量）"],
+    ["n8n","第二梯队","D-Agent-native开发者","自动化工作流、n8n、集成","中高","中","中高（禁止AI slop、自推广，workflow须附代码）"],
+    ["indiehackers","第二梯队","A-知识创作者","独立开发者、MRR、产品变现","中高","中高","中（自推广限一次且须为反馈，MRR须有证明）"],
+    ["SaaS","第二梯队","A-知识创作者、B-数据主权团队","SaaS创业、产品增长、B2B","中","中","高（严格限制vendor spam、调研和推广）"],
+    ["Entrepreneur","第二梯队","A-知识创作者","创业、副业、商业运营","中","中","中高（禁止推广，要求原创人类内容）"],
+    ["NotionTemplates","第二梯队","C-Notion迁移用户","Notion模板、模板变现","中高","中","低"],
+    ["productivity","第三梯队","C-Notion迁移用户","效率工具、时间管理、生产力","低","中（流量大）","高（禁止广告和AI生成帖）"],
+    ["writing","第三梯队","A-知识创作者","写作技巧、创作习惯","低","中","中"],
+    ["freelance","第三梯队","A-知识创作者","自由职业、接单、客户管理","低","中","中"],
+    ["startups","第三梯队","A-知识创作者、B-数据主权团队","创业、融资、产品开发","低","中","中高（推广/反馈/展示须分流）"],
+    ["smallbusiness","第三梯队","A-知识创作者、B-数据主权团队","小企业运营、管理工具","低","中低","高（禁止市场调研、AI/app开发需求收集和推广）"],
+    ["projectmanagement","第三梯队","B-数据主权团队、C-Notion迁移用户","项目管理、团队协作","低","中低","低"],
+    ["patreon","画像提及/未入梯队","A-知识创作者","Patreon、付费订阅、创作者经济","高","中高","高（禁止活动链接/广告、比较问题和市场调研）"],
+    ["juststart","画像提及/未入梯队","A-知识创作者","副业启动、在线业务、SEO","中高","中","中"],
+    ["sysadmin","画像提及/未入梯队","B-数据主权团队","系统管理、运维、企业IT","高","中","中"],
+    ["devops","画像提及/未入梯队","B-数据主权团队","DevOps、CI/CD、基础设施","高","中","中"],
+    ["homelab","画像提及/未入梯队","B-数据主权团队","家庭实验室、自托管、硬件","中高","中","低"],
+    ["kubernetes","画像提及/未入梯队","B-数据主权团队","K8s、容器化、云原生","中高","中","低"],
+    ["privacy","画像提及/未入梯队","B-数据主权团队","隐私保护、数据安全、替代工具","高","中","高（应用推广暂停，要求原始可信来源）"],
+    ["opensource","画像提及/未入梯队","B-数据主权团队","开源软件、开源社区、自托管","中高","中","中"],
+    ["Anytype","画像提及/未入梯队","C-Notion迁移用户","Anytype、本地优先、P2P协作","中高","中","低"],
+    ["logseq","画像提及/未入梯队","C-Notion迁移用户","Logseq、大纲笔记、开源","中高","中","低"],
+    ["CraftDocs","画像提及/未入梯队","C-Notion迁移用户","Craft、文档工具、苹果生态","中","中低","低"],
+    ["codaio","画像提及/未入梯队","C-Notion迁移用户","Coda、文档数据库、无代码","中高","中","低"],
+    ["ChatGPTCoding","画像提及/未入梯队","D-Agent-native开发者","AI编程、ChatGPT、代码生成","高","中高","中"],
+    ["automation","画像提及/未入梯队","D-Agent-native开发者","自动化、RPA、工作流","中高","中","中高（禁止blogspam、自推广和联盟链接）"],
+    ["nocode","画像提及/未入梯队","D-Agent-native开发者","无代码、自动化、工具集成","中","中","中高（产品发布须进指定入口且需价值增量）"],
+    ["cursor","画像提及/未入梯队","D-Agent-native开发者","Cursor、AI编辑器、开发者工具","高","高增长","中"]
+  ];
+  var tierMap = {"第一梯队":"P0","第二梯队":"P1","第三梯队":"P2","画像提及/未入梯队":"P3"};
+  var moderationFromRisk = function(risk){
+    if(/^高/.test(risk)) return "严格";
+    if(/^中高/.test(risk)) return "中高";
+    if(/^中/.test(risk)) return "中等";
+    return "较宽松";
+  };
+  var byName = {};
+  window.EXPANDED_REDDIT_COMMUNITIES.forEach(function(c){byName[c.name.replace(/^r\//, "").toLowerCase()] = c;});
+  rows.forEach(function(r){
+    var key=r[0].toLowerCase(), c=byName[key];
+    if(!c){
+      c={name:"r/"+r[0],url:"https://www.reddit.com/r/"+r[0]+"/",product:r[3].split("、")[0],members:null,members_display:"待确认",activity:r[5],atmosphere:"待进一步研究",sentiment:"unknown",notes:"2026-09-13 按用户确认的目标社区矩阵新增；社区规模、活跃度和实时版规仍需逐项核验。",posting_pattern:"待补充",user_profile:r[2],promo_ratio:"待观察",promo_ratio_note:"尚未完成固定时间窗抽样。",promo_strategy:"先贡献与主题直接相关的高价值内容，发帖前核对实时版规并透明披露关联。",source_checked_at:"2026-09-13（用户提供，待实时核验）"};
+      window.EXPANDED_REDDIT_COMMUNITIES.push(c); byName[key]=c;
+    }
+    c.tier=tierMap[r[1]]; c.tier_label=r[1]; c.target_persona=r[2]; c.audience_fit=r[4]; c.traffic_potential=r[5]; c.risk=r[6]; c.moderation=moderationFromRisk(r[6]); c.main_topics=r[3].split("、");
+    c.relevance=r[4]+"匹配："+r[2]+"；主题为"+r[3]+"。";
+    c.matrix_source="用户确认的社区矩阵"; c.matrix_updated_at="2026-09-13";
+  });
+})();
