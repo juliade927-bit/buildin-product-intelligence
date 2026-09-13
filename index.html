@@ -151,6 +151,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 .user-card .u-row .lbl{font-weight:700;color:var(--growth);display:block;margin-bottom:2px;font-size:10px;text-transform:uppercase;letter-spacing:.5px}
 .user-card .u-row .val{color:var(--muted);line-height:1.5}
 .user-card .u-value{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:12px;color:var(--accent);font-weight:600}
+.user-card.persona-p0{border-top-color:#DC2626}.user-card.persona-p1{border-top-color:#D97706}.persona-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}.persona-code{font-size:10px;color:var(--faint);font-weight:700}.persona-priority{font-size:10px;font-weight:800;padding:3px 8px;border-radius:999px;background:#FEE2E2;color:#991B1B}.persona-p1 .persona-priority{background:#FEF3C7;color:#92400E}.persona-list{margin:3px 0 0;padding-left:18px;color:var(--muted);font-size:11px}.persona-list li{margin:3px 0}.persona-pitch{background:#F0FDFA;border-left:3px solid var(--accent);padding:9px 10px;border-radius:6px;color:#115E59;font-size:12px;margin:9px 0}.persona-proof{font-size:10px;color:var(--blue);word-break:break-word;margin-top:7px}
 .metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
 .metric-card{background:var(--card);border-radius:12px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.05);border:1px solid rgba(0,0,0,.04)}
 .metric-card .m-title{font-size:14px;font-weight:700;margin-bottom:10px;color:var(--ink);display:flex;align-items:center;gap:6px}
@@ -373,7 +374,8 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 <div class="timeline" id="growthTimeline"></div>
 </div>
 <div class="growth-section">
-<div class="growth-section-title"><span class="icon">👥</span>目标用户画像</div>
+<div class="growth-section-title"><span class="icon">👥</span>四个核心客户画像</div>
+<div class="reddit-research-note"><strong>定位判断：</strong>优先争取已经形成复杂知识工作流，并正被多工具割裂、SaaS 锁定或 AI 工作流断层困扰，且具有明确迁移或付费触发事件的个人、创作者和团队；不笼统定位为“所有人的 AI 笔记工具”。</div>
 <div class="user-grid" id="targetUsers"></div>
 </div>
 <div class="growth-section">
@@ -1702,39 +1704,64 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
   ],
   "target_users": [
     {
-      "name": "企业IT/运维决策者",
-      "pain": "SaaS数据安全顾虑、合规要求、不想数据出内网",
-      "need": "可私有化部署的企业级知识库",
-      "channel": "r/selfhosted、Hacker News、企业IT社区",
-      "value": "高客单价、长期续约"
+      "priority": "P0",
+      "code": "画像 A",
+      "name": "技术型知识创作者",
+      "identity": "独立作者、Newsletter 作者、咨询顾问、教程/课程/模板/行业报告创作者",
+      "current_stack": "Notion 写作整理；Substack/Medium 发布；Patreon/Gumroad/Stripe 收款；Discord、邮件或网盘交付",
+      "pain_points": ["同一内容需跨平台重复维护", "免费内容、会员内容与内部素材割裂", "付费用户难以进入结构化知识库", "用户关系掌握在第三方平台手中"],
+      "pitch": "把内容生产、知识库、公开发布、付费订阅和持续交付放进一个工作空间。",
+      "trigger": "已经在卖课程、Newsletter、行业资料或会员内容，但尚未形成成熟的内容变现系统",
+      "keywords": "paid newsletter / membership content / sell a knowledge base / monetize Notion / Substack alternative",
+      "channel": "r/Substack、r/ContentCreators、r/Blogging、r/patreon、r/Entrepreneur、r/juststart、r/indiehackers",
+      "value": "Reddit 获客潜力高；订阅与内容交付闭环可直接支撑付费转化",
+      "constraint": "先研究定价与付费价值问题，不在限制自推广的社区直接推销工具",
+      "evidence": "https://nl.reddit.com/r/Substack/comments/1u7piq1/trying_to_understand_why_someone_would_want_to/"
     },
     {
-      "name": "知识付费创作者",
-      "pain": "Notion管内容+Patreon收费+Substack分发，工具碎片化",
-      "need": "一站式知识管理+内容变现工具",
-      "channel": "r/juststart、r/Entrepreneur、Substack社区",
-      "value": "内容变现抽成、口碑传播"
+      "priority": "P0",
+      "code": "画像 B",
+      "name": "重视数据主权的技术团队",
+      "identity": "20–200 人公司的 CTO、IT 管理员、技术负责人、知识管理负责人及信息安全决策者",
+      "current_stack": "Notion/Confluence 与自托管 Wiki 并存；使用者是研发、产品和运营，购买者是 CTO、IT 或公司负责人",
+      "pain_points": ["内部文档不能进入普通海外 SaaS", "Confluence 太重，Notion 难满足部署与控制要求", "自托管工具常缺数据库、任务和协作", "担心停服、封号、涨价或数据无法完整迁出"],
+      "pitch": "一个可由企业掌控、同时具有现代文档和数据库体验的内部知识工作空间。",
+      "trigger": "正在寻找自托管知识库，或因数据驻留、权限、合规和供应商风险启动替换项目",
+      "keywords": "self-hosted knowledge base / data residency / internal wiki / SaaS lock-in / backup and restore",
+      "channel": "r/selfhosted、r/sysadmin、r/devops、r/homelab、r/kubernetes、r/privacy、r/opensource",
+      "value": "高意向、低规模；中小团队适合 Reddit 线索获取，大型企业客单价高但销售周期长",
+      "constraint": "公开推广前必须具备可试用版本及部署架构、资源、存储、权限、备份、升级、导入导出和成本证据",
+      "evidence": "https://www.reddit.com/r/selfhosted/comments/1tbs9qt/removed/"
     },
     {
-      "name": "Notion不满用户",
-      "pain": "AI功能绑架、数据人质、客服无人、MCP注入广告、工作空间被封",
-      "need": "尊重用户、不绑架AI、数据属于用户的替代方案",
-      "channel": "r/Notion吐槽帖、迁移讨论、r/NotionExodus",
-      "value": "迁移窗口期获取、情绪共鸣传播"
+      "priority": "P0",
+      "code": "画像 C",
+      "name": "有真实迁移意愿的 Notion 重度用户",
+      "identity": "使用 Notion 1–5 年，已建立关联数据库、Wiki、项目和模板的个人用户或小团队负责人",
+      "current_stack": "并非单纯讨厌 Notion，而是长期被复杂工作区的迁移成本困住",
+      "pain_points": ["套餐涨价或功能重新分层", "数据导出、恢复或访问问题", "性能下降与 AI 强绑定干扰", "权限或公司 IT 要求触发迁移"],
+      "pitch": "不要求用户重建第二人生：先证明复杂数据库、关联关系和内容可以迁过去。",
+      "trigger": "正准备离开 Notion，并主动搜索 alternative、migration、export 或 data ownership",
+      "keywords": "Notion alternative / migrate from Notion / export database / data ownership / Notion pricing",
+      "channel": "r/Notion、r/NotionTemplates、r/PKMS、r/productivity、r/ObsidianMD、r/Anytype、r/logseq、r/CraftDocs、r/codaio",
+      "value": "高流量、高竞争；迁移触发事件明确时意向显著高于普通 Notion 用户",
+      "constraint": "必须提供大型工作区迁移录像、字段关系对照、支持边界、耗时、可逆性、导出方式及迁移后表现",
+      "evidence": "https://www.reddit.com/r/Notion/comments/1uj225g/what_notion_alternatives_are_people_actually/"
     },
     {
-      "name": "开发者/AI Agent爱好者",
-      "pain": "知识库不支持MCP/Skill、AI对话被广告劫持",
-      "need": "AI Agent友好、原生MCP/Skill支持的知识库",
-      "channel": "r/AI_Agents、r/ClaudeAI、GitHub、AI IDE社区",
-      "value": "技术口碑、生态建设、先发优势"
-    },
-    {
-      "name": "俄语区用户",
-      "pain": "国际工具支付不便、本地化不足、数据驻留需求",
-      "need": "俄语本地化、本地支付、数据驻留的知识库",
-      "channel": "VK、Telegram、俄语Reddit",
-      "value": "已有自然基础、快速转化、但需控制集中度"
+      "priority": "P1",
+      "code": "画像 D",
+      "name": "Agent-native 开发者与小团队",
+      "identity": "Claude Code、Codex、Cursor、Windsurf 用户；独立开发者、AI 自动化工程师及内部 Agent 团队",
+      "current_stack": "使用 MCP、n8n、Make 或自定义脚本，但上下文散落在 Markdown、GitHub、Notion 与聊天记录中",
+      "pain_points": ["每次对话都需重新提供背景", "Agent 难以稳定读写结构化工作空间", "不同 Agent 无法共享持久记忆", "知识库与任务执行系统断开"],
+      "pitch": "把 Buildin 作为 Agent 的长期记忆和可写工作空间，而不只是一个给人看的笔记应用。",
+      "trigger": "正在给 Claude、Codex、Cursor 或多 Agent 工作流寻找持久化知识层",
+      "keywords": "MCP workspace / agent memory / Claude Code knowledge base / Codex workflow / writable knowledge base",
+      "channel": "r/AI_Agents、r/ClaudeAI、r/ClaudeCode、r/ChatGPTCoding、r/LocalLLaMA、r/n8n、r/automation、r/nocode、r/cursor",
+      "value": "高增长潜力；可通过可复现的读写闭环 Demo 建立开发者口碑和生态先发优势",
+      "constraint": "避免抽象的“AI 提效”；必须说明工具、权限、稳定读写、数据格式、API 限制和失败行为",
+      "evidence": "Buildin 官方 CLI、MCP 与 Skill 能力；具体兼容范围以最新官方文档为准"
     }
   ],
   "metrics": {
@@ -4657,11 +4684,18 @@ return '<div class="timeline-phase"><div class="timeline-dot" style="background:
 function renderTargetUsers(){
 var g=document.getElementById("targetUsers");
 g.innerHTML=growth.target_users.map(function(u){
-return '<div class="user-card"><div class="u-name">'+escapeHtml(u.name)+'</div>'+
-'<div class="u-row"><span class="lbl">核心痛点</span><span class="val">'+escapeHtml(u.pain)+'</span></div>'+
-'<div class="u-row"><span class="lbl">核心需求</span><span class="val">'+escapeHtml(u.need)+'</span></div>'+
-'<div class="u-row"><span class="lbl">触达渠道</span><span class="val">'+escapeHtml(u.channel)+'</span></div>'+
-'<div class="u-value">价值：'+escapeHtml(u.value)+'</div></div>';
+var pains=(u.pain_points||[u.pain]).filter(Boolean).map(function(x){return'<li>'+escapeHtml(x)+'</li>'}).join('');
+var proof=/^https?:/.test(u.evidence||'')?'<a class="persona-proof" href="'+escapeHtml(u.evidence)+'" target="_blank" rel="noopener">研究示例 ↗</a>':'<div class="persona-proof">证据口径：'+escapeHtml(u.evidence||'待补充')+'</div>';
+return '<div class="user-card persona-'+escapeHtml((u.priority||"P2").toLowerCase())+'"><div class="persona-head"><div><div class="persona-code">'+escapeHtml(u.code||'目标画像')+'</div><div class="u-name">'+escapeHtml(u.name)+'</div></div><span class="persona-priority">'+escapeHtml(u.priority||'P2')+'</span></div>'+
+'<div class="u-row"><span class="lbl">典型身份</span><span class="val">'+escapeHtml(u.identity||'待补充')+'</span></div>'+
+'<div class="u-row"><span class="lbl">当前工作流</span><span class="val">'+escapeHtml(u.current_stack||'待补充')+'</span></div>'+
+'<div class="u-row"><span class="lbl">核心痛点</span><ul class="persona-list">'+pains+'</ul></div>'+
+'<div class="persona-pitch"><strong>核心卖点：</strong>'+escapeHtml(u.pitch||u.need||'待补充')+'</div>'+
+'<div class="u-row"><span class="lbl">高意向触发事件</span><span class="val">'+escapeHtml(u.trigger||'待补充')+'</span></div>'+
+'<div class="u-row"><span class="lbl">高意向关键词</span><span class="val">'+escapeHtml(u.keywords||'待补充')+'</span></div>'+
+'<div class="u-row"><span class="lbl">可能活跃社区</span><span class="val">'+escapeHtml(u.channel)+'</span></div>'+
+'<div class="u-row"><span class="lbl">转化前提 / 进入限制</span><span class="val">'+escapeHtml(u.constraint||'待核验')+'</span></div>'+
+'<div class="u-value">价值：'+escapeHtml(u.value)+'</div>'+proof+'</div>';
 }).join("");
 }
 function renderMetrics(){
