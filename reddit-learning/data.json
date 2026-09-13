@@ -1,12 +1,90 @@
 {
-  "updated_at": "2026-09-12T12:07:05+08:00",
+  "updated_at": "2026-09-13T12:36:53+08:00",
   "library_totals": {
-    "posts": 21,
-    "comments": 32,
-    "communities": 18,
+    "posts": 29,
+    "comments": 48,
+    "communities": 26,
     "p0_first_round_complete": true
   },
   "runs": [
+    {
+      "date": "2026-09-13",
+      "observed_at": "2026-09-13 12:36",
+      "timezone": "Asia/Shanghai",
+      "summary": "Agent 的价值来自持续监控、触发、日志与审批；一体化应证明减少协调成本，同时公开迁移、证据类型和人工判断边界。",
+      "counts": {
+        "candidates": 46,
+        "deep_posts": 8,
+        "comments": 16,
+        "profiles": 8,
+        "duplicates_skipped": 2,
+        "irrelevant_skipped": 0,
+        "failed": 0
+      },
+      "coverage": [
+        "r/ChatGPT",
+        "r/automation",
+        "r/nocode",
+        "r/Entrepreneur",
+        "r/startups",
+        "r/ProductManagement",
+        "r/GrowthHacking",
+        "r/privacy"
+      ],
+      "findings": [
+        {
+          "title": "Agent 要用持续责任链解释",
+          "detail": "高赞回复用一次任务与持续看流程区分 prompt 和 Agent；完整案例还要写触发器、确定性步骤、模型判断、日志、审批与失败接管。",
+          "evidence": ["1w9duly", "p8a0yws", "p8a4nk4"]
+        },
+        {
+          "title": "一体化价值是降低协调成本",
+          "detail": "nocode 样本把 wrapper 从贬义词改写为完整任务成本；未使用的灵活性不一定有价值，但锁定、迁移与故障可见性必须公开。",
+          "evidence": ["1w007ro", "p695zv8", "p69fztg"]
+        },
+        {
+          "title": "反馈汇总不等于用户发现",
+          "detail": "异常反馈可让工程师更靠近问题，但故障、情绪、用户现实、市场信息、优先级和组织授权是不同证据与职责。",
+          "evidence": ["1w4e38y", "p76ubxf", "p76vw39"]
+        },
+        {
+          "title": "AI 营销要回到真实交付物",
+          "detail": "创业社区的高赞反方更在意广告是否清楚、餐饮图片是否展示真实食物，而不是抽象争论 AI 好坏。",
+          "evidence": ["1vy195n", "p5t4zr5", "p5tdjdk"]
+        },
+        {
+          "title": "增长与隐私需要更高证据门槛",
+          "detail": "35% 销售增长缺产品类别、基线与归因窗口；高风险隐私摘要则需回到原始测试、数据流与同意主体。",
+          "evidence": ["1we46w0", "p9do46m", "1w9npy0", "p8botzl"]
+        }
+      ],
+      "rule_changes": [
+        "r/ChatGPT：禁止自广告；周二只开放文字帖。",
+        "r/Entrepreneur：禁止推广并要求 original and human content。",
+        "r/startups：展示、反馈和 Startup 分享进入指定入口，禁止 DM 招揽。",
+        "r/ProductManagement：禁止研究招募、自推广和 AI-generated posts。",
+        "r/GrowthHacking：禁止工具软广；调查、Beta、反馈与评测需许可。",
+        "r/privacy：应用帖子暂停；要求原始可信来源且不得改标题。"
+      ],
+      "limitations": [
+        "互动数是采集时页面快照，会继续变化；每日只取月榜与热门当前可见前三。",
+        "ChatGPT 深读图像只确认存在，未逐字读取；娱乐高分不能外推到 B2B 内容。",
+        "融资、组织效率、自动化收益、销售增长和转化均为用户自述，未独立审计。",
+        "GrowthHacking 的两条评论各 1 分，只作同帖功能样本，不标绝对高赞。",
+        "privacy 的站外报道、原始测试、法律判断与网络阻断效果未核验。"
+      ],
+      "next_queue": [
+        "r/opensource",
+        "r/homelab",
+        "r/degoogle",
+        "r/NewTubers",
+        "r/logseq",
+        "r/Anytype",
+        "r/Capacities",
+        "r/CraftDocs"
+      ],
+      "source_record": "学习增长/运行记录/2026-09-13.md"
+    },
     {
       "date": "2026-09-12",
       "observed_at": "2026-09-12 12:07",
