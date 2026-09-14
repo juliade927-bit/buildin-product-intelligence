@@ -1,12 +1,90 @@
 {
-  "updated_at": "2026-09-13T12:36:53+08:00",
+  "updated_at": "2026-09-14T12:21:49+08:00",
   "library_totals": {
-    "posts": 29,
-    "comments": 48,
-    "communities": 26,
+    "posts": 37,
+    "comments": 64,
+    "communities": 34,
     "p0_first_round_complete": true
   },
   "runs": [
+    {
+      "date": "2026-09-14",
+      "observed_at": "2026-09-14 12:21",
+      "timezone": "Asia/Shanghai",
+      "summary": "可信迁移与私有化叙事要公开版本证据、现实依赖、数据分级和退出路径；功能发布则要用实际步骤与人工审批证明减少摩擦。",
+      "counts": {
+        "candidates": 45,
+        "deep_posts": 8,
+        "comments": 16,
+        "profiles": 8,
+        "duplicates_skipped": 2,
+        "irrelevant_skipped": 0,
+        "failed": 1
+      },
+      "coverage": [
+        "r/opensource",
+        "r/homelab",
+        "r/degoogle",
+        "r/NewTubers",
+        "r/logseq",
+        "r/Anytype",
+        "r/capacitiesapp（替代失效的 r/Capacities）",
+        "r/CraftDocs"
+      ],
+      "findings": [
+        {
+          "title": "争议要重排成版本证据链",
+          "detail": "开源许可争议的高价值评论按许可切换日、提交和可观察特征建证据表，避免把情绪最强的截图或收费事实当成关键证明。",
+          "evidence": ["1w8merd", "p84jv92", "p83vs4d"]
+        },
+        {
+          "title": "私有化必须写恢复账本",
+          "detail": "homelab 高分梗图暴露十年硬盘焦虑；实用回复进一步公开容量、每日版本备份、周度异地盘与可替换内容。",
+          "evidence": ["1vql59u", "p46b61k", "p46q34s"]
+        },
+        {
+          "title": "迁移完成态要列现实例外",
+          "detail": "degoogle 用户把已替换、sandbox、仍保留和因维护成本暂缓的服务分开；Logseq/Anytype 评论则补存量、同步、加密、导出与插件条件。",
+          "evidence": ["1wfqxs1", "1w0nm8f", "p6ehb01", "p8zh60b"]
+        },
+        {
+          "title": "发布说明要回答少了哪一步",
+          "detail": "Capacities 官方帖明确 AI 多步计划、追问与写入前审批，用户仍用分享入口到对象创建的额外步骤检验是否真正更快。",
+          "evidence": ["1vtktw4", "p4vk1it", "p4u9un0"]
+        },
+        {
+          "title": "增长稳定与小实验需并存",
+          "detail": "NewTubers 变现复盘强调按数据调整，高赞反方提醒增长期完全不实验会造成格式锁定；第三方认可内容也仍需澄清价格与隐私。",
+          "evidence": ["1w81yrs", "p7zsdgj", "p7zz1y6", "1w3ef5w"]
+        }
+      ],
+      "rule_changes": [
+        "r/opensource：所有 AI-generated content 被列为 low-effort；仓库需 OSI 许可。",
+        "r/homelab：软件项目必须披露 AI 使用并给用途与研究细节。",
+        "r/degoogle：AI 内容/代码/推荐需披露；指控要有证据，推广进 Showcase。",
+        "r/NewTubers：禁止 AI-written posts、自推广、广告和市场调研。",
+        "r/Anytype：禁止 spam/自推广，批评需有论据，bug/功能请求转官方社区。",
+        "r/CraftDocs：规则页当前未列独立社区规则。"
+      ],
+      "limitations": [
+        "r/Capacities 不存在；本轮研究 Reddit 推荐的 r/capacitiesapp，未把两者当同一社区。",
+        "互动数是采集时页面快照；每日只取月榜与热门当前可见前三。",
+        "开源法律结论、硬件可靠性、频道增长与产品路线均未独立审计。",
+        "degoogle 深读帖很新，两条人工评论各 1 分，只作互动功能样本。",
+        "Capacities 功能未逐项实测；Craft 折扣期限和 E2EE 需求仍需独立核验。"
+      ],
+      "next_queue": [
+        "r/Notion",
+        "r/ObsidianMD",
+        "r/tana_inc",
+        "r/artificial",
+        "r/webdev",
+        "r/marketing",
+        "r/codaio",
+        "r/LocalLLaMA（回访）"
+      ],
+      "source_record": "学习增长/运行记录/2026-09-14.md"
+    },
     {
       "date": "2026-09-13",
       "observed_at": "2026-09-13 12:36",
