@@ -15,9 +15,9 @@ header .page{padding-bottom:0}
 header h1{font-size:26px;font-weight:700;letter-spacing:.5px}
 header .subtitle{font-size:13px;opacity:.85;margin-top:6px}
 header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;flex-wrap:wrap;padding-bottom:16px}
-.tabs{display:flex;gap:0;background:rgba(255,255,255,.1);border-radius:10px 10px 0 0;padding:0 8px;flex-wrap:wrap}.tab,.tab-link{padding:12px 20px;font-size:14px;font-weight:600;color:rgba(255,255,255,.7);cursor:pointer;border-bottom:3px solid transparent;transition:all .2s;user-select:none}
-.tab-link{text-decoration:none}.tab:hover,.tab-link:hover{color:#fff}
-.tab.active{color:#fff;border-bottom-color:#fff;background:rgba(255,255,255,.1)}
+.tabs{display:flex;gap:8px;background:rgba(255,255,255,.1);border-radius:12px 12px 0 0;padding:8px 8px 0;align-items:flex-end;flex-wrap:wrap}.tab{padding:11px 18px;font-size:14px;font-weight:700;color:rgba(255,255,255,.72);cursor:pointer;border:0;border-radius:9px 9px 0 0;background:transparent;transition:all .2s;user-select:none;font-family:inherit}.tab:hover{color:#fff;background:rgba(255,255,255,.08)}
+.tab.active{color:var(--accent);background:var(--bg);box-shadow:0 -1px 0 rgba(255,255,255,.18)}
+.subnav-shell{background:rgba(255,255,255,.88);border-bottom:1px solid var(--line);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20}.subnav-shell .page{display:flex;align-items:center;gap:14px;padding-top:10px;padding-bottom:10px}.subnav-label{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--faint);white-space:nowrap}.subtabs{display:flex;gap:7px;flex-wrap:wrap}.subtab{border:1px solid transparent;background:transparent;color:var(--muted);border-radius:8px;padding:7px 12px;font:600 13px/1.2 inherit;cursor:pointer;transition:all .15s}.subtab:hover{background:var(--gray-light);color:var(--ink)}.subtab.active{background:var(--accent-light);color:var(--accent);border-color:#99F6E4}.daily-link{margin-left:auto;text-decoration:none;color:var(--blue);font-size:12px;font-weight:700;white-space:nowrap;padding:7px 10px;border-radius:8px}.daily-link:hover{background:var(--blue-light)}
 .tab-content{display:none;padding-top:24px}
 .tab-content.active{display:block}
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-bottom:24px}
@@ -296,33 +296,28 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 .tmpl-card .tmpl-copy:hover{background:#E0E7FF}
 .tmpl-card .tmpl-copy.copied{background:#DCFCE7;color:#166534;border-color:#86EFAC}
 @media(max-width:900px){.tmpl-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.page{padding-left:14px;padding-right:14px}header h1{font-size:22px}.tabs{gap:4px}.tab{padding:10px 12px;font-size:13px}.subnav-shell .page{align-items:flex-start;gap:8px}.subnav-label{display:none}.subtabs{gap:5px}.subtab{padding:7px 9px;font-size:12px}.daily-link{font-size:0;padding:7px}.daily-link:after{content:"学习 ↗";font-size:12px}.cards-grid,.comm-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
 <div class="page">
 <h1>Buildin.AI 产品情报看板</h1>
-<div class="subtitle">产品情报 · 社区调研 · 增长策略 · 冷启动作战 — 持续累积迭代</div>
+<div class="subtitle">战略总览 · 产品情报 · Reddit 增长 · 执行素材 — 持续累积迭代</div>
 <div class="meta">
-<span>最近更新：2026-09-13</span>
+<span>看板整理：2026-09-19 · 各条研究以原始观察日期为准</span>
 <span>数据来源：公开资料 + 51 个 Reddit 社区分级调研 + Reddit 社区规则/帖子观察 + 冷启动策略 + 产品展示案例调研 + 用户补充</span>
 <span>更新方式：编辑文件底部对应JSON数据区</span>
 </div>
 <div class="tabs">
-<div class="tab active" data-tab="overview">情报总览</div>
-<div class="tab" data-tab="productintel">产品动态</div>
-<div class="tab" data-tab="reddit">Reddit社区调研</div>
-<div class="tab" data-tab="growth">增长策略</div>
-<div class="tab" data-tab="coldstart">冷启动策略</div>
-<div class="tab" data-tab="reserve">Reddit 帖子储备</div>
-<div class="tab" data-tab="showcase">产品展示案例</div>
-<div class="tab" data-tab="reviews">用户真实反馈</div>
-<div class="tab" data-tab="highvalue">Reddit高赞帖分析</div>
-<div class="tab" data-tab="strategy">Reddit内容策略</div>
-<div class="tab" data-tab="posttype">帖子类型分析</div><a class="tab-link" href="./reddit-learning/">Reddit 每日学习 ↗</a>
+<button class="tab active" data-group="strategy">战略总览</button>
+<button class="tab" data-group="intelligence">产品情报</button>
+<button class="tab" data-group="reddit">Reddit 增长</button>
+<button class="tab" data-group="execution">执行与素材</button>
 </div></header>
+<div class="subnav-shell"><div class="page"><span class="subnav-label">当前工作台</span><div class="subtabs" id="subtabs"></div><a class="daily-link" href="./reddit-learning/">Reddit 每日学习 ↗</a></div></div>
 <div class="page">
-<div class="tab-content active" id="tab-overview">
+<div class="tab-content" id="tab-overview">
 <div class="kpi-grid" id="kpiGrid"></div>
 <div class="chart-grid">
 <div class="chart-card"><h3>分类占比</h3><div class="sub">各分类条目数量分布</div><div class="chart" id="pieChart"></div></div>
@@ -363,7 +358,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 <div class="comm-toolbar" id="commToolbar"><button class="comm-filter active" data-tier="全部">全部社区</button><button class="comm-filter" data-tier="P0">第一梯队</button><button class="comm-filter" data-tier="P1">第二梯队</button><button class="comm-filter" data-tier="P2">第三梯队</button><button class="comm-filter" data-tier="P3">画像池</button><button class="comm-filter" data-tier="严格">封控严格</button><input class="comm-search" id="commSearch" placeholder="搜索社区、用户、话题、推广方式…"><span class="comm-filter-count" id="commFilterCount"></span></div>
 <div class="comm-grid" id="commGrid"></div>
 </div>
-<div class="tab-content" id="tab-growth">
+<div class="tab-content active" id="tab-growth">
 <div class="growth-thesis" id="growthThesis"></div>
 <div class="growth-section">
 <div class="growth-section-title"><span class="icon">🎯</span>机会社区与介入策略</div>
@@ -392,6 +387,25 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 </div>
 </div>
 <div class="tab-content" id="tab-coldstart">
+<section class="cold-section" id="entry-playbook">
+<div class="cold-section-head"><h3>冷启动切入指南 · 先建立信任</h3><p>用户提供的策略建议 · 2026-09-13 · 周期与数量为建议值，社区适配与产品能力需在执行前验证。</p></div>
+<div class="decision-box"><strong>先回答问题 → 再展示解决过程 → 最后介绍产品。</strong><br>让目标用户在具体问题里反复遇见有价值的 Buildin 团队成员。把有用的方法、可复现的证据和透明身份放在产品介绍之前。</div>
+<div class="sprint-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:16px">
+<article class="sprint-card"><div class="sprint-week">01 · 回答问题</div><h4>先贡献 2–3 周</h4><p>只选 3 个核心社区；每天阅读 10–15 个相关新帖，找到 1–2 个确实能回答的问题。提供方法、清单、反例或技术解释。</p><div class="sprint-gate">没有必要时不提产品；相关时披露 “I work on Buildin”。</div></article>
+<article class="sprint-card"><div class="sprint-week">02 · 展示过程</div><h4>发布问题解决型内容</h4><p>已有正常互动后，选择下方一类实验，展示真实输入、过程、结果和失败项，附清单、截图、配置或脱敏日志。</p><div class="sprint-gate">进入条件：素材真实、证据充分，并符合目标社区规则。</div></article>
+<article class="sprint-card"><div class="sprint-week">03 · 介绍产品</div><h4>在需求出现时说明角色</h4><p>解释 Buildin 在解决过程中的作用、限制与适用人群；结合用户主动询问和社区允许的展示入口提供下一步。</p><div class="sprint-gate">执行补充：按对话质量推进，不按账号天数自动升级推广。</div></article>
+</div>
+<details style="margin-top:16px"><summary style="cursor:pointer;font-weight:700">首轮社区与评论示例</summary><div class="decision-box" style="margin-top:10px"><p>每组二选一：r/Notion / r/PKMS（迁移与知识管理）；r/AI_Agents / r/ClaudeAI（Agent 工作空间）；r/Substack / r/ContentCreators（创作者变现）。</p><p>私有化具备公开部署或充分验证材料时，再考虑用 r/selfhosted 替换一个；否则先作为研究渠道。</p><blockquote style="margin:12px 0;border-left:3px solid var(--accent);padding-left:14px">Before choosing another workspace, export one of your real Notion databases and test four things: relations, formulas, embedded files, and permissions. Most migration demos only show plain pages, which is the easy part.</blockquote><p>评论范例由用户提供，用于说明具体方法的表达方式；实际回复应结合原帖语境。</p></div></details>
+<details style="margin-top:12px"><summary style="cursor:pointer;font-weight:700">开始阶段的禁区 · 身份与证据</summary><div class="decision-box" style="margin-top:10px">避免以 “Introducing Buildin.AI, the best Notion alternative”、全能 AI 工作空间或 “Notion + Patreon + Substack” 作为冷启动开场；不做无证据的竞品攻击、不伪装普通用户、不多账号互赞造势、不批量发布高度相似的 AI 内容。用户首先关心利益关系、历史贡献、真实可用性、截图 / 数据 / 代码 / 失败记录，以及内容是否真正解决问题。</div></details>
+<div class="cold-section-head" style="margin-top:24px"><h3>四类可执行内容 · 选一条，做透一个实验</h3><p>展开查看素材清单与英文标题。标题属于创意草案，第一人称经历必须由实际实验或创作者授权记录支撑。</p></div>
+<div class="angle-grid">
+<details class="angle-card primary"><summary style="cursor:pointer"><span class="angle-tag">01 · 迁移痛点</span><h4>真实 Notion 迁移实验</h4><p>用完整工作区证明迁移边界，保留失败项和人工修复记录。</p></summary><div class="angle-proof"><strong>候选社区：</strong>r/Notion、r/PKMS、r/productivity、r/NotionTemplates</div><p><strong>准备材料：</strong>真实工作区规模、普通页面、数据库、关联关系、公式、附件、权限；迁移耗时、损坏项、修复项，以及独立于产品也能使用的检查清单。</p><p><strong>正文顺序：</strong>动机 → 规模 → 标准 → 成功项 → 失败项 → 验证 → 团队身份 → 邀请纠错。</p><ul><li>I tested a Notion migration with relations, files, and databases. Here’s what actually broke</li><li>Before leaving Notion, test these 7 things with your real workspace</li><li>I migrated a workspace instead of a demo page. The databases were the hard part</li></ul><div class="angle-proof">不承诺“完美迁移”或“100% 保留”；以实际测试结果为准。</div></details>
+<details class="angle-card primary"><summary style="cursor:pointer"><span class="angle-tag">02 · Agent 工作流</span><h4>可复现的读取、执行与写回</h4><p>让 Agent 读取产品规范，完成任务，再把决策与待办写回工作空间。</p></summary><div class="angle-proof"><strong>候选社区：</strong>r/AI_Agents、r/ClaudeAI、r/ClaudeCode、r/n8n、r/automation、r/LocalLLaMA</div><p><strong>必须展示：</strong>输入、读取范围、写入范围、人工批准点、错误检测、回滚方式、完整配置或脱敏日志，以及 Buildin 的具体角色。</p><p><strong>核心价值：</strong>在明确的权限边界内持续留下成果，而不只展示 MCP 搜索成功。</p><ul><li>I gave Claude Code a writable project memory instead of another context file</li><li>My agent reads the project wiki, finishes a task, then writes the decision log back</li><li>MCP demos usually stop at search. I tested the write-back and failure cases</li><li>What should an AI agent be allowed to write into your workspace?</li></ul><div class="angle-proof">演示只使用已验证的能力；审批与回滚是测试项目，不代表产品已原生支持。</div></details>
+<details class="angle-card primary"><summary style="cursor:pointer"><span class="angle-tag">03 · 创作者变现</span><h4>真实账本与持续交付流程</h4><p>回答第一位付费用户从哪里来、什么值得付费，以及会员为什么续订。</p></summary><div class="angle-proof"><strong>候选社区：</strong>r/Substack、r/ContentCreators、r/Blogging、r/indiehackers、r/Entrepreneur、r/SideProject</div><p><strong>共建素材：</strong>1–3 位真实创作者；内容数量、搭建时间、渠道、免费 / 付费层差异、首批访问、付费与续订；平台抽成、成本及交付失败。标明 Buildin 完成的部分，结果不好也记录原因。</p><ul><li>What happened before the first person paid for my knowledge base</li><li>I mapped the workflow behind a paid research library—not just the landing page</li><li>The hidden cost of running content across Notion, email, payments, and a community</li><li>Would you pay for an archive, a community, or continuously updated research?</li></ul><div class="angle-proof">不编造收入；初期优先参与现有定价、留存与付费价值讨论。调研型标题也需核验社区是否允许。</div></details>
+<details class="angle-card primary"><summary style="cursor:pointer"><span class="angle-tag">04 · 私有化部署</span><h4>数据控制的技术解释</h4><p>用数据流、部署过程与恢复测试证明控制边界。</p></summary><div class="angle-proof"><strong>候选社区：</strong>r/selfhosted、r/homelab、r/sysadmin、r/devops</div><p><strong>证据清单：</strong>部署架构；浏览器到服务器的数据流；默认外部服务；AI 请求边界；管理员控制范围；备份、恢复、升级、迁移；资源占用、运维成本及不支持项。</p><ul><li>Self-hosted isn’t a checkbox, so we mapped every place workspace data can leave</li><li>What it actually takes to deploy an internal Notion-like workspace</li><li>I tested backup and recovery before trusting a self-hosted knowledge base</li><li>Private deployment vs local-first: they solve different problems</li></ul><div class="angle-proof">进入前提：社区成员可按公开步骤部署或充分验证；企业售前可交付不等同于公开自托管可用。</div></details>
+</div>
+<p style="font-size:12px;color:var(--muted);margin-top:14px">用户提供的参考链接（本次仅归档，未重新核验）：<a href="https://www.reddit.com/r/selfhosted/comments/1tbs9qt/removed/" target="_blank" rel="noopener">selfhosted 规则执行示例</a> · <a href="https://www.reddit.com/r/Notion/comments/1uj225g/what_notion_alternatives_are_people_actually/" target="_blank" rel="noopener">Notion 替代品讨论</a>。候选社区不等于允许发布，执行时核验最新规则。</p>
+</section>
 <div class="cold-hero">
 <div class="cold-eyebrow">Buildin AI · Cold Start Command Center</div>
 <h2>冷启动不是“先养号再发广告”，而是用连续的小实验找到第一个可复制增长闭环</h2>
@@ -400,7 +414,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 </div>
 <div class="kpi-grid">
 <div class="kpi-card c-product"><div class="num">3</div><div class="label">首发产品切口</div></div>
-<div class="kpi-card c-competitor"><div class="num">6</div><div class="label">优先验证社区</div></div>
+<div class="kpi-card c-competitor"><div class="num">3</div><div class="label">首轮聚焦社区</div></div>
 <div class="kpi-card c-user"><div class="num">5</div><div class="label">核心内容方向</div></div>
 <div class="kpi-card c-market"><div class="num">8周</div><div class="label">首轮验证周期</div></div>
 <div class="kpi-card c-reddit"><div class="num">12</div><div class="label">关键实验单元</div></div>
@@ -443,7 +457,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 <section class="cold-section" id="cold-sprint">
 <div class="cold-section-head"><h3>04 · 8 周冷启动节奏</h3><p>阶段不是按时间自动升级；只有达到“门槛信号”才进入下一阶段，否则继续迭代切口与内容。</p></div>
 <div class="sprint-grid">
-<div class="sprint-card"><div class="sprint-week">Week 1–2</div><h4>定位与问题验证</h4><ul><li>访谈 10–15 位目标用户</li><li>每个主叙事发布 2 条纯价值内容</li><li>整理 30 条高频原话与异议</li></ul><div class="sprint-gate">门槛：至少 1 个切口获得 5 次有效对话</div></div>
+<div class="sprint-card"><div class="sprint-week">Week 1–3 · 可按反馈调整</div><h4>评论贡献与问题验证</h4><ul><li>聚焦 3 个核心社区，观察真实问题</li><li>每天阅读 10–15 帖，回答 1–2 个能帮助的问题</li><li>记录高频原话与异议，不急于发布产品帖</li></ul><div class="sprint-gate">门槛：已有正常互动，形成可用方法与实验素材</div></div>
 <div class="sprint-card"><div class="sprint-week">Week 3–4</div><h4>内容—社区匹配</h4><ul><li>每周 6–8 条主内容</li><li>每条只测试一个角度或格式</li><li>完成 2 个可体验模板 / Demo</li></ul><div class="sprint-gate">门槛：2 组内容达到社区中位互动，并带来主动询问</div></div>
 <div class="sprint-card"><div class="sprint-week">Week 5–6</div><h4>场景与转化验证</h4><ul><li>发布 3 个完整场景案例</li><li>开放迁移帮助或共创招募</li><li>追踪访问—注册—激活路径</li></ul><div class="sprint-gate">门槛：获得 10–20 位高意向种子用户</div></div>
 <div class="sprint-card"><div class="sprint-week">Week 7–8</div><h4>复用与渠道放大</h4><ul><li>复用表现最佳的 2 个主题</li><li>扩展到 X / YouTube / PH</li><li>沉淀案例、FAQ 与内容模板</li></ul><div class="sprint-gate">门槛：形成 1 个可重复获客闭环</div></div>
@@ -463,7 +477,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 <div class="cold-section-head"><h3>06 · 本周行动清单</h3><p>勾选状态保存在当前浏览器，便于把策略页直接当作执行面板使用。</p></div>
 <div class="checklist" id="coldChecklist">
 <label class="check-item"><input type="checkbox"><span><span class="check-title">确认 3 个首发切口的一句话主张</span><span class="check-text">每句话必须包含目标用户、问题和可验证结果。</span></span></label>
-<label class="check-item"><input type="checkbox"><span><span class="check-title">建立 6 个 P0 / P1 社区观察表</span><span class="check-text">记录规则、热门格式、常见问题、发布窗口与禁区。</span></span></label>
+<label class="check-item"><input type="checkbox"><span><span class="check-title">选定 3 个核心社区并建立观察表</span><span class="check-text">从迁移、Agent、创作者三组各选一个；私有化证据成熟后再考虑替换。</span></span></label>
 <label class="check-item"><input type="checkbox"><span><span class="check-title">完成 10–15 次目标用户访谈</span><span class="check-text">优先收集原话、当前替代方案、触发迁移的时刻。</span></span></label>
 <label class="check-item"><input type="checkbox"><span><span class="check-title">制作 2 个可公开体验的真实 Demo</span><span class="check-text">建议分别覆盖 AI 工作流与知识变现场景。</span></span></label>
 <label class="check-item"><input type="checkbox"><span><span class="check-title">准备首批 6 条纯价值内容</span><span class="check-text">3 个切口各 2 条，标题和格式形成 A/B 组合。</span></span></label>
@@ -556,7 +570,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 
 <div class="update-guide">
 <h3>看板更新指南</h3>
-<p>本看板包含四个独立数据区，分别对应四个标签页：</p>
+<p>看板已按四个工作台组织；以下是主要数据区及对应数据源：</p>
 <ol>
 <li><strong>情报总览</strong>：<code>&lt;script id="board-data"&gt;</code> — 产品/竞品/用户/市场声量/SEO&GEO/待调研 六类情报条目</li>
 <li><strong>Reddit社区调研</strong>：<code>&lt;script id="reddit-data"&gt;</code> — 社区名称/成员数/氛围/活跃度/主要话题等</li>
@@ -588,17 +602,15 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
 
 <div class="tab-content" id="tab-strategy">
 <div class="kpi-grid" id="strategyKpi"></div>
-<div class="section-title">五账号角色分工</div>
-<div class="card-grid" id="strategyAccountCards"></div>
-<div class="section-title">四级内容梯度（每周递进）</div>
+<div class="section-title">画像驱动的内容路线</div>
 <div id="strategyGradient"></div>
-<div class="section-title">第二个月四周内容日历（40篇帖子/200条评论）</div>
+<div class="section-title">内容日历 · 第二周至第五周</div>
 <div id="strategyCalendar"></div>
-<div class="section-title">增长预期与关键假设</div>
+<div class="section-title">分画像转化与复盘</div>
 <div class="card-grid" id="strategyGrowth"></div>
-<div class="section-title">风险控制与避坑指南</div>
+<div class="section-title">证据准备与发布门槛</div>
 <div class="card-grid" id="strategyRisk"></div>
-<div class="section-title">快速参考卡</div>
+<div class="section-title">本周执行方式</div>
 <div id="strategyQuickRef"></div>
 </div>
 
@@ -3385,7 +3397,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
       {
         "level": 1,
         "name": "纯价值内容",
-        "weeks": "第5-6周（第二个月前半）",
+        "weeks": "第二至第三周",
         "promotion_intent": "0% - 完全不提Buildin",
         "content_focus": "建立专业形象和社区信任，评论有价值的帖子，发布纯方法论/教程/对比内容",
         "examples": [
@@ -3399,7 +3411,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
       {
         "level": 2,
         "name": "间接提及",
-        "weeks": "第7周（第二个月第三周）",
+        "weeks": "第四周",
         "promotion_intent": "20% - 在评论或帖子中自然提及Buildin作为'我正在试用的工具'",
         "content_focus": "在价值内容中自然插入Buildin的使用体验，不展开介绍，不放链接，让好奇的用户主动问",
         "examples": [
@@ -3413,7 +3425,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
       {
         "level": 3,
         "name": "案例分享",
-        "weeks": "第8周（第二个月第四周）",
+        "weeks": "第五周",
         "promotion_intent": "50% - 以'我的使用案例'为主体，详细展示Buildin的功能和效果",
         "content_focus": "用真实使用案例展示Buildin的核心价值（终身买断/私有化部署/内容变现/AI不绑架），放截图和链接，但保持'用户分享'而非'官方推广'的语气",
         "examples": [
@@ -3427,7 +3439,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
       {
         "level": 4,
         "name": "软推广",
-        "weeks": "第三个月起（第二个月只铺垫不执行）",
+        "weeks": "第六周起（第二至第五周只铺垫不执行）",
         "promotion_intent": "80% - 明确推荐Buildin，但保持用户视角",
         "content_focus": "基于前三级积累的信任，明确推荐Buildin，可以配合限时优惠或独家折扣码",
         "examples": [
@@ -3450,7 +3462,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
     "overview": "第二个月（第5-8周），五个账号在6个重点社区发布约40篇帖子（平均每账号每周2篇），评论约200条（平均每账号每周10条）。内容从纯价值逐步过渡到案例分享，目标是建立'Buildin是Notion最佳替代方案'的社区认知。",
     "weekly_breakdown": [
       {
-        "week": "第5周（Month2 W1）",
+        "week": "第二周内容日历",
         "theme": "纯价值内容·建立专业形象",
         "gradient": "Level 1",
         "total_posts": 10,
@@ -3530,7 +3542,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
         "comment_focus": "每个账号在目标社区评论10条有价值的内容，重点回复求助帖和吐槽帖，建立'乐于助人'的形象"
       },
       {
-        "week": "第6周（Month2 W2）",
+        "week": "第三周内容日历",
         "theme": "纯价值内容·深化专业领域",
         "gradient": "Level 1（巩固）",
         "total_posts": 10,
@@ -3610,7 +3622,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
         "comment_focus": "开始在含'Notion替代'/'自托管文档'/'知识管理工具'关键词的帖子中评论，展示专业见解，但不提Buildin"
       },
       {
-        "week": "第7周（Month2 W3）",
+        "week": "第四周内容日历",
         "theme": "间接提及·自然植入",
         "gradient": "Level 2",
         "total_posts": 10,
@@ -3700,7 +3712,7 @@ header .meta{display:flex;gap:20px;margin-top:14px;font-size:12px;opacity:.8;fle
         "comment_focus": "在含'Notion替代'/'自托管文档'/'终身定价'/'内容变现'关键词的帖子中评论，自然提及Buildin，回复询问时放链接"
       },
       {
-        "week": "第8周（Month2 W4）",
+        "week": "第五周内容日历",
         "theme": "案例分享·深度展示",
         "gradient": "Level 3",
         "total_posts": 10,
@@ -4539,17 +4551,26 @@ var currentCommTier="全部",currentCommSearch="";
 var currentTypeGrade="全部",currentTypePlatform="全部",currentTypeSearch="";
 var chartsInited={overview:false,reddit:false,growth:false,coldstart:false,reserve:false,showcase:false,reviews:false,highvalue:false,strategy:false,posttype:false,productintel:false};
 function escapeHtml(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
-document.querySelectorAll(".tab").forEach(function(tab){
-tab.addEventListener("click",function(){
-var target=this.getAttribute("data-tab");
-document.querySelectorAll(".tab").forEach(function(t){t.classList.remove("active")});
-this.classList.add("active");
+var NAV_GROUPS={
+strategy:{items:[{id:"audience",label:"核心用户画像"},{id:"growth",label:"增长与冷启动策略"}]},
+intelligence:{items:[{id:"overview",label:"情报总览"},{id:"productintel",label:"产品动态"},{id:"reviews",label:"用户反馈"}]},
+reddit:{items:[{id:"reddit",label:"社区地图"},{id:"strategy",label:"内容策略"},{id:"highvalue",label:"高赞研究"},{id:"posttype",label:"帖子类型"}]},
+execution:{items:[{id:"reserve",label:"帖子储备"},{id:"showcase",label:"展示案例"}]}
+};
+function groupForSection(section){var found="strategy";Object.keys(NAV_GROUPS).some(function(group){return NAV_GROUPS[group].items.some(function(item){if(item.id===section){found=group;return true}return false})});return found}
+function renderSubtabs(group,activeSection){var items=NAV_GROUPS[group].items;document.getElementById("subtabs").innerHTML=items.map(function(item){return'<button class="subtab '+(item.id===activeSection?'active':'')+'" data-tab="'+item.id+'">'+item.label+'</button>'}).join("");document.querySelectorAll(".subtab").forEach(function(button){button.addEventListener("click",function(){activateSection(this.getAttribute("data-tab"),true)})})}
+function activateSection(target,updateUrl){
+if(target==="coldstart")target="growth";
+var targetPanel=document.getElementById("tab-"+target);if(!targetPanel)return;
+var group=groupForSection(target);
+document.querySelectorAll(".tab").forEach(function(t){t.classList.toggle("active",t.getAttribute("data-group")===group)});
+renderSubtabs(group,target);
 document.querySelectorAll(".tab-content").forEach(function(c){c.classList.remove("active")});
-document.getElementById("tab-"+target).classList.add("active");
+targetPanel.classList.add("active");
 if(target==="overview"&&!chartsInited.overview){initOverviewCharts();chartsInited.overview=true}
 if(target==="reddit"&&!chartsInited.reddit){initRedditCharts();chartsInited.reddit=true}
-if(target==="growth"&&!chartsInited.growth){renderGrowth();chartsInited.growth=true}
-if(target==="coldstart"&&!chartsInited.coldstart){initColdStart();chartsInited.coldstart=true}
+if((target==="growth"||target==="audience")&&!chartsInited.growth){renderGrowth();chartsInited.growth=true}
+if(target==="growth"&&!chartsInited.coldstart){initColdStart();chartsInited.coldstart=true}
 if(target==="reserve"&&!chartsInited.reserve){initReserve();chartsInited.reserve=true}
 if(target==="showcase"&&!chartsInited.showcase){initShowcaseCharts();chartsInited.showcase=true}
 if(target==="reviews"&&!chartsInited.reviews){initReviews();chartsInited.reviews=true}
@@ -4557,11 +4578,34 @@ if(target==="highvalue"&&!chartsInited.highvalue){initHighValue();chartsInited.h
 if(target==="strategy"&&!chartsInited.strategy){initStrategy();chartsInited.strategy=true}
 if(target==="posttype"&&!chartsInited.posttype){initPostType();chartsInited.posttype=true}
 if(target==="productintel"&&!chartsInited.productintel){renderProductIntel();chartsInited.productintel=true}
+if(updateUrl){var url=new URL(window.location.href);url.searchParams.set("tab",target);history.replaceState(null,"",url)}
 setTimeout(function(){window.dispatchEvent(new Event("resize"))},100);
-});
-});
-var initialTab=new URLSearchParams(window.location.search).get("tab");
-if(initialTab){setTimeout(function(){var initialButton=document.querySelector('.tab[data-tab="'+initialTab+'"]');if(initialButton)initialButton.click()},0)}
+}
+document.querySelectorAll(".tab").forEach(function(tab){tab.addEventListener("click",function(){var group=this.getAttribute("data-group");activateSection(NAV_GROUPS[group].items[0].id,true)})});
+var initialTab=new URLSearchParams(window.location.search).get("tab")||"audience";
+// Separate audience profiles from the combined growth and cold-start strategy.
+var growthPanel=document.getElementById("tab-growth");
+var coldPanel=document.getElementById("tab-coldstart");
+var audienceSection=document.getElementById("targetUsers").parentElement;
+audienceSection.id="growth-audience";
+var audiencePanel=document.createElement("div");
+audiencePanel.id="tab-audience";
+audiencePanel.className="tab-content";
+audiencePanel.appendChild(audienceSection);
+growthPanel.before(audiencePanel);
+var strategyArchive=document.createElement("details");
+strategyArchive.className="growth-section";
+strategyArchive.innerHTML='<summary style="cursor:pointer;font-weight:700;padding:16px 0">扩展参考：机会社区、长期路线、指标与资源</summary><p class="reddit-research-note">以下保留早期策略资料；具体执行优先参考上方最新切入指南与首轮三社区安排。</p>';
+Array.from(growthPanel.children).forEach(function(section){if(section!==audienceSection)strategyArchive.appendChild(section)});
+var strategyJump=document.createElement("nav");
+strategyJump.className="cold-nav";
+strategyJump.setAttribute("aria-label","增长策略页内导航");
+strategyJump.innerHTML='<a href="#entry-playbook">切入指南与选题</a><a href="#cold-community">社区选择</a><a href="#cold-sprint">执行节奏</a><a href="#cold-checklist">本周行动</a>';
+growthPanel.appendChild(strategyJump);
+while(coldPanel.firstChild)growthPanel.appendChild(coldPanel.firstChild);
+coldPanel.remove();
+growthPanel.appendChild(strategyArchive);
+setTimeout(function(){activateSection(initialTab,false)},0);
 function renderKPI(){
 var g=document.getElementById("kpiGrid");
 var h='<div class="kpi-card c-total"><div class="num">'+raw.length+'</div><div class="label">总条目数</div></div>';
@@ -4855,8 +4899,6 @@ renderShowcaseKPI();renderShowcaseFilterTabs();renderShowcaseCards();
 renderHighValueKPI();renderHVCommunityCards();renderHVTypeCards();renderHVTitleCards();renderHVAlgoCards();renderHVPatternCards();renderHVPlaybook();
 setTimeout(function(){initHVCharts();chartsInited.highvalue=true},100);
 
-setTimeout(function(){initOverviewCharts();chartsInited.overview=true},50);
-
 function getHVData(){try{return JSON.parse(document.getElementById("highvalue-data").textContent)}catch(e){return null}}
 function renderHighValueKPI(){var d=getHVData();if(!d)return;var m=d.key_metrics;var kpis=[
 {label:"分析社区数",value:m.communities_analyzed,sub:"重点生产力/工具社区"},
@@ -4896,8 +4938,8 @@ function renderStrategyKPI(){
   var d=getStrategyData();
   var html='';
   html+='<div class="kpi-card"><div class="kpi-value">5</div><div class="kpi-label">运营账号</div></div>';
-  html+='<div class="kpi-card"><div class="kpi-value">40</div><div class="kpi-label">第二个月帖子数</div></div>';
-  html+='<div class="kpi-card"><div class="kpi-value">200</div><div class="kpi-label">第二个月评论数</div></div>';
+  html+='<div class="kpi-card"><div class="kpi-value">40</div><div class="kpi-label">第二至第五周计划帖子数</div></div>';
+  html+='<div class="kpi-card"><div class="kpi-value">200</div><div class="kpi-label">第二至第五周计划评论数</div></div>';
   html+='<div class="kpi-card"><div class="kpi-value">4级</div><div class="kpi-label">内容梯度</div></div>';
   html+='<div class="kpi-card"><div class="kpi-value">6+</div><div class="kpi-label">重点社区</div></div>';
   html+='<div class="kpi-card"><div class="kpi-value">500-1000</div><div class="kpi-label">月2预计官网访客</div></div>';
@@ -5015,9 +5057,6 @@ function renderStrategyQuickRef(){
   var d=getStrategyData();
   var q=d.quick_reference;
   var html='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;">';
-  html+='<div class="card" style="border-left:4px solid #6366f1;"><div class="card-title">五账号速览</div><ul style="margin:4px 0;padding-left:18px;">';
-  q.five_accounts_at_a_glance.forEach(function(x){html+='<li style="margin:4px 0;font-size:12px;">'+x+'</li>';});
-  html+='</ul></div>';
   html+='<div class="card" style="border-left:4px solid #10b981;"><div class="card-title">四级梯度速览</div><ul style="margin:4px 0;padding-left:18px;">';
   q.four_gradient_levels.forEach(function(x){html+='<li style="margin:4px 0;font-size:12px;">'+x+'</li>';});
   html+='</ul></div>';
@@ -5031,8 +5070,30 @@ function renderStrategyQuickRef(){
   document.getElementById("strategyQuickRef").innerHTML=html;
 }
 function initStrategy(){
-  renderStrategyKPI();renderStrategyAccounts();renderStrategyGradient();
-  renderStrategyCalendar();renderStrategyGrowth();renderStrategyRisk();renderStrategyQuickRef();
+  renderPersonaStrategy();
+}
+
+function renderPersonaStrategy(){
+var routes=[
+{id:"A",name:"技术型知识创作者",priority:"P0 · 商业价值优先",trigger:"已经在卖课程、Newsletter 或会员资料，但生产、收费与交付分散。",question:"什么值得付费？怎样减少重复维护、持续更新并留住会员？",community:"r/Substack 或 r/ContentCreators 二选一；其他创作者社区后续验证",topic:"内容交付流程拆解 → 免费与付费层设计 → 真实创作者共建复盘",title:"The hidden work behind a paid research library: updates, access, and delivery",proof:"真实创作者授权；内容数量、搭建时间、免费 / 付费层、更新记录与实际成本；有数据再讨论收入和续订。",product:"用同一工作空间连接内容生产、知识库、发布与付费交付；说明本次实际用到的能力。",action:"先提供交付流程清单；用户明确表达需求后，在规则允许时邀请共建。",metric:"有效创作者对话 → 共建意愿 → 完成可交付内容库 → 持续更新 / 实际付费",decision:"有人感兴趣却不愿搬入内容：查交付成本与迁移障碍，不先加大发帖。"},
+{id:"B",name:"重视数据主权的技术团队",priority:"P0 · 证据就绪后启动",trigger:"公司因数据驻留、权限、备份或供应商风险启动知识库替换。",question:"哪些数据离开服务器？能否恢复备份、完整导出并控制 AI 请求？",community:"r/selfhosted 为条件候选；r/sysadmin / r/devops 用于需求观察",topic:"私有部署与 local-first 的差异 → 数据流与外部依赖 → 备份恢复实测",title:"What we would verify before moving a team knowledge base to private deployment",proof:"公开可部署或充分验证材料；资源要求、数据流、外部服务、AI 边界、权限、导出、备份恢复、升级与成本。",product:"呈现企业能够掌控的工作空间及实际控制范围，不把企业私有化等同于开源或一键自托管。",action:"先给技术评估清单；证据齐备且用户主动提出需求后安排技术验证。",metric:"符合条件的团队需求 → 技术评估 → 部署验证 → 团队持续使用",decision:"部署证据不足则继续研究与补材料，不占用首轮产品展示名额。"},
+{id:"C",name:"有真实迁移意愿的 Notion 重度用户",priority:"P0 · 首轮需求验证",trigger:"正在离开 Notion，主动询问 alternative、migration、export 或 data ownership。",question:"关系、公式、附件和权限能迁走吗？迁移失败后能否恢复？",community:"r/Notion 或 r/PKMS 二选一；优先进入明确的迁移求助讨论",topic:"迁移前检查清单 → 真实工作区实验 → 失败项与人工修复复盘",title:"Before leaving Notion, test relations, formulas, files, and permissions",proof:"真实工作区规模；字段与关系对照；迁移时间；失败与修复项；导出及可逆性验证。",product:"用实际迁移结果证明适配程度，明确支持与不支持项，避免承诺完美迁移。",action:"先分享检查清单；对明确迁移者提供样本验证方法，再讨论 Buildin 是否适合。",metric:"明确迁移问题 → 提交或自行测试样本 → 完成真实工作区迁移 → 后续活跃",decision:"咨询多但迁移少：优先定位导入失败或重建成本，而非扩大泛替代品曝光。"},
+{id:"D",name:"Agent-native 开发者与小团队",priority:"P1 · 小规模验证增长潜力",trigger:"正在给 Claude、Codex、Cursor 或多 Agent 工作流寻找持久化知识层。",question:"能稳定写回吗？权限怎么限制？失败、重复写入或误写如何处理？",community:"r/AI_Agents 或 r/ClaudeAI 二选一；有对应案例再扩展 r/ClaudeCode / r/n8n",topic:"读取 Wiki → 执行任务 → 写回决策；同时展示权限边界和失败路径",title:"MCP demos stop at search. What happens when an agent writes back?",proof:"可复现配置、输入输出、脱敏日志、可写范围、审批点、失败检测与恢复方法；不假定产品原生支持所有控制。",product:"将 Buildin 作为可读写的项目知识空间，用完整流程代替抽象 AI 提效口号。",action:"先提供配置与复现步骤；让用户完成一次真实读写，再邀请反馈。",metric:"有效技术提问 → 独立复现 → 首次成功写回 → 重复使用工作流",decision:"点赞多但无人复现：检查配置完整度、权限门槛和场景必要性。"}
+];
+function card(title,body){return '<article class="card" style="padding:20px;border-left:4px solid var(--accent);margin-bottom:12px"><h3>'+escapeHtml(title)+'</h3>'+body+'</article>'}
+function row(label,value){return '<p style="margin-top:10px;font-size:13px"><strong>'+escapeHtml(label)+'：</strong>'+escapeHtml(value)+'</p>'}
+document.getElementById("strategyKpi").innerHTML='<div class="decision-box" style="grid-column:1/-1"><strong>从用户触发事件安排内容，而不是按账号分工或推广浓度排期。</strong><p>规划更新：2026-09-14 · 基于现有四类核心画像的研究判断，尚非实测增长结论。首轮聚焦 A 创作者、C 迁移用户、D 开发者各一个社区；B 技术团队保留高优先级，待部署证据就绪后替换一个席位。候选社区不代表允许发布，执行前核验当前规则。</p></div>';
+document.getElementById("strategyGradient").innerHTML='<div class="angle-grid">'+routes.map(function(r){return '<details class="angle-card primary"><summary style="cursor:pointer"><span class="angle-tag">画像 '+r.id+' · '+r.priority+'</span><h4>'+r.name+'</h4><p>'+r.trigger+'</p></summary>'+row('用户在问',r.question)+row('候选社区',r.community)+row('内容路线',r.topic)+row('英文选题草案',r.title)+row('Buildin 的角色',r.product)+row('下一步',r.action)+'</details>'}).join('')+'</div>';
+var weeks=[
+['第二周 · 发现真实问题','A / C / D 各选一个社区，以评论贡献为主。','C：迁移前检查项；A：付费资料如何持续交付；D：Agent 上下文和写回断点。','每天阅读 10–15 个相关帖，按能力回答 1–2 个；记录触发事件、原话、已有工具及未解决问题。数量是建议，不为凑数回复。','产出三张问题记录表与一个最值得验证的问题；没有真实需求则继续观察。'],
+['第三周 · 做出可检验的素材','优先 C 迁移实验，A / D 按证据成熟度选择一条辅助线。','C：真实数据库迁移检查清单；A：交付流程与免费 / 付费层；D：最小读取—写回配置。','建议完成 1 个主实验与 1 个辅助素材；符合社区规则且已有正常互动后再发布。','必须有实际过程、结果与限制；未完成实验的第一人称标题留在草稿。'],
+['第四周 · 展示过程与验证价值','选择第三周有效对话最多、证据最完整的 1–2 条路线。','C：失败项与修复复盘；A：真实共建记录；D：写回错误与恢复演示；B：证据齐备才做部署评估内容。','每篇只回答一个问题，披露团队身份；建议 1–2 篇深度内容，持续回应后续问题。','看清单使用、独立复现、共建意愿或技术评估请求，不按点赞自动增加产品露出。'],
+['第五周 · 承接需求并复盘','按真实信号决定继续、调整或暂停路线。','C：迁移样本验证；A：可交付内容库共建；D：重复运行工作流；B：团队技术验证。','仅在规则允许且用户明确需要时提供对应下一步；对素材和渠道分别复盘。','记录实际对话、尝试、成功与后续使用；没有转化也保存失败原因，下周只改一个关键变量。']
+];
+document.getElementById("strategyCalendar").innerHTML=weeks.map(function(w){return card(w[0],row('目标画像',w[1])+row('选题任务',w[2])+row('执行节奏',w[3])+row('验收与推进条件',w[4]))}).join('');
+document.getElementById("strategyGrowth").innerHTML=routes.map(function(r){return card('画像 '+r.id+' · '+r.name,row('转化链路',r.metric)+row('复盘判断',r.decision))}).join('');
+document.getElementById("strategyRisk").innerHTML=routes.map(function(r){return card('画像 '+r.id+' · 发布前准备',row('证据',r.proof))}).join('');
+document.getElementById("strategyQuickRef").innerHTML=card('每条内容都要能回答这六个问题','<ol style="padding-left:20px;margin-top:12px"><li>写给哪类用户，回应什么真实触发事件？</li><li>不使用 Buildin，读者仍能得到什么帮助？</li><li>哪些结论有截图、日志、清单或实际记录支撑？</li><li>目标社区当前允许这种内容与链接吗？</li><li>是否透明披露关系、真实限制与失败项？</li><li>期待读者完成哪一步，如何记录实际结果？</li></ol><p style="margin-top:12px">本周先选定三个社区、一个主实验和一个辅助素材。原固定 40 篇帖子 / 200 条评论、按周升级推广及访客预测不再作为本页执行目标。</p>');
 }
 
 // ========== 冷启动策略指挥中心交互 ==========
