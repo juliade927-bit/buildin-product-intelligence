@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-19T12:14:12+08:00",
+  "updated_at": "2026-09-20T11:50:00+08:00",
   "library_totals": {
-    "posts": 46,
-    "comments": 82,
+    "posts": 49,
+    "comments": 86,
     "communities": 40,
     "community_target": 78,
     "core_communities": 39,
@@ -10,6 +10,57 @@
     "p0_first_round_complete": true
   },
   "runs": [
+    {
+      "date": "2026-09-20",
+      "observed_at": "2026-09-20 11:50",
+      "timezone": "Asia/Shanghai",
+      "summary": "完成 SaaS、SideProject、smallbusiness 三帖与四条评论深读，selfhosted 完成列表/规则回访；两原页空白后停止，发现池与广域流不补量。",
+      "operations": {
+        "phase": "核心深读部分完成 / 发现与广域阻塞 / 周日待发布",
+        "objective": "用二次势能、反例和事实边界校正运营判断，同时保持历史学习与实时发布机会分离。",
+        "community_strategy": {"title": "先补昨日被阻塞的原帖", "detail": "SaaS、SideProject、smallbusiness 完成正文与评论树；selfhosted 只回访 New/置顶/规则；LocalLLaMA 与 codaio 空白即停。", "meta": "全集 78 · 核心深读 3 · 列表/规则 1 · 失败 2 · 发现完成 0"},
+        "comment_strategy": {"title": "用高分方向与普通分反例成对学习", "detail": "SaaS 的遗漏变量与维护反例、SideProject 的练习类比与 feed 成本同时保留；smallbusiness 未知分评论不标高赞。", "meta": "4 新评论卡 · 0 新实时发布候选"},
+        "post_strategy": {"title": "从口号转向采用、发布与验收证据", "detail": "内容分别验证持续采用、练习与正式发布边界、供应商交付物验收；所有 Buildin 能力先取官方或实测证据。", "meta": "3 个原创迁移方向 · proof needed"},
+        "next_test": {"title": "恢复两个失败原页并先取两条广域对照", "detail": "LocalLLaMA/codaio 恢复后再继续 Solopreneur/docker；广域流先取极短回答与温和分歧。", "meta": "空白/验证码/限制即停"}
+      },
+      "community_pipeline": {
+        "new_candidates": [],
+        "verified": ["r/SaaS 1wk4rbe 正文、157 条评论树可见区与 11 条规则", "r/SideProject 1wjqq6d 正文与评论树", "r/smallbusiness 1wjy4zf 正文、评论树与 5 条规则", "r/selfhosted New、置顶与 6 条规则"],
+        "comment_observation": ["pao5qo3：350 分遗漏变量纠正，含 5 分维护反例", "pao391p：145 分上下文幽默", "paknpe1：70 分类比，含 16 分 feed 饱和反例", "pamufop：分数未知的相似经历主张"],
+        "paused_or_invalid": [],
+        "rule_changes": [],
+        "blocked": ["LocalLLaMA 1wk979c 与 codaio 1wjwyp0 原页空白", "Solopreneur/docker 未用昨日列表补量", "广域语感 0 样本"]
+      },
+      "strategy_decisions": [
+        {"priority": "P0", "title": "高增长线程仍不自动成为评论机会", "decision": "SaaS 两日快照显示持续增长，但 157 条评论且主要方向覆盖充分。", "action": "保留为学习与市场讨论样本，不进入 9/20 value_comments。", "target": "SaaS 1wk4rbe", "evidence": ["1wk4rbe", "pao5qo3"]},
+        {"priority": "P0", "title": "作者主张与公司动机推测分层", "decision": "smallbusiness 的付款、污染和延期未独立核验，评论中的资金链/并购动机更低证据。", "action": "只迁移时间线、交付物和验收节点。", "target": "smallbusiness 1wjy4zf", "evidence": ["1wjy4zf", "pamufop"]},
+        {"priority": "P1", "title": "练习价值不等于公开发布许可", "decision": "高分支持练习，普通分回复指出大量 launch 帖造成 feed 成本。", "action": "内容分为私下练习、公开复盘和正式发布。", "target": "SideProject 1wjqq6d", "evidence": ["paknpe1"]},
+        {"priority": "P1", "title": "广域流继续保持独立且可为零", "decision": "页面状态不足以取得完整广域证据。", "action": "不把运营轻量评论混入广域语感。", "target": "natural_voice", "evidence": ["技能迭代/广域语感基准.md"]}
+      ],
+      "decision_support": {
+        "comment_move": {"title": "今日不新增实时评论候选", "detail": "4 条评论用于历史功能学习；缺新鲜双快照或回复缺口时不占发布位。", "meta": "value_comments = no_new_live_candidate"},
+        "post_angle": {"title": "采用、发布边界与验收链", "detail": "先取 Buildin 当前证据，再写三个方向；不复述口号、经历或公司指控。", "meta": "ready_for_evidence_collection"},
+        "validation_focus": {"title": "两次快照之外还要看覆盖与位置", "detail": "SaaS 证明增长不等于证明还有未覆盖缺口。", "meta": "content value and opportunity separated"}
+      },
+      "learning_updates": [
+        {"skill": "高价值评论", "insight": "遗漏变量纠正需与维护成本反例成对；高分线程饱和后仍可学习但不占发布位。"},
+        {"skill": "社区语言风格", "insight": "SaaS 可直接纠正模型，SideProject 会追问公开发布成本，smallbusiness 对推测和推广风险高。"},
+        {"skill": "真人感语言", "insight": "一条评论只完成纠正、幽默或限定之一；不补统一总结闭环。"},
+        {"skill": "广域语感", "insight": "样本仍为 0；运营评论不替代广域对照。"}
+      ],
+      "evidence_health": {"verified": "3 篇原帖、4 条评论 permalink、3 社区正文/评论树与 2 社区当前规则区", "comparison": "SaaS 有两日帖子快照及高/普通分反例；SideProject 有 70/16 分条件化对照", "gap": "2 原页空白、0 发现深读、0 广域样本；smallbusiness 作者主张未独立核验", "confidence": "规则与可见数值高 / 线程功能中 / 因果低"},
+      "counts": {"candidates": 8, "deep_posts": 3, "comments": 4, "profiles": 4, "duplicates_skipped": 0, "irrelevant_skipped": 0, "failed": 2, "broad_voice_samples": 0, "communities_listing_only": 1, "communities_skipped": 2, "downstream_live_candidates": 0},
+      "coverage": ["r/SaaS（核心深读）", "r/SideProject（核心深读）", "r/smallbusiness（核心深读）", "r/selfhosted（列表/规则）", "r/LocalLLaMA（原页空白）", "r/codaio（原页空白）", "r/Solopreneur（停止后未补量）", "r/docker（停止后未补量）"],
+      "findings": [
+        {"title": "构建者增加同时改变买家与维护成本", "detail": "前排纠正把买家池作为变量，普通分反例提醒非技术用户和维护责任。", "use_for": "用户分层与产品采用", "confidence": "中", "evidence": ["pao5qo3"]},
+        {"title": "练习项目的争议在公开 feed 成本", "detail": "支持练习的高分评论与反对大量 launch 的普通分回复并存。", "use_for": "内容发布边界", "confidence": "中低", "evidence": ["paknpe1"]},
+        {"title": "风险帖价值来自交付物，不来自公司动机推测", "detail": "金额、日期、缺失字段和验收清单可迁移；商业指控仍是作者主张。", "use_for": "供应商管理内容", "confidence": "中", "evidence": ["1wjy4zf"]}
+      ],
+      "rule_changes": [],
+      "limitations": ["分数和评论数均为观察时快照；SaaS 两日增长不证明措辞因果。", "SideProject 本轮仍未见独立规则区。", "smallbusiness 的付款、污染、延期和相似经历未独立核验。", "LocalLLaMA/codaio 页面空白后停止，发现池与广域流未补量。"],
+      "next_queue": ["LocalLLaMA 1wk979c 与 codaio 1wjwyp0 原页恢复", "Solopreneur/docker 高分与普通评论对照", "广域语感极短回答＋温和分歧", "合格社区两次精确 New/Hot 快照"],
+      "source_record": "学习增长/运行记录/2026-09-20.md"
+    },
     {
       "date": "2026-09-19",
       "observed_at": "2026-09-19 12:14",
