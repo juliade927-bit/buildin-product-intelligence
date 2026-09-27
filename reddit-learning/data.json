@@ -1,15 +1,1224 @@
 {
-  "updated_at": "2026-09-20T11:50:00+08:00",
+  "updated_at": "2026-09-27T19:44:00+08:00",
   "library_totals": {
-    "posts": 49,
-    "comments": 86,
-    "communities": 40,
-    "community_target": 78,
+    "posts": 95,
+    "comments": 162,
+    "communities": 55,
+    "index_records": 257,
+    "broad_voice_samples": 20,
+    "community_target": 81,
     "core_communities": 39,
-    "discovery_communities": 39,
+    "discovery_communities": 42,
     "p0_first_round_complete": true
   },
   "runs": [
+    {
+      "date": "2026-09-27",
+      "observed_at": "2026-09-27 19:44",
+      "timezone": "Asia/Shanghai",
+      "summary": "完成 6 个核心＋2 个发现社区的 Top/Hot 与线程深读，新增 8 帖、16 评论；ClaudeCode 与 projectmanagement 升级。实时机会为 0，广域语感新增 5 条。",
+      "operations": {
+        "phase": "研究与候选准备期 / 8 个入口完整深读 / 无实时机会 / 周日待发布",
+        "objective": "把迁移语义、Agent 状态与项目约束转成可验证动作，同时让规则、双快照和事实门继续先于热度。",
+        "community_strategy": {
+          "title": "6 核心＋2 发现完成深读",
+          "detail": "homelab、logseq、Notion、ObsidianMD、TanaInc、artificial 完成轮换；ClaudeCode、projectmanagement 完成存在、活跃、规则和高/普通评论对照并升级。",
+          "meta": "全集 81 · 核心 39 · 发现 42 · research active 53"
+        },
+        "comment_strategy": {
+          "title": "内容价值与 Karma 势能双门",
+          "detail": "homelab、Notion、ObsidianMD 的复核样本势能持平、答案覆盖或属于方案分享；其余线程较旧、饱和、规则阻塞或事实未闭环。",
+          "meta": "0 实时候选 · 0 草稿 · 0 Karma 优先"
+        },
+        "post_strategy": {
+          "title": "用失败对象和状态边界组织选题",
+          "detail": "迁移写对象—错误—验证；Agent 写状态写入者—provenance—恢复；graceful stop 写并发—限额—接管。所有产品能力先做固定任务实测。",
+          "meta": "2 个方向 · 3 类 proof needed"
+        },
+        "next_test": {
+        "title": "补覆盖与固定任务证据",
+        "detail": "让最近升级社区进入正常轮换，补企业私有化、客户门户与 SOP 偏差；对迁移和 graceful stop 做版本、并发、限额、回退与恢复对照。",
+          "meta": "原页优先 · 人工审核 · 可为零"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [
+          "50 条列表记录、46 个唯一 ID；42 个新 ID、4 个历史重复、4 条同日 Top/Hot 交叉重复"
+        ],
+        "verified": [
+          "8 个入口完成代表原帖与评论树核验",
+          "ClaudeCode、projectmanagement 完成发现池升级门",
+          "homelab、Notion、ObsidianMD 完成实时机会复核"
+        ],
+        "comment_observation": [
+          "homelab：双快照持平",
+          "Notion：线程较旧且答案覆盖",
+          "ObsidianMD：方案分享与功能庆祝，缺新缺口"
+        ],
+        "paused_or_invalid": [],
+        "rule_changes": [
+          "projectmanagement 当前规则明确禁止 AI 生成帖子与评论，comment_status=blocked_by_rules"
+        ],
+        "blocked": [
+          "TanaInc、artificial 当前规则已读；正式互动仍需逐帖复核",
+          "94% token、Notion 公司动机、ClaudeCode 版本行为未独立复现"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "规则硬门先于热度",
+          "decision": "projectmanagement 即使有当前讨论也不生成可提交稿。",
+          "action": "只保留研究卡与社区画像，互动状态维持 blocked_by_rules。",
+          "target": "账号安全",
+          "evidence": [
+            "社区档案/projectmanagement.md",
+            "帖子/1wqziav.md"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "实时机会可为零",
+          "decision": "双快照持平、答案覆盖、旧帖或事实未闭环均不足以进入 Karma 优先位。",
+          "action": "value_comments=no_new_live_candidate，items 为空。",
+          "target": "价值评论",
+          "evidence": [
+            "运行记录/2026-09-27.md"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "迁移先问语义对象",
+          "decision": "“可迁移”必须拆成数据结构、失败工件和验收动作。",
+          "action": "写作与评论都采用对象—错误—验证链，Buildin 能力另做固定任务实测。",
+          "target": "写作",
+          "evidence": [
+            "帖子/1wn0c8l.md",
+            "评论/pbbry4w.md",
+            "评论/pbc5c6v.md"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "强效率数字先问状态责任",
+          "decision": "94% 等数字不因帖子高分升级为事实。",
+          "action": "先核验状态写入者、provenance、遗漏恢复和原论文口径。",
+          "target": "产品研究",
+          "evidence": [
+            "帖子/1w1ynrf.md",
+            "评论/p6oszy6.md",
+            "评论/p6q32mx.md"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "广域语感与运营隔离",
+          "decision": "5 条广域样本只支持长度、节奏和 one-job 审校。",
+          "action": "不进入社区池、选题库、账号分配或发布候选。",
+          "target": "Skill 学习",
+          "evidence": [
+            "技能迭代/广域语感基准.md"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "title": "成熟系统的完成态可以是少做",
+          "detail": "homelab 高分回复把“停止折腾”作为许可，另一条补自动化后的享受；只适用于父帖已完整描述倦怠的场景。",
+          "use_for": "评论功能与内容角度",
+          "confidence": "中",
+          "evidence": [
+            "pcaojrn",
+            "pcaenku"
+          ]
+        },
+        {
+          "title": "迁移质量取决于语义和失败工件",
+          "detail": "TanaInc 回复把宽泛迁移拆到 supertag、field、node、UUID、代码位置和补丁。",
+          "use_for": "迁移实测设计",
+          "confidence": "中",
+          "evidence": [
+            "pbbry4w",
+            "pbc5c6v"
+          ]
+        },
+        {
+          "title": "Agent 状态压缩需要责任链",
+          "detail": "评论先问谁写 state，再补 schema、provenance 与恢复；实现和 94% 数字均待原始证据。",
+          "use_for": "Agent 产品研究",
+          "confidence": "中低",
+          "evidence": [
+            "p6oszy6",
+            "p6q32mx"
+          ]
+        },
+        {
+          "title": "Graceful stop 的边界在并发与接管",
+          "detail": "高分追问把功能推向多 Agent、限额、状态保存和人工接管；版本行为需固定任务复现。",
+          "use_for": "外部 Agent 集成",
+          "confidence": "中低",
+          "evidence": [
+            "pc2g6ng",
+            "pc2y8ip"
+          ]
+        }
+      ],
+      "learning_updates": [
+        {
+          "skill": "高价值评论",
+          "insight": "允许停止、迁移对象—错误—验证、状态写入者与并发/限额成为四类新功能证据。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "更新 8 个社区；ClaudeCode、projectmanagement 升级，后者规则硬阻塞。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "长度由一个动作决定；极短许可、长故障链和范围缩小不共享统一闭环。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 5、累计 20，覆盖 11 个社区；1–433 分只作对照，稳定 Skill 未修改。"
+        }
+      ],
+      "evidence_health": {
+        "verified": "Chrome Reddit 原页的 50 条列表、8 篇原帖、16 条评论、可见规则与永久链接",
+        "comparison": "Top/Hot、历史重复、高/普通/低分、短/长评论和 5 条广域样本均保留对照",
+        "gap": "原论文、Notion 公司动机、迁移结果和 ClaudeCode 版本行为仍待独立核验",
+        "confidence": "原页链接与可见指标高 / 评论功能中 / 外部事实与语言因果低"
+      },
+      "counts": {
+        "listing_records": 50,
+        "candidates": 46,
+        "duplicates_skipped": 4,
+        "irrelevant_skipped": 0,
+        "deep_posts": 8,
+        "comments": 16,
+        "new_post_cards": 8,
+        "new_comment_cards": 16,
+        "updated_post_cards": 0,
+        "updated_comment_cards": 0,
+        "profiles": 8,
+        "profiles_created": 2,
+        "profiles_updated": 6,
+        "communities_deep_read": 8,
+        "communities_failed": 0,
+        "communities_upgraded": 2,
+        "communities_paused": 0,
+        "rule_feedback_processed": 0,
+        "failed": 0,
+        "broad_voice_samples": 5,
+        "downstream_live_candidates": 0,
+        "karma_priority_candidates": 0
+      },
+      "coverage": [
+        "r/homelab（核心 / Top+Hot+线程深读 / 双快照持平）",
+        "r/logseq（核心 / Top+Hot+线程深读）",
+        "r/Notion（核心 / Top+Hot+线程深读 / 动机待证）",
+        "r/ObsidianMD（核心 / Top+Hot+线程深读）",
+        "r/TanaInc（核心 / Top+Hot+规则+线程深读）",
+        "r/artificial（核心 / Top+Hot+线程深读 / 外部数字待证）",
+        "r/ClaudeCode（发现 / 完成升级 / 版本行为待实测）",
+        "r/projectmanagement（发现 / 完成升级 / blocked_by_rules）"
+      ],
+      "rule_changes": [
+        "r/ClaudeCode：求助需上下文与复现，禁止低质量推广和伪装广告。",
+        "r/projectmanagement：当前规则明确禁止 AI 生成帖子与评论；研究资格不产生发布许可。"
+      ],
+      "limitations": [
+        "TanaInc Hot 曾短暂空白，后续同登录态原页恢复；保留访问不稳定记录",
+        "外部产品、价格、论文、公司动机和版本能力未独立复现",
+        "9/25–9/26 无可审计运行文件",
+        "高分与位置不能证明措辞或结构导致互动"
+      ],
+      "next_queue": [
+        "最近升级社区在 7 天内进入一次正常轮换",
+        "补企业私有化、客户门户与 SOP 的覆盖偏差",
+        "迁移方向记录对象映射、错误清单、回退与固定任务复现"
+      ],
+      "source_record": "学习增长/运行记录/2026-09-27.md"
+    },
+    {
+      "date": "2026-09-24",
+      "observed_at": "2026-09-24 11:53",
+      "timezone": "Asia/Shanghai",
+      "summary": "完成 6 核心＋2 发现入口 Top/Hot 与 8 帖 16 评论深读；DigitalGardens、Zettelkasten 升级。Reddit 刷新阻塞且规则硬门生效，当日实时机会保持为空。",
+      "operations": {
+        "phase": "核心与发现深读完成 / 两个发现升级 / 原页受阻 / 无实时机会 / 本地积累",
+        "objective": "把采用与退出、迁移连续性、缺失动作和工具任务边界转成可验证决策，同时让规则硬阻塞优先于热度。",
+        "community_strategy": {
+          "title": "6 核心轮换＋2 发现升级",
+          "detail": "GrowthHacking、ProductManagement、privacy、Anytype、CraftDocs、degoogle 完成轮换；DigitalGardens、Zettelkasten 完成存在、活跃、规则、Top/Hot 与评论对照后升级。",
+          "meta": "全集 81 · 核心 39 · 发现 42 · research active 51"
+        },
+        "comment_strategy": {
+          "title": "规则和双快照先于草稿",
+          "detail": "ProductManagement/Zettelkasten 禁 AI 内容，GrowthHacking 新帖与推广规则冲突，Anytype 事实不足，degoogle 缺第二快照；实时队列保持为空。",
+          "meta": "16 条深读 · 0 草稿 · 0 Karma 优先"
+        },
+        "post_strategy": {
+          "title": "从结果主张回到任务验证",
+          "detail": "写作方向只保留采用/退出门、迁移连续性、缺失动作导致切换；Buildin 能力必须补官方或固定任务实测。",
+          "meta": "3 个证据收集方向 · proof needed"
+        },
+        "next_test": {
+          "title": "恢复原页后重做实时门",
+          "detail": "只在 Reddit 原页可用时检查规则、完整回复树、两次有序快照和账号去重；再遇阻塞就保持空队列。",
+          "meta": "不绕过 · 只人工确认与手动提交"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [
+          "34 条可核对列表记录；30 个新 ID、4 个历史重复，访问阻塞后没有补量"
+        ],
+        "verified": [
+          "6 个核心社区完成 Top/month、Hot、规则和代表帖评论深读",
+          "DigitalGardens、Zettelkasten 完成发现核验并升级为研究社区",
+          "houseplants、Baking、learnprogramming 新增 5 条独立广域语感样本"
+        ],
+        "comment_observation": [
+          "pblklao/pblq4pe：低成本构建需要采用与退出门",
+          "pa4l2iv：大型发布更新先问迁移连续性",
+          "p9yolfr/p9yxp6m：工具用法与任务范围同时保留",
+          "pbepv1q/pbf2xc6：缺失动作有价值，纯共识只作自然对照"
+        ],
+        "paused_or_invalid": [],
+        "rule_changes": [
+          "ProductManagement：明确禁止 AI Generated Posts 与顶层评论",
+          "Zettelkasten：明确禁止 AI-generated content，互动阻塞",
+          "GrowthHacking：推广、反馈、众包和 SaaS 内容需要严格门槛",
+          "DigitalGardens：仅取得 Reddiquette，互动许可未知"
+        ],
+        "blocked": [
+          "degoogle 刷新返回 ERR_BLOCKED_BY_CLIENT，第二快照未取得",
+          "研究升级不提供自动互动许可"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "规则硬门优先于热度",
+          "decision": "ProductManagement 和 Zettelkasten 即使有高赞研究价值，也不能进入 AI 评论草稿流程。",
+          "action": "注册表标为 blocked_by_rules，下游 value_comments 保持空。",
+          "target": "价值评论",
+          "evidence": [
+            "社区档案/ProductManagement.md",
+            "社区档案/Zettelkasten.md"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "构建便宜不等于产品成立",
+          "decision": "代码成本下降后仍要预先定义采用信号、退出条件和非代码成本。",
+          "action": "Buildin 内容先做固定小实验，记录成功与停止门。",
+          "target": "产品研究",
+          "evidence": [
+            "1wobbhj",
+            "pblklao",
+            "pblq4pe"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "迁移连续性先于发布清单",
+          "decision": "大型工作空间更新的关键不是功能数量，而是导入、链接、权限、自托管和加密是否连续。",
+          "action": "建立真实迁移对象、失败、回退与观察期证据。",
+          "target": "迁移内容",
+          "evidence": [
+            "1whrb9z",
+            "pa4l2iv"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "工具建议必须带任务边界",
+          "decision": "高分具体用法与较低分范围限制共同决定建议质量。",
+          "action": "选题必须列固定任务、基线、失败类型与适用范围。",
+          "target": "方法库",
+          "evidence": [
+            "1wh074a",
+            "p9yolfr",
+            "p9yxp6m"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "真人感不替代信息增量",
+          "decision": "共识短评与共享画面幽默可以自然，但不自动值得占运营评论位。",
+          "action": "继续保留普通分对照，价值门检查对象、动作、证据或边界。",
+          "target": "Skill 学习",
+          "evidence": [
+            "pbf2xc6",
+            "pbjzq66",
+            "pbmx87c"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "title": "采用门把低成本实验和产品承诺分开",
+          "detail": "小范围试验只降低承诺；仍需预先定义采用信号、停止条件和非代码成本。",
+          "use_for": "产品实验与内容证据",
+          "confidence": "中",
+          "evidence": [
+            "1wobbhj",
+            "pblklao",
+            "pblq4pe"
+          ]
+        },
+        {
+          "title": "迁移连续性是发布帖的高价值追问",
+          "detail": "大型更新应拆成导入、链接、权限、自托管、加密和回退对象；能力主张仍需独立核验。",
+          "use_for": "迁移与替代内容",
+          "confidence": "中低",
+          "evidence": [
+            "1whrb9z",
+            "pa4l2iv"
+          ]
+        },
+        {
+          "title": "自然短评可能没有运营价值",
+          "detail": "共识和轻量幽默可以自然，但没有对象、动作、证据或边界时不过价值门。",
+          "use_for": "评论质检与真人感",
+          "confidence": "中低",
+          "evidence": [
+            "pbf2xc6",
+            "pbjzq66",
+            "pbmx87c"
+          ]
+        }
+      ],
+      "learning_updates": [
+        {
+          "skill": "高价值评论",
+          "insight": "新增采用/退出门、工具任务边界、迁移连续性和规则硬阻塞。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "更新 8 个社区的当前规则与线程功能；DigitalGardens/Zettelkasten 升级。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "自然短评不自动有信息增量；长回复只围绕一个必须展开的功能。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 3 社区 5 样本，累计 15；稳定 Skill 未修改。"
+        }
+      ],
+      "evidence_health": {
+        "verified": "8 个入口、8 篇原帖、16 条评论 permalink、当前规则与 5 条广域样本来自现有 Chrome Reddit 原页",
+        "comparison": "保留高/普通分、具体/共识、实用/口号和长/短对照；伤害与人肉内容排除",
+        "gap": "候选池 34 条且 degoogle 缺第二快照；多个产品和商业主张未独立核验",
+        "confidence": "规则与可见数值高 / 线程功能中 / 语言与结果因果低"
+      },
+      "counts": {
+        "listing_records": 34,
+        "candidates": 30,
+        "duplicates_skipped": 4,
+        "irrelevant_skipped": 0,
+        "deep_posts": 8,
+        "comments": 16,
+        "new_post_cards": 8,
+        "new_comment_cards": 16,
+        "updated_post_cards": 0,
+        "updated_comment_cards": 0,
+        "profiles": 8,
+        "profiles_created": 2,
+        "profiles_updated": 6,
+        "communities_deep_read": 8,
+        "communities_failed": 1,
+        "communities_upgraded": 2,
+        "communities_paused": 0,
+        "rule_feedback_processed": 0,
+        "failed": 1,
+        "broad_voice_samples": 5,
+        "downstream_live_candidates": 0,
+        "karma_priority_candidates": 0
+      },
+      "coverage": [
+        "r/GrowthHacking（核心深读/规则更新）",
+        "r/ProductManagement（核心深读/AI 内容阻塞）",
+        "r/privacy（核心深读/伤害内容排除）",
+        "r/Anytype（核心深读）",
+        "r/CraftDocs（核心深读/规则不完整）",
+        "r/degoogle（核心深读/实时快照受阻）",
+        "r/DigitalGardens（发现核验/升级）",
+        "r/Zettelkasten（发现核验/升级/AI 内容阻塞）"
+      ],
+      "rule_changes": [
+        "ProductManagement 与 Zettelkasten 新增 AI 内容硬阻塞",
+        "GrowthHacking 推广/反馈门补齐",
+        "DigitalGardens 仅有 Reddiquette，许可未知"
+      ],
+      "limitations": [
+        "Reddit 刷新返回 ERR_BLOCKED_BY_CLIENT 后停止浏览器研究",
+        "没有第二快照就不计算势能，也不生成实时草稿",
+        "高分、短句或幽默不被视为互动因果"
+      ],
+      "next_queue": [
+        "从最久未更新的 research-active 社区选 6 核心＋2 发现",
+        "恢复原页后只重查规则、完整回复树和双快照",
+        "为采用/退出、迁移连续性和缺失动作补 Buildin 固定任务证据"
+      ],
+      "source_record": "学习增长/运行记录/2026-09-24.md"
+    },
+    {
+      "date": "2026-09-23",
+      "observed_at": "2026-09-23 12:08",
+      "timezone": "Asia/Shanghai",
+      "summary": "完成 6 核心＋2 发现入口 Top/Hot 轮换与 8 组第二列表快照，深读 8 帖 16 评论；consulting、technicalwriting 升级，发现 1 条有内容价值但势能平的人工复核草稿。",
+      "operations": {
+        "phase": "核心与发现深读完成 / 两个发现升级 / 低机会草稿 / 本地积累",
+        "objective": "把产品发布、自动化静默故障、商业退出、AI 提速和文档准确性还原为可验证对象，同时让动态社区分母回到唯一上游。",
+        "community_strategy": {
+          "title": "6 核心轮换＋2 发现证据升级",
+          "detail": "PersonalKnowledgeMgmt、ChatGPT、automation、nocode、Entrepreneur、startups 完成轮换；consulting、technicalwriting 完成存在、活跃、规则、Top/Hot 与评论对照后升级。",
+          "meta": "全集 81 · 核心 39 · 发现 42 · 今日 6+2"
+        },
+        "comment_strategy": {
+          "title": "内容缺口与 Karma 机会分开判定",
+          "detail": "nocode 1wnt4q9 存在 schema contract 补充点，但两次快照均为 2 分、2 评论，只进入低机会人工复核；其余答案饱和或势能平。",
+          "meta": "16 条深读 · 1 低机会草稿 · 0 Karma 优先"
+        },
+        "post_strategy": {
+          "title": "主张拆成可运行的验证对象",
+          "detail": "产品发布按入口/套餐/上下文，自动化按版本/键/枚举，文档按 spec/生成稿/运行结果，AI 提速按责任与回退组织。",
+          "meta": "5 个原创迁移方向 · proof needed"
+        },
+        "next_test": {
+          "title": "低机会草稿的淘汰复核",
+          "detail": "下一次原页检查 1wnt4q9 的增长、最新回复、预计位置和账号去重；仍持平或缺口被覆盖即淘汰。",
+          "meta": "只人工复核与手动提交"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [
+          "48 条列表记录、46 个唯一 ID；33 个新 ID、13 个历史重复、2 条同日 Top/Hot 交叉重复"
+        ],
+        "verified": [
+          "PersonalKnowledgeMgmt、ChatGPT、automation、nocode、Entrepreneur、startups：完成 Top/month、Hot 与深读",
+          "consulting、technicalwriting：完成规则、活跃、Top/Hot、原帖和评论对照并升级",
+          "8 个研究社区 Hot 头部完成第二列表快照",
+          "gardening、AskPhotography、DIY：新增 5 条独立广域语感样本"
+        ],
+        "comment_observation": [
+          "pbfd6h9/pbfg6dj：产品分发矛盾与成本/资源解释边界",
+          "pb7bcst/pb9micr：夸张安全主张的可信度反例",
+          "pbe9cjh/pbe9clm：商业出售中的替代解释与交接变量",
+          "pb8t6q3/pb8tfes：准备速度与决策责任",
+          "p8zimym/p90tqnp：文档流畅与运行事实分离"
+        ],
+        "paused_or_invalid": [],
+        "rule_changes": [
+          "PersonalKnowledgeMgmt：取得广告/spam、自推广专线、AI slop 与主题相关规则",
+          "consulting：禁止广告、免费 offer、市场调研、问卷、博客与 AI slop",
+          "technicalwriting：要求主题相关、文明、先搜索转行问题、职位帖按格式"
+        ],
+        "blocked": [
+          "1wnt4q9 内容缺口存在但两次快照持平，不是 Karma 优先机会",
+          "发现社区研究升级不提供自动互动许可"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "内容价值与实时机会分开",
+          "decision": "schema contract 是具体贡献，但 2 分、2 评论且两次持平，不能因草稿质量抬高机会等级。",
+          "action": "只保留人工复核草稿；下次仍持平或被覆盖即淘汰。",
+          "target": "价值评论",
+          "evidence": [
+            "1wnt4q9",
+            "候选池/2026-09-23.jsonl"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "产品发布按可用路径拆解",
+          "decision": "新模型名称不能代表普通 Chat、Plus 套餐或旧上下文中都可用。",
+          "action": "对外内容必须列能力、入口、套餐、上下文和限制，并回到官方资料。",
+          "target": "产品情报",
+          "evidence": [
+            "1wnj0l8",
+            "pbfd6h9",
+            "pbfg6dj"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "静默自动化先做契约与隔离",
+          "decision": "字段重命名比显性报错更危险；版本、必填键和枚举值能把兼容变化显性化。",
+          "action": "Buildin 相关内容先取得真实工作流、失败样本、隔离队列和告警证据。",
+          "target": "自动化/数据库",
+          "evidence": [
+            "1wmi69z",
+            "1wnt4q9"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "研究升级不等于互动许可",
+          "decision": "consulting 与 technicalwriting 达到研究门槛，但规则仍须逐帖应用。",
+          "action": "进入常规高赞研究轮换，不自动分配账号或发布候选。",
+          "target": "社区扩选",
+          "evidence": [
+            "社区档案/consulting.md",
+            "社区档案/technicalwriting.md"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "短回复先过信息增量门",
+          "decision": "同为极短评论，具体对象和宽泛称赞的功能不同；自然不等于有价值。",
+          "action": "真人感审校先确认一个新贡献，再决定是否可以一句停止。",
+          "target": "reddit-natural-voice",
+          "evidence": [
+            "技能迭代/广域语感基准.md"
+          ]
+        }
+      ],
+      "decision_support": {
+        "comment_move": {
+          "title": "保留 1 条低机会人工复核草稿",
+          "detail": "有未覆盖的 schema contract 补充，但势能平；不是 Karma 优先候选。",
+          "meta": "valuable_low_opportunity"
+        },
+        "post_angle": {
+          "title": "从流畅叙事转向运行验证",
+          "detail": "产品入口、表单契约、客户责任和文档主张均需要官方或实测证据。",
+          "meta": "ready_for_evidence_collection"
+        },
+        "validation_focus": {
+          "title": "规则、缺口、双快照与人工去重",
+          "detail": "四项同时通过后才进入人工发布判断。",
+          "meta": "no_automatic_interaction"
+        }
+      },
+      "learning_updates": [
+        {
+          "skill": "高价值评论",
+          "insight": "有内容缺口不代表有 Karma 机会；自动化补充可聚焦版本、必填键、枚举与隔离。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "consulting 依赖共享职业语境；technicalwriting 偏好可验证主张与运行事实。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "短回复先区分具体贡献与宽泛反应，不把一句停止本身当技巧。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 3 社区 5 样本，支持低破坏动作—复查—再升级与同分结构对照。"
+        }
+      ],
+      "evidence_health": {
+        "verified": "8 个入口 Top/Hot、8 篇原帖、16 条评论 permalink、8 个 Hot 第二列表快照、5 条广域样本",
+        "comparison": "保留高/普通分、极短/中短、具体/泛化与可执行/仅反应对照",
+        "gap": "绝大多数双快照持平；低机会候选样本小；多项商业和模型解释未独立核验",
+        "confidence": "规则与可见数值高 / 线程功能中 / 语言与结果因果低"
+      },
+      "counts": {
+        "listing_records": 48,
+        "candidates": 33,
+        "deep_posts": 8,
+        "comments": 16,
+        "new_post_cards": 5,
+        "new_comment_cards": 11,
+        "updated_post_cards": 3,
+        "updated_comment_cards": 5,
+        "profiles": 8,
+        "profiles_created": 2,
+        "profiles_updated": 6,
+        "duplicates_skipped": 13,
+        "cross_list_duplicates": 2,
+        "irrelevant_skipped": 0,
+        "failed": 0,
+        "broad_voice_samples": 5,
+        "communities_listing_only": 0,
+        "communities_upgraded": 2,
+        "communities_retained_pending_interaction": 0,
+        "rule_feedback_processed": 0,
+        "downstream_live_candidates": 1,
+        "karma_priority_candidates": 0
+      },
+      "coverage": [
+        "r/PersonalKnowledgeMgmt（核心深读/规则补齐）",
+        "r/ChatGPT（核心深读/产品更新时效）",
+        "r/automation（核心深读/已有卡更新）",
+        "r/nocode（核心深读/1 条低机会草稿）",
+        "r/Entrepreneur（核心深读/商业尽调变量）",
+        "r/startups（核心深读/答案饱和）",
+        "r/consulting（发现升级/推广限制）",
+        "r/technicalwriting（发现升级/主张核验）"
+      ],
+      "findings": [
+        {
+          "title": "产品发布要拆实际可用路径",
+          "detail": "能力名称、界面入口、套餐、上下文与限制可能不同步。",
+          "use_for": "产品情报与发布复核",
+          "confidence": "中",
+          "evidence": [
+            "1wnj0l8",
+            "pbfd6h9",
+            "pbfg6dj"
+          ]
+        },
+        {
+          "title": "静默故障需要契约检查",
+          "detail": "版本、必填键、枚举与隔离能把字段变化变成可见事件。",
+          "use_for": "自动化内容与实测",
+          "confidence": "中低",
+          "evidence": [
+            "1wmi69z",
+            "1wnt4q9"
+          ]
+        },
+        {
+          "title": "AI 提速与客户价值不是同一指标",
+          "detail": "准备时间减少后，建议、责任和错误回退仍需单独验收。",
+          "use_for": "AI 工作流内容",
+          "confidence": "中低",
+          "evidence": [
+            "1wmpo3p",
+            "pb8t6q3",
+            "pb8tfes"
+          ]
+        },
+        {
+          "title": "流畅文档不提高事实等级",
+          "detail": "数字、默认值、状态码和条件行为需对运行系统逐条确认。",
+          "use_for": "文档与知识库质量",
+          "confidence": "中",
+          "evidence": [
+            "1wcndeb",
+            "p8zimym",
+            "p90tqnp"
+          ]
+        }
+      ],
+      "rule_changes": [
+        "r/PersonalKnowledgeMgmt：禁止广告/spam 与 AI slop，自推广限专用线程。",
+        "r/consulting：禁止广告、免费 offer、市场调研、问卷、博客与 AI slop。",
+        "r/technicalwriting：内容需与技术写作相关；转行问题先搜索，职位帖按格式。"
+      ],
+      "limitations": [
+        "分数与评论数是观察时快照；多数第二快照无变化，不能估计稳定增长率。",
+        "ChatGPT 产品策略、创业出售原因和客户价值均含未核验作者/评论者解释。",
+        "nocode 低机会草稿尚未做账号侧去重，且必须人工确认与手动提交。",
+        "广域样本累计 5 个社区 10 条评论，不建立统一 Reddit 人设。",
+        "今天是周三，仅本地积累，不执行 Git commit/push。"
+      ],
+      "next_queue": [
+        "1wnt4q9 原页、最新回复、预计位置与账号去重复核",
+        "最久未更新核心池与尚未研究发现候选轮换",
+        "Buildin 表单契约、文档主张和 AI 提速责任的真实证据",
+        "广域流继续补技术解释、温和分歧与普通分对照"
+      ],
+      "source_record": "学习增长/运行记录/2026-09-23.md"
+    },
+    {
+      "date": "2026-09-22",
+      "observed_at": "2026-09-22 12:06",
+      "timezone": "Asia/Shanghai",
+      "summary": "完成 6 核心＋2 发现入口 Top/Hot 轮换，深读 7 帖 14 评论；Newsletters 升级，CreatorEconomy 保留规则阻塞，首次写入 5 条独立广域语感样本。",
+      "operations": {
+        "phase": "核心与发现深读完成 / 三条双快照无增长 / 广域首批样本 / 本地积累",
+        "objective": "把迁移、首笔交易、平台比较和健康机制主张还原为可验证对象，同时建立与运营流隔离的广域语感基线。",
+        "community_strategy": {
+          "title": "最久未更新核心回访＋发现社区证据门",
+          "detail": "Blogging、ContentCreators、productivity、Substack、patreon 完成深读；PersonalKnowledgeMgmt 因无评论树只更新低活跃观察；Newsletters 升级，CreatorEconomy 规则未知。",
+          "meta": "全集 79 · 核心深读 5 · 核心列表 1 · 发现深读 2"
+        },
+        "comment_strategy": {
+          "title": "一个评论只处理一个可验证对象",
+          "detail": "迁移断点、首笔交易、平台任务和证据等级分别入卡；三条 Hot 双快照无增长，不生成可提交稿。",
+          "meta": "14 新评论卡 · 0 新实时发布候选"
+        },
+        "post_strategy": {
+          "title": "从平台标签转向任务与证据链",
+          "detail": "四个方向均要求真实迁移、收款交付、平台对照或权威健康来源；不把 Reddit 作者主张写成 Buildin 产品事实。",
+          "meta": "4 个原创迁移方向 · proof needed"
+        },
+        "next_test": {
+          "title": "规则完整社区的精确双快照",
+          "detail": "先补 CreatorEconomy、PersonalKnowledgeMgmt 与 Newsletters 完整规则，再在有未覆盖缺口的 Hot/New 线程保存两次快照。",
+          "meta": "规则不明或势能平即停"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [
+          "45 条列表记录中 33 个新 ID；12 个历史重复只更新观察，不重复建卡"
+        ],
+        "verified": [
+          "Blogging、ContentCreators、productivity、Substack、patreon：各 1 帖 2 评论",
+          "CreatorEconomy、Newsletters：各 1 帖 2 评论",
+          "Blogging、ContentCreators、Substack：各完成两次有序 Hot 快照",
+          "woodworking、AskCulinary：5 条独立广域语感样本",
+          "4 条 2026-09-16/17 遗留 BitBrowser/旧端口访问反馈已闭环，仅保留历史审计"
+        ],
+        "comment_observation": [
+          "pb4urx0/pb51ury：迁移中的链接、历史内容与流量连续性",
+          "pb5763c/pb56i8u：第一次收款与交付动作",
+          "p9peo0s/p9smsbi：高分健康机制主张与证据边界",
+          "pb8kx2o/pb8m315：平台比较中的编辑、分发与受众关系",
+          "p6kzcdk/p6ld6n6：创作者里程碑与长期风险",
+          "p6e3no0/p7132i2/par3hrl/pai32kz：小社区具体追问与普通分对照"
+        ],
+        "paused_or_invalid": [],
+        "rule_changes": [
+          "Newsletters：完成 No Spam、活跃和评论对照，升级为研究社区；互动仍逐帖核验",
+          "CreatorEconomy：规则区未显示，保留研究入口但不进入互动",
+          "Blogging：AI 生成内容需披露且个案评估",
+          "Substack：普通帖子不得用于拉订阅者或给自建工具找用户"
+        ],
+        "blocked": [
+          "PersonalKnowledgeMgmt：当前可见帖子低分且 0 评论",
+          "CreatorEconomy 与 PersonalKnowledgeMgmt：独立规则正文未取得"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "迁移内容先列会断裂的对象",
+          "decision": "Blogging 回复把平台迁移落到 URL、历史内容和流量连续性，而不是工具偏好。",
+          "action": "Buildin 迁移内容先取映射、失败、回退与迁移后观察证据。",
+          "target": "Notion/博客迁移",
+          "evidence": [
+            "1wm8m43",
+            "pb4urx0",
+            "pb51ury"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "一体化价值用第一次交易验收",
+          "decision": "创作者基础设施的真实门槛是收款、权限、交付、联系和退款的连续动作。",
+          "action": "只有完成真实流程实测后，才写 Buildin 减少协调成本。",
+          "target": "创作者变现",
+          "evidence": [
+            "1wm9rbb",
+            "pb5763c",
+            "pb56i8u"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "高分不升级健康主张证据",
+          "decision": "542 分机制解释仍是无权威来源的 Reddit 主张。",
+          "action": "内容将行为观察、作者解释和权威证据分栏，不作医学承诺。",
+          "target": "生产力内容",
+          "evidence": [
+            "1wfvs5i",
+            "p9peo0s",
+            "p9smsbi"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "研究升级与互动许可继续分离",
+          "decision": "Newsletters 达到研究门槛但只有 No Spam；CreatorEconomy 规则缺失。",
+          "action": "前者进入轮换、后者保留研究入口；两者均不自动进入候选。",
+          "target": "社区扩选",
+          "evidence": [
+            "社区档案/Newsletters.md",
+            "社区档案/CreatorEconomy.md"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "广域语感只影响表达审校",
+          "decision": "5 条样本支持具体对象、one-job 与不确定性表达，但样本小且有分数混杂。",
+          "action": "不进入运营社区池、选题库、账号分配或发布许可。",
+          "target": "reddit-natural-voice",
+          "evidence": [
+            "技能迭代/广域语感基准.md"
+          ]
+        }
+      ],
+      "decision_support": {
+        "comment_move": {
+          "title": "今日不新增 Karma 优先候选",
+          "detail": "三条 Hot 双快照无增长，另有规则、资格或回复覆盖阻塞。",
+          "meta": "value_comments = no_new_live_candidate"
+        },
+        "post_angle": {
+          "title": "迁移断点、首笔交易与平台任务",
+          "detail": "先补 Buildin 实测和权威来源，再写原创内容；不复用作者经历。",
+          "meta": "ready_for_evidence_collection"
+        },
+        "validation_focus": {
+          "title": "规则、双快照、缺口与证据等级",
+          "detail": "四项同时通过，才进入人工审核候选。",
+          "meta": "blocked_until_live_evidence"
+        }
+      },
+      "learning_updates": [
+        {
+          "skill": "高价值评论",
+          "insight": "迁移先问失败对象；一体化先看第一笔交易；强机制主张先过来源门。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "创作者社区按交易与受众动作说话；低活跃社区只保留具体追问，不强行概括风格。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "具体名词允许评论在一个动作后停止；不统一总结、CTA 或第一人称。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "首次取得 2 社区 5 样本；具体称赞、温和分歧、技术追问、轻量幽默与谨慎诊断分开记录。"
+        }
+      ],
+      "evidence_health": {
+        "verified": "8 个入口 Top/Hot、7 篇原帖、14 条评论 permalink、3 条 Hot 双快照、5 条广域样本",
+        "comparison": "运营评论保留高/普通分与功能/限制对照；广域样本保留 15/7/2/1/2 分差异",
+        "gap": "仅三条双快照且均无增长；两个社区规则不完整；健康主张未独立核验；广域样本量小",
+        "confidence": "规则与可见数值高 / 线程功能中 / 语言与结果因果低"
+      },
+      "counts": {
+        "candidates": 33,
+        "deep_posts": 7,
+        "comments": 14,
+        "profiles": 8,
+        "profiles_created": 2,
+        "profiles_updated": 6,
+        "duplicates_skipped": 12,
+        "irrelevant_skipped": 0,
+        "failed": 0,
+        "broad_voice_samples": 5,
+        "communities_listing_only": 1,
+        "communities_upgraded": 1,
+        "communities_retained_pending_interaction": 1,
+        "rule_feedback_processed": 4,
+        "downstream_live_candidates": 0
+      },
+      "coverage": [
+        "r/Blogging（核心深读/AI 披露）",
+        "r/ContentCreators（核心深读/评论资格待核验）",
+        "r/productivity（核心深读/健康证据边界）",
+        "r/Substack（核心深读/自推广限制）",
+        "r/patreon（核心深读）",
+        "r/PersonalKnowledgeMgmt（列表/无评论树）",
+        "r/CreatorEconomy（发现深读/规则待补）",
+        "r/Newsletters（发现升级）"
+      ],
+      "findings": [
+        {
+          "title": "迁移的关键是连续性而非平台标签",
+          "detail": "旧链接、历史内容、流量和回退是会改变迁移判断的对象。",
+          "use_for": "迁移内容与产品验收",
+          "confidence": "中",
+          "evidence": [
+            "pb4urx0",
+            "pb51ury"
+          ]
+        },
+        {
+          "title": "创作者工具价值要通过第一次交易",
+          "detail": "收款、交付、联系和退款比功能清单更能显示协调成本。",
+          "use_for": "创作者变现",
+          "confidence": "中低",
+          "evidence": [
+            "pb5763c",
+            "pb56i8u"
+          ]
+        },
+        {
+          "title": "健康机制需独立证据",
+          "detail": "高分评论只能说明曝光和共鸣，不能证明机制正确。",
+          "use_for": "生产力内容事实审核",
+          "confidence": "高于证据边界/低于机制本身",
+          "evidence": [
+            "p9peo0s",
+            "p9smsbi"
+          ]
+        },
+        {
+          "title": "广域短答依赖共享对象",
+          "detail": "材料、曲线、铰链或面团状态明确时，一个动作即可成立。",
+          "use_for": "真人感语言审校",
+          "confidence": "低中",
+          "evidence": [
+            "pb7va9u",
+            "pb7xnwn",
+            "pb7xpdb",
+            "pb830cj",
+            "pbad3s1"
+          ]
+        }
+      ],
+      "rule_changes": [
+        "r/Blogging：AI 生成草稿/摘要需清楚披露，允许性按个案评估。",
+        "r/Substack：普通帖子不得用于找订阅者或给自建工具找用户。",
+        "r/Newsletters：当前仅见 No Spam；升级为研究社区，不代表发布许可。",
+        "r/CreatorEconomy：独立规则区未显示，互动阻塞。"
+      ],
+      "limitations": [
+        "分数与评论数是观察时快照；三条第二快照无变化，不能估计稳定增长率。",
+        "productivity 的健康机制、作者收入和平台体验均未独立核验。",
+        "PersonalKnowledgeMgmt 无评论树；CreatorEconomy 规则缺失。",
+        "广域样本只有 2 个社区 5 条评论，不足以形成通用 Reddit 人设。",
+        "今天是周二，仅本地积累，不执行 Git commit/push。"
+      ],
+      "next_queue": [
+        "CreatorEconomy、PersonalKnowledgeMgmt、Newsletters 完整规则与置顶",
+        "规则合格 Hot/New 的两次精确快照与回复覆盖",
+        "第三类广域讨论功能＋普通分对照",
+        "未覆盖且最久未更新核心池轮换"
+      ],
+      "source_record": "学习增长/运行记录/2026-09-22.md"
+    },
+    {
+      "date": "2026-09-21",
+      "observed_at": "2026-09-21 11:48",
+      "timezone": "Asia/Shanghai",
+      "summary": "完成 6 核心＋2 发现入口 Top/Hot 轮换，深读 7 帖 14 评论；Solopreneur/docker 升级，四项规则反馈闭环，Blogging 与广域流因页面阻塞未补量。",
+      "operations": {
+        "phase": "核心与发现深读完成 / 规则硬门更新 / 广域阻塞 / 本地积累",
+        "objective": "把技术栈、限额异常、学习顺序、知识系统与工具选型还原为可验证对象，同时升级两个完成证据门的发现社区。",
+        "community_strategy": {
+          "title": "最久未更新核心回访＋发现候选升级",
+          "detail": "AI_Agents、ClaudeAI、indiehackers、n8n、PKMS 深读；Blogging 列表后原帖空白；Solopreneur/docker 完成规则与评论对照并升级。",
+          "meta": "全集 79 · 核心深读 5 · 核心失败 1 · 发现升级 2"
+        },
+        "comment_strategy": {
+          "title": "高分判断与普通分反例同读",
+          "detail": "抽象功能追问、失败驱动学习、数据来源与维护门槛、Docker 高分选择与 1 分限制分别入卡；所有 Hot 只有单次快照。",
+          "meta": "14 新评论卡 · 0 新实时发布候选"
+        },
+        "post_strategy": {
+          "title": "从工具/数字叙事转向责任与证据",
+          "detail": "内容方向聚焦生产责任、可复现用量、行为实验、导入与人工维护边界；Buildin 主张全部需要官方或实测证据。",
+          "meta": "5 个原创迁移方向 · proof needed"
+        },
+        "next_test": {
+          "title": "先完成广域双样本与精确双快照",
+          "detail": "广域流完成短答＋温和分歧；合格社区保存两次精确 Hot/New 数据，再判断实时机会。",
+          "meta": "页面阻塞或规则不明即停"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [
+          "31 条此前未记录的 Top/month 或 Hot 列表候选；17 条历史重复已跳过"
+        ],
+        "verified": [
+          "AI_Agents、ClaudeAI、indiehackers、n8n、PKMS：各 1 帖 2 评论",
+          "Solopreneur：透明自推广、禁伪装/affiliate/clickbait/诱导私信",
+          "docker：推广预批、求助细节、AI 披露与验证规则",
+          "opensource/sysadmin/NewTubers/ContentCreators：四项下游规则反馈原页复核"
+        ],
+        "comment_observation": [
+          "pazk8cq/pazmlbw：默认栈概括与受众错位",
+          "payyjgp/paz8lcn：症状共鸣与历史材料",
+          "pb0lzsp/pb0n00k：模糊功能定义与具体示例",
+          "pb1ivys/pb1jbdc：失败驱动学习与资源推荐对照",
+          "pay4by1/pazb5ky：数据来源与按需升级反例",
+          "p9wcu14/p9wc360：持续性约束与低可执行共鸣",
+          "p6oxs38/p7k7dab：高分迁移选择与低分移动端限制"
+        ],
+        "paused_or_invalid": [],
+        "rule_changes": [
+          "opensource/sysadmin：AI 生成稿互动阻塞",
+          "NewTubers/ContentCreators：评论范围或账号资格待核验",
+          "Solopreneur/docker：完成升级但不自动取得发布许可"
+        ],
+        "blocked": [
+          "Blogging 1wlmnos 原帖正文与评论节点空白",
+          "广域流第二社区被浏览器阻塞，完整样本仍为 0"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "清单内容先分默认、例外和关系披露",
+          "decision": "AI_Agents 长工具栈的评论争议集中在受众错位和陌生 SaaS 植入，不在工具数量。",
+          "action": "Buildin 技术内容按生产责任和证据组织，所有产品关系透明。",
+          "target": "Agent/CLI/MCP 内容",
+          "evidence": [
+            "1wll2dj",
+            "pazk8cq",
+            "pazmlbw"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "异常主张先保存可复现字段",
+          "decision": "ClaudeAI 共鸣高，但模型、任务、工具调用、用量基线与官方说明缺失。",
+          "action": "不把 394/178 的讨论写成官方限额变化，只迁移复现模板。",
+          "target": "AI 成本与稳定性内容",
+          "evidence": [
+            "1wlj3gu",
+            "payyjgp",
+            "paz8lcn"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "知识系统规模必须带维护门槛",
+          "decision": "3,600 个关系页只有在导入、覆盖保护、按需升级和人工上下文可解释时才有意义。",
+          "action": "内容展示原始记录与人工维护的边界，不用规模数字代替质量。",
+          "target": "数据库/Wiki/关系知识库",
+          "evidence": [
+            "1wlcbes",
+            "pay4by1",
+            "pazb5ky"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "发现社区升级与互动许可分离",
+          "decision": "Solopreneur/docker 已满足研究门槛，但规则、账号、双快照和透明披露仍需逐帖复核。",
+          "action": "注册表进入 candidate_live_check_required，外部互动仍为人工决定。",
+          "target": "社区扩选",
+          "evidence": [
+            "社区档案/Solopreneur.md",
+            "社区档案/docker.md"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "规则硬门取消风格适配",
+          "decision": "opensource/sysadmin 明确禁止 AI 生成内容；NewTubers/ContentCreators 评论范围或资格未闭环。",
+          "action": "前两者 blocked_by_rules，后两者 blocked_pending_rules。",
+          "target": "value_comments",
+          "evidence": [
+            "联动/下游反馈.jsonl",
+            "联动/社区注册表.json"
+          ]
+        }
+      ],
+      "decision_support": {
+        "comment_move": {
+          "title": "今日不新增 Karma 优先候选",
+          "detail": "Hot 只有单次快照；ClaudeAI 已饱和，其他线程缺规则、账号去重或明确回复缺口。",
+          "meta": "value_comments = no_new_live_candidate"
+        },
+        "post_angle": {
+          "title": "生产责任、失败日志与维护门槛",
+          "detail": "先取 Buildin 当前证据，再写工具栈、自动化教程或关系知识库；不复用作者经历和数字。",
+          "meta": "ready_for_evidence_collection"
+        },
+        "validation_focus": {
+          "title": "规则＋双快照＋回复覆盖＋账号去重",
+          "detail": "四项齐全且仍有未覆盖缺口，才进入人工审核候选。",
+          "meta": "blocked_until_live_evidence"
+        }
+      },
+      "learning_updates": [
+        {
+          "skill": "高价值评论",
+          "insight": "抽象功能先问用户动作；学习顺序可由失败日志决定；高分选择必须与普通/低分限制同读。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "AI/PKM/创业/容器社区分别偏复现字段、维护边界、周动作和技术对象；规则硬门优先。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "定义、反例、限制、资源和共鸣由不同长度完成，不合并成统一小论文；第一人称仍需来源。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "完整样本仍为 0；列表快照不计样本，运营评论不替代广域对照。"
+        }
+      ],
+      "evidence_health": {
+        "verified": "8 个入口 Top/Hot、7 篇原帖、14 条评论 permalink、2 个发现社区完整规则、4 项规则反馈",
+        "comparison": "每个深读线程至少保留高/普通、功能/反例或作者回复对照；Docker 明确保留 47/1 分差异",
+        "gap": "Hot 仅单次快照；Blogging 原帖空白；PKMS 规则未知；0 广域完整样本；作者数字未独立核验",
+        "confidence": "规则与可见数值高 / 线程功能中 / 语言与结果因果低"
+      },
+      "counts": {
+        "candidates": 31,
+        "deep_posts": 7,
+        "comments": 14,
+        "profiles": 7,
+        "duplicates_skipped": 17,
+        "irrelevant_skipped": 0,
+        "failed": 2,
+        "broad_voice_samples": 0,
+        "communities_listing_only": 1,
+        "communities_upgraded": 2,
+        "rule_feedback_processed": 4,
+        "downstream_live_candidates": 0
+      },
+      "coverage": [
+        "r/AI_Agents（核心深读）",
+        "r/ClaudeAI（核心深读）",
+        "r/indiehackers（核心深读）",
+        "r/n8n（核心深读）",
+        "r/PKMS（核心深读/规则待补）",
+        "r/Blogging（列表可读/原帖空白）",
+        "r/Solopreneur（发现升级）",
+        "r/docker（发现升级）"
+      ],
+      "findings": [
+        {
+          "title": "抽象功能名需要被还原成用户动作",
+          "detail": "indiehackers 的关键追问使 prompt-based engagement 变成具体输入、分享和群组回复。",
+          "use_for": "产品发布与反馈",
+          "confidence": "中",
+          "evidence": [
+            "pb0lzsp",
+            "pb0n00k"
+          ]
+        },
+        {
+          "title": "学习顺序可以由失败日志生成",
+          "detail": "n8n 相对高分回复先让初学者构建并观察失败，普通分课程推荐没有回答知识顺序。",
+          "use_for": "教程与 onboarding",
+          "confidence": "中低",
+          "evidence": [
+            "pb1ivys",
+            "pb1jbdc"
+          ]
+        },
+        {
+          "title": "全量结构化与按需升级是不同策略",
+          "detail": "PKMS 评论同时保留 3,600 导入和只为活跃关系建页的维护边界。",
+          "use_for": "数据库、Wiki 与导入",
+          "confidence": "中",
+          "evidence": [
+            "pay4by1",
+            "pazb5ky"
+          ]
+        },
+        {
+          "title": "工具比较必须保留低分限制",
+          "detail": "Docker 47 分迁移偏好没有覆盖移动端缺点；任务边界比多数赞同更可迁移。",
+          "use_for": "竞品与私有化选型",
+          "confidence": "中低",
+          "evidence": [
+            "p6oxs38",
+            "p7k7dab"
+          ]
+        }
+      ],
+      "rule_changes": [
+        "r/opensource：all AI-generated content is ban worthy，自动化成稿互动阻塞。",
+        "r/sysadmin：No GPT/LLM created content，自动化成稿互动阻塞。",
+        "r/NewTubers：只明确 AI-written posts；评论范围待核验。",
+        "r/ContentCreators：发帖需 20 合并 karma＋7 天；评论范围与账号资格待核验。",
+        "r/docker：AI 内容需披露模型/提示并完成验证；推广需版主预批。"
+      ],
+      "limitations": [
+        "所有分数与评论数是单次观察快照，不能计算增长速度。",
+        "作者的安装、限额、收入、关系规模和工具体验未独立核验。",
+        "Blogging 原帖空白后停止，没有使用列表摘要写正式卡。",
+        "广域流只有列表，缺原帖/评论/permalink 对照，样本仍为 0。",
+        "今天是周一，仅本地积累，不执行 Git commit/push。"
+      ],
+      "next_queue": [
+        "广域语感：极短回答＋温和分歧完整记录",
+        "PKMS 当前完整规则",
+        "合格 Hot/New 两次精确快照",
+        "Blogging、ContentCreators、productivity、Substack 久未更新轮换",
+        "两个未研究发现社区的存在/活跃/规则核验"
+      ],
+      "source_record": "学习增长/运行记录/2026-09-21.md"
+    },
     {
       "date": "2026-09-20",
       "observed_at": "2026-09-20 11:50",
@@ -18,47 +1227,199 @@
       "operations": {
         "phase": "核心深读部分完成 / 发现与广域阻塞 / 周日待发布",
         "objective": "用二次势能、反例和事实边界校正运营判断，同时保持历史学习与实时发布机会分离。",
-        "community_strategy": {"title": "先补昨日被阻塞的原帖", "detail": "SaaS、SideProject、smallbusiness 完成正文与评论树；selfhosted 只回访 New/置顶/规则；LocalLLaMA 与 codaio 空白即停。", "meta": "全集 78 · 核心深读 3 · 列表/规则 1 · 失败 2 · 发现完成 0"},
-        "comment_strategy": {"title": "用高分方向与普通分反例成对学习", "detail": "SaaS 的遗漏变量与维护反例、SideProject 的练习类比与 feed 成本同时保留；smallbusiness 未知分评论不标高赞。", "meta": "4 新评论卡 · 0 新实时发布候选"},
-        "post_strategy": {"title": "从口号转向采用、发布与验收证据", "detail": "内容分别验证持续采用、练习与正式发布边界、供应商交付物验收；所有 Buildin 能力先取官方或实测证据。", "meta": "3 个原创迁移方向 · proof needed"},
-        "next_test": {"title": "恢复两个失败原页并先取两条广域对照", "detail": "LocalLLaMA/codaio 恢复后再继续 Solopreneur/docker；广域流先取极短回答与温和分歧。", "meta": "空白/验证码/限制即停"}
+        "community_strategy": {
+          "title": "先补昨日被阻塞的原帖",
+          "detail": "SaaS、SideProject、smallbusiness 完成正文与评论树；selfhosted 只回访 New/置顶/规则；LocalLLaMA 与 codaio 空白即停。",
+          "meta": "全集 78 · 核心深读 3 · 列表/规则 1 · 失败 2 · 发现完成 0"
+        },
+        "comment_strategy": {
+          "title": "用高分方向与普通分反例成对学习",
+          "detail": "SaaS 的遗漏变量与维护反例、SideProject 的练习类比与 feed 成本同时保留；smallbusiness 未知分评论不标高赞。",
+          "meta": "4 新评论卡 · 0 新实时发布候选"
+        },
+        "post_strategy": {
+          "title": "从口号转向采用、发布与验收证据",
+          "detail": "内容分别验证持续采用、练习与正式发布边界、供应商交付物验收；所有 Buildin 能力先取官方或实测证据。",
+          "meta": "3 个原创迁移方向 · proof needed"
+        },
+        "next_test": {
+          "title": "恢复两个失败原页并先取两条广域对照",
+          "detail": "LocalLLaMA/codaio 恢复后再继续 Solopreneur/docker；广域流先取极短回答与温和分歧。",
+          "meta": "空白/验证码/限制即停"
+        }
       },
       "community_pipeline": {
         "new_candidates": [],
-        "verified": ["r/SaaS 1wk4rbe 正文、157 条评论树可见区与 11 条规则", "r/SideProject 1wjqq6d 正文与评论树", "r/smallbusiness 1wjy4zf 正文、评论树与 5 条规则", "r/selfhosted New、置顶与 6 条规则"],
-        "comment_observation": ["pao5qo3：350 分遗漏变量纠正，含 5 分维护反例", "pao391p：145 分上下文幽默", "paknpe1：70 分类比，含 16 分 feed 饱和反例", "pamufop：分数未知的相似经历主张"],
+        "verified": [
+          "r/SaaS 1wk4rbe 正文、157 条评论树可见区与 11 条规则",
+          "r/SideProject 1wjqq6d 正文与评论树",
+          "r/smallbusiness 1wjy4zf 正文、评论树与 5 条规则",
+          "r/selfhosted New、置顶与 6 条规则"
+        ],
+        "comment_observation": [
+          "pao5qo3：350 分遗漏变量纠正，含 5 分维护反例",
+          "pao391p：145 分上下文幽默",
+          "paknpe1：70 分类比，含 16 分 feed 饱和反例",
+          "pamufop：分数未知的相似经历主张"
+        ],
         "paused_or_invalid": [],
         "rule_changes": [],
-        "blocked": ["LocalLLaMA 1wk979c 与 codaio 1wjwyp0 原页空白", "Solopreneur/docker 未用昨日列表补量", "广域语感 0 样本"]
+        "blocked": [
+          "LocalLLaMA 1wk979c 与 codaio 1wjwyp0 原页空白",
+          "Solopreneur/docker 未用昨日列表补量",
+          "广域语感 0 样本"
+        ]
       },
       "strategy_decisions": [
-        {"priority": "P0", "title": "高增长线程仍不自动成为评论机会", "decision": "SaaS 两日快照显示持续增长，但 157 条评论且主要方向覆盖充分。", "action": "保留为学习与市场讨论样本，不进入 9/20 value_comments。", "target": "SaaS 1wk4rbe", "evidence": ["1wk4rbe", "pao5qo3"]},
-        {"priority": "P0", "title": "作者主张与公司动机推测分层", "decision": "smallbusiness 的付款、污染和延期未独立核验，评论中的资金链/并购动机更低证据。", "action": "只迁移时间线、交付物和验收节点。", "target": "smallbusiness 1wjy4zf", "evidence": ["1wjy4zf", "pamufop"]},
-        {"priority": "P1", "title": "练习价值不等于公开发布许可", "decision": "高分支持练习，普通分回复指出大量 launch 帖造成 feed 成本。", "action": "内容分为私下练习、公开复盘和正式发布。", "target": "SideProject 1wjqq6d", "evidence": ["paknpe1"]},
-        {"priority": "P1", "title": "广域流继续保持独立且可为零", "decision": "页面状态不足以取得完整广域证据。", "action": "不把运营轻量评论混入广域语感。", "target": "natural_voice", "evidence": ["技能迭代/广域语感基准.md"]}
+        {
+          "priority": "P0",
+          "title": "高增长线程仍不自动成为评论机会",
+          "decision": "SaaS 两日快照显示持续增长，但 157 条评论且主要方向覆盖充分。",
+          "action": "保留为学习与市场讨论样本，不进入 9/20 value_comments。",
+          "target": "SaaS 1wk4rbe",
+          "evidence": [
+            "1wk4rbe",
+            "pao5qo3"
+          ]
+        },
+        {
+          "priority": "P0",
+          "title": "作者主张与公司动机推测分层",
+          "decision": "smallbusiness 的付款、污染和延期未独立核验，评论中的资金链/并购动机更低证据。",
+          "action": "只迁移时间线、交付物和验收节点。",
+          "target": "smallbusiness 1wjy4zf",
+          "evidence": [
+            "1wjy4zf",
+            "pamufop"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "练习价值不等于公开发布许可",
+          "decision": "高分支持练习，普通分回复指出大量 launch 帖造成 feed 成本。",
+          "action": "内容分为私下练习、公开复盘和正式发布。",
+          "target": "SideProject 1wjqq6d",
+          "evidence": [
+            "paknpe1"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "广域流继续保持独立且可为零",
+          "decision": "页面状态不足以取得完整广域证据。",
+          "action": "不把运营轻量评论混入广域语感。",
+          "target": "natural_voice",
+          "evidence": [
+            "技能迭代/广域语感基准.md"
+          ]
+        }
       ],
       "decision_support": {
-        "comment_move": {"title": "今日不新增实时评论候选", "detail": "4 条评论用于历史功能学习；缺新鲜双快照或回复缺口时不占发布位。", "meta": "value_comments = no_new_live_candidate"},
-        "post_angle": {"title": "采用、发布边界与验收链", "detail": "先取 Buildin 当前证据，再写三个方向；不复述口号、经历或公司指控。", "meta": "ready_for_evidence_collection"},
-        "validation_focus": {"title": "两次快照之外还要看覆盖与位置", "detail": "SaaS 证明增长不等于证明还有未覆盖缺口。", "meta": "content value and opportunity separated"}
+        "comment_move": {
+          "title": "今日不新增实时评论候选",
+          "detail": "4 条评论用于历史功能学习；缺新鲜双快照或回复缺口时不占发布位。",
+          "meta": "value_comments = no_new_live_candidate"
+        },
+        "post_angle": {
+          "title": "采用、发布边界与验收链",
+          "detail": "先取 Buildin 当前证据，再写三个方向；不复述口号、经历或公司指控。",
+          "meta": "ready_for_evidence_collection"
+        },
+        "validation_focus": {
+          "title": "两次快照之外还要看覆盖与位置",
+          "detail": "SaaS 证明增长不等于证明还有未覆盖缺口。",
+          "meta": "content value and opportunity separated"
+        }
       },
       "learning_updates": [
-        {"skill": "高价值评论", "insight": "遗漏变量纠正需与维护成本反例成对；高分线程饱和后仍可学习但不占发布位。"},
-        {"skill": "社区语言风格", "insight": "SaaS 可直接纠正模型，SideProject 会追问公开发布成本，smallbusiness 对推测和推广风险高。"},
-        {"skill": "真人感语言", "insight": "一条评论只完成纠正、幽默或限定之一；不补统一总结闭环。"},
-        {"skill": "广域语感", "insight": "样本仍为 0；运营评论不替代广域对照。"}
+        {
+          "skill": "高价值评论",
+          "insight": "遗漏变量纠正需与维护成本反例成对；高分线程饱和后仍可学习但不占发布位。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "SaaS 可直接纠正模型，SideProject 会追问公开发布成本，smallbusiness 对推测和推广风险高。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "一条评论只完成纠正、幽默或限定之一；不补统一总结闭环。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "样本仍为 0；运营评论不替代广域对照。"
+        }
       ],
-      "evidence_health": {"verified": "3 篇原帖、4 条评论 permalink、3 社区正文/评论树与 2 社区当前规则区", "comparison": "SaaS 有两日帖子快照及高/普通分反例；SideProject 有 70/16 分条件化对照", "gap": "2 原页空白、0 发现深读、0 广域样本；smallbusiness 作者主张未独立核验", "confidence": "规则与可见数值高 / 线程功能中 / 因果低"},
-      "counts": {"candidates": 8, "deep_posts": 3, "comments": 4, "profiles": 4, "duplicates_skipped": 0, "irrelevant_skipped": 0, "failed": 2, "broad_voice_samples": 0, "communities_listing_only": 1, "communities_skipped": 2, "downstream_live_candidates": 0},
-      "coverage": ["r/SaaS（核心深读）", "r/SideProject（核心深读）", "r/smallbusiness（核心深读）", "r/selfhosted（列表/规则）", "r/LocalLLaMA（原页空白）", "r/codaio（原页空白）", "r/Solopreneur（停止后未补量）", "r/docker（停止后未补量）"],
+      "evidence_health": {
+        "verified": "3 篇原帖、4 条评论 permalink、3 社区正文/评论树与 2 社区当前规则区",
+        "comparison": "SaaS 有两日帖子快照及高/普通分反例；SideProject 有 70/16 分条件化对照",
+        "gap": "2 原页空白、0 发现深读、0 广域样本；smallbusiness 作者主张未独立核验",
+        "confidence": "规则与可见数值高 / 线程功能中 / 因果低"
+      },
+      "counts": {
+        "candidates": 8,
+        "deep_posts": 3,
+        "comments": 4,
+        "profiles": 4,
+        "duplicates_skipped": 0,
+        "irrelevant_skipped": 0,
+        "failed": 2,
+        "broad_voice_samples": 0,
+        "communities_listing_only": 1,
+        "communities_skipped": 2,
+        "downstream_live_candidates": 0
+      },
+      "coverage": [
+        "r/SaaS（核心深读）",
+        "r/SideProject（核心深读）",
+        "r/smallbusiness（核心深读）",
+        "r/selfhosted（列表/规则）",
+        "r/LocalLLaMA（原页空白）",
+        "r/codaio（原页空白）",
+        "r/Solopreneur（停止后未补量）",
+        "r/docker（停止后未补量）"
+      ],
       "findings": [
-        {"title": "构建者增加同时改变买家与维护成本", "detail": "前排纠正把买家池作为变量，普通分反例提醒非技术用户和维护责任。", "use_for": "用户分层与产品采用", "confidence": "中", "evidence": ["pao5qo3"]},
-        {"title": "练习项目的争议在公开 feed 成本", "detail": "支持练习的高分评论与反对大量 launch 的普通分回复并存。", "use_for": "内容发布边界", "confidence": "中低", "evidence": ["paknpe1"]},
-        {"title": "风险帖价值来自交付物，不来自公司动机推测", "detail": "金额、日期、缺失字段和验收清单可迁移；商业指控仍是作者主张。", "use_for": "供应商管理内容", "confidence": "中", "evidence": ["1wjy4zf"]}
+        {
+          "title": "构建者增加同时改变买家与维护成本",
+          "detail": "前排纠正把买家池作为变量，普通分反例提醒非技术用户和维护责任。",
+          "use_for": "用户分层与产品采用",
+          "confidence": "中",
+          "evidence": [
+            "pao5qo3"
+          ]
+        },
+        {
+          "title": "练习项目的争议在公开 feed 成本",
+          "detail": "支持练习的高分评论与反对大量 launch 的普通分回复并存。",
+          "use_for": "内容发布边界",
+          "confidence": "中低",
+          "evidence": [
+            "paknpe1"
+          ]
+        },
+        {
+          "title": "风险帖价值来自交付物，不来自公司动机推测",
+          "detail": "金额、日期、缺失字段和验收清单可迁移；商业指控仍是作者主张。",
+          "use_for": "供应商管理内容",
+          "confidence": "中",
+          "evidence": [
+            "1wjy4zf"
+          ]
+        }
       ],
       "rule_changes": [],
-      "limitations": ["分数和评论数均为观察时快照；SaaS 两日增长不证明措辞因果。", "SideProject 本轮仍未见独立规则区。", "smallbusiness 的付款、污染、延期和相似经历未独立核验。", "LocalLLaMA/codaio 页面空白后停止，发现池与广域流未补量。"],
-      "next_queue": ["LocalLLaMA 1wk979c 与 codaio 1wjwyp0 原页恢复", "Solopreneur/docker 高分与普通评论对照", "广域语感极短回答＋温和分歧", "合格社区两次精确 New/Hot 快照"],
+      "limitations": [
+        "分数和评论数均为观察时快照；SaaS 两日增长不证明措辞因果。",
+        "SideProject 本轮仍未见独立规则区。",
+        "smallbusiness 的付款、污染、延期和相似经历未独立核验。",
+        "LocalLLaMA/codaio 页面空白后停止，发现池与广域流未补量。"
+      ],
+      "next_queue": [
+        "LocalLLaMA 1wk979c 与 codaio 1wjwyp0 原页恢复",
+        "Solopreneur/docker 高分与普通评论对照",
+        "广域语感极短回答＋温和分歧",
+        "合格社区两次精确 New/Hot 快照"
+      ],
       "source_record": "学习增长/运行记录/2026-09-20.md"
     },
     {
@@ -127,7 +1488,10 @@
           "decision": "LocalLLaMA 和 marketing 的当前规则不允许本自动化生成可直接提交评论。",
           "action": "注册表降为 blocked_by_rules；下游不得因 Hot 分数或产品相关性重新放行。",
           "target": "value_comments 与 account_nurturing",
-          "evidence": ["LocalLLaMA Rule 3", "marketing Rule 2/13"]
+          "evidence": [
+            "LocalLLaMA Rule 3",
+            "marketing Rule 2/13"
+          ]
         },
         {
           "priority": "P0",
@@ -135,7 +1499,9 @@
           "decision": "40 条记录只证明当前列表可见、分数与评论数快照，未证明正文、回复缺口或势能。",
           "action": "全部保持 deep_read=false；正式索引不新增。下游当日候选单独引用，不与列表样本混合。",
           "target": "8 个今日入口",
-          "evidence": ["候选池/2026-09-19.jsonl"]
+          "evidence": [
+            "候选池/2026-09-19.jsonl"
+          ]
         },
         {
           "priority": "P1",
@@ -143,7 +1509,10 @@
           "decision": "Solopreneur 与 docker 已过存在/活跃/规则门，但 Chrome 阻断前没有读评论树。",
           "action": "保持 pending；下一轮补高分、普通分和反例后再评分。",
           "target": "发现池",
-          "evidence": ["社区档案/Solopreneur.md", "社区档案/docker.md"]
+          "evidence": [
+            "社区档案/Solopreneur.md",
+            "社区档案/docker.md"
+          ]
         },
         {
           "priority": "P1",
@@ -151,7 +1520,13 @@
           "decision": "可见、被移除和未找到同时存在；2 分与回复也不能证明规则或长期存活。",
           "action": "score、回复、可见性、移除、账号状态分字段记录；不删除重发。",
           "target": "5 条历史评论",
-          "evidence": ["pa4rwb9", "pa4shfh", "pa5orsv", "pa5ot3z", "pa5ouku"]
+          "evidence": [
+            "pa4rwb9",
+            "pa4shfh",
+            "pa5orsv",
+            "pa5ot3z",
+            "pa5ouku"
+          ]
         }
       ],
       "decision_support": {
@@ -224,21 +1599,29 @@
           "detail": "LocalLLaMA 和 marketing 的当前规则都不支持把自动生成稿交给人工直接发布。",
           "use_for": "社区准入与账号安全",
           "confidence": "高",
-          "evidence": ["LocalLLaMA Rule 3", "marketing Rule 2"]
+          "evidence": [
+            "LocalLLaMA Rule 3",
+            "marketing Rule 2"
+          ]
         },
         {
           "title": "发现社区规模不等于可互动价值",
           "detail": "Solopreneur 成员数大但 Hot 绝对互动低；docker 规则清楚但当前 Hot 弱，仍需评论树和社区内基线。",
           "use_for": "社区扩选",
           "confidence": "中",
-          "evidence": ["Solopreneur Top/Hot", "docker Top/Hot"]
+          "evidence": [
+            "Solopreneur Top/Hot",
+            "docker Top/Hot"
+          ]
         },
         {
           "title": "可见回复不等于评论长期存活",
           "detail": "pa4rwb9 有一条回复并显示 2 分，但页面同时显示版主移除。",
           "use_for": "评论效果追踪",
           "confidence": "中",
-          "evidence": ["pa4rwb9"]
+          "evidence": [
+            "pa4rwb9"
+          ]
         }
       ],
       "rule_changes": [
@@ -328,7 +1711,10 @@
           "decision": "r/webdev 两条 Hot 只有一次分数/评论数，未读完整回复树，也没有增长速度证据。",
           "action": "value_comments 保持 blocked；Chrome 恢复后取得第二快照、答案覆盖和预计位置。",
           "target": "5 个运营账号",
-          "evidence": ["1wivo1w", "1wipq1u"]
+          "evidence": [
+            "1wivo1w",
+            "1wipq1u"
+          ]
         },
         {
           "priority": "P0",
@@ -336,7 +1722,10 @@
           "decision": "临时冲刺只消费已入池且规则状态合格的社区，不能因流量大直接加入无关入口。",
           "action": "优先使用已升级的 webdev/sysadmin 等入口；无两次快照则允许零候选。",
           "target": "2026-09-17 至 09-30 实验",
-          "evidence": ["下游反馈.jsonl", "社区注册表.json"]
+          "evidence": [
+            "下游反馈.jsonl",
+            "社区注册表.json"
+          ]
         },
         {
           "priority": "P1",
@@ -344,7 +1733,10 @@
           "decision": "NoteTaking 追问显示真实条件是导出、自由布局、手写、图片与可关闭范围，而非统一反技术立场。",
           "action": "核验 Buildin 默认开关、关闭范围、数据流和非 AI 工作流后再写内容。",
           "target": "产品定位与迁移内容",
-          "evidence": ["1w7eshs", "p7uip2c"]
+          "evidence": [
+            "1w7eshs",
+            "p7uip2c"
+          ]
         },
         {
           "priority": "P1",
@@ -352,7 +1744,10 @@
           "decision": "M365 个案的恢复包含身份、license、电话、安全工作区、DNS 和备份等残留重建。",
           "action": "Buildin 私有化内容必须给架构、备份、申诉、恢复顺序和演练证据。",
           "target": "企业私有化与供应商风险内容",
-          "evidence": ["1w1qc0i", "p6zuy4z"]
+          "evidence": [
+            "1w1qc0i",
+            "p6zuy4z"
+          ]
         },
         {
           "priority": "P2",
@@ -360,7 +1755,10 @@
           "decision": "codaio 近月最高约 7 分，规则未知；即使问题相关，也不符合 comment karma 有限位目标。",
           "action": "只提取移动端与 Agent 包装层需求，不生成可发稿。",
           "target": "r/codaio",
-          "evidence": ["1vwflnm", "p5gxo93"]
+          "evidence": [
+            "1vwflnm",
+            "p5gxo93"
+          ]
         }
       ],
       "decision_support": {
@@ -425,28 +1823,41 @@
           "detail": "一句 Apple Notes 追问逼出 PDF 导出、自由布局、手写与图片条件，比继续报工具名更能改变推荐。",
           "use_for": "迁移与产品定位",
           "confidence": "中",
-          "evidence": ["1w7eshs", "p7uip2c"]
+          "evidence": [
+            "1w7eshs",
+            "p7uip2c"
+          ]
         },
         {
           "title": "平台变化主张必须附一手来源",
           "detail": "72 分回复给出治理时间线但无来源，3 分回复只索取官方依据；分数不替代事实门槛。",
           "use_for": "内容营销与 GEO/AEO",
           "confidence": "中",
-          "evidence": ["p93tqcg", "p97b19o"]
+          "evidence": [
+            "p93tqcg",
+            "p97b19o"
+          ]
         },
         {
           "title": "企业恢复不是单一开关",
           "detail": "租户恢复后仍需重建 license、电话、安全分析、DNS 与备份对象，可靠性内容应按链路展开。",
           "use_for": "私有化与企业可靠性",
           "confidence": "中低",
-          "evidence": ["1w1qc0i", "p6zuy4z"]
+          "evidence": [
+            "1w1qc0i",
+            "p6zuy4z"
+          ]
         },
         {
           "title": "安全复盘要分日志、官方证据和机器建议",
           "detail": "selfhosted 事故帖把多种证据混写；评论抓 IOC 有价值，但 CVE 范围和建议仍需独立验证。",
           "use_for": "安全与运维内容",
           "confidence": "中低",
-          "evidence": ["1wfq2vx", "p9oughw", "p9p2xmd"]
+          "evidence": [
+            "1wfq2vx",
+            "p9oughw",
+            "p9p2xmd"
+          ]
         }
       ],
       "rule_changes": [
