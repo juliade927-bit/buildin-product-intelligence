@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-04T14:50:00+08:00",
+  "updated_at": "2026-10-04T15:45:00+08:00",
   "library_totals": {
-    "posts": 137,
-    "comments": 227,
-    "communities": 73,
-    "index_records": 364,
-    "broad_voice_samples": 31,
+    "posts": 144,
+    "comments": 243,
+    "communities": 75,
+    "index_records": 387,
+    "broad_voice_samples": 37,
     "community_target": 88,
     "core_communities": 39,
     "discovery_communities": 49,
@@ -14,132 +14,218 @@
   "runs": [
     {
       "date": "2026-10-04",
-      "observed_at": "2026-10-04 14:50",
+      "observed_at": "2026-10-04 15:40",
       "timezone": "Asia/Shanghai",
-      "summary": "Chrome 原页可读并确认 Ok_Army_9681 后，独立研究标签连续被切换到其他 Reddit 页面；为避免干扰用户与污染采样而停止。今日 0 候选、0 深读、0 评论、0 广域样本。",
+      "summary": "修复错误停止判断后，Chrome Reddit 原页完成 6 核心＋2 发现：40 条列表、8 帖深读、16 评论、2 个社区升级、1 个暂停、6 条广域语感；五个 BitBrowser 登录身份与公开 karma 已只读核验，实时发布候选仍为 0。",
       "operations": {
-        "phase": "研究阻塞 / 周度复盘完成 / 待周日发布",
-        "objective": "如实呈现浏览器被接管造成的零样本批次，同时保留并发布本周已验收的有效研究增量。",
+        "phase": "研究修复完成 / 五账号公开基线已核验 / 评论闭环待实时线程",
+        "objective": "把研究证据转成可审计运营决策，并用“学—筛—写—确认—发—追踪—调整”闭环增长 comment karma。",
         "community_strategy": {
-          "title": "计划 6 核心＋2 发现，未开始采样",
-          "detail": "计划 Blogging、ContentCreators、Substack、patreon、productivity、PersonalKnowledgeMgmt、AIAssisted、Evernote；浏览器被接管后全部停止。",
-          "meta": "全集 88 · 核心 39 · 发现 49 · 今日覆盖 0"
+          "title": "6 核心＋2 发现完成",
+          "detail": "AIAssisted、Evernote 升级常规研究；PersonalKnowledgeMgmt 连续第三次低活跃后暂停常规轮换。",
+          "meta": "全集 88 · 核心 39 · 发现 49 · 今日覆盖 8"
         },
         "comment_strategy": {
-          "title": "没有当前线程证据，不生成草稿",
-          "detail": "规则、完整回复树、账号去重与双快照均未取得；价值门和机会门无法完成。",
+          "title": "五账号基线已核验，实时机会仍为零",
+          "detail": "窗口 8/7/5/2/1 身份映射一致；公开 comment karma 为 1/0/2/36/2。主要 Hot 第二快照持平，逐线程资格与排他去重未闭环，不生成可提交批次。",
           "meta": "0 实时候选 · 0 草稿 · 0 Karma 优先"
         },
         "post_strategy": {
-          "title": "没有新证据，不制造写作方向",
-          "detail": "保留本周既有方向的 proof_needed；今天不新增或升级任何主张。",
-          "meta": "0 新方向 · 0 新产品主张"
+          "title": "三个方向进入证据准备",
+          "detail": "创作者指标复盘、迁移备份与来源、付费预览配置层级均需 Buildin 自有工件后再写。",
+          "meta": "3 研究方向 · 0 新产品事实"
         },
         "next_test": {
-          "title": "Chrome 空闲后从第一入口重试",
-          "detail": "严格按注册表重试 6 核心＋2 发现；每个潜在线程仍需当前规则、完整回复树和两次有序快照。",
-          "meta": "浏览器接管即停 · 不复用旧快照"
+          "title": "从当前 Hot/New 生成首个精确确认批次",
+          "detail": "逐账号核验社区资格、完整回复树、双快照与同帖排他；通过后锁定账号、URL、最终正文供用户一次确认。",
+          "meta": "确认后原样提交 · 即时/24h/72h/7d 追踪"
         }
       },
       "community_pipeline": {
         "new_candidates": [],
         "verified": [
-          "社区注册表保持 88=39+49；今日无上游变更",
-          "Chrome Reddit 首页一度可读并显示 Ok_Army_9681"
+          "Blogging、ContentCreators、Substack、patreon、productivity、PersonalKnowledgeMgmt 完成原页复核",
+          "AIAssisted、Evernote 完成存在性、活跃度、置顶、Top/Hot 与场景匹配核验",
+          "五个 BitBrowser 映射窗口登录身份与公开 karma 基线一致"
         ],
-        "comment_observation": [],
-        "paused_or_invalid": [],
-        "rule_changes": [],
+        "comment_observation": [
+          "AIAssisted、Evernote 进入常规研究，互动资格仍 pending",
+          "五账号逐线程筛选前置为同日资格与排他去重"
+        ],
+        "paused_or_invalid": [
+          "PersonalKnowledgeMgmt：连续第三次低活跃、列表重复、0 评论，暂停常规轮换"
+        ],
+        "rule_changes": [
+          "productivity 再次确认禁止 AI 生成帖子和评论；仅研究"
+        ],
         "blocked": [
-          "独立研究标签连续被切换到其他 Reddit 页面和公开账号档案",
-          "8 个计划入口均未完成 Top/month、Hot、规则与评论树核验",
-          "没有双快照、账号排他去重或广域评论样本"
+          "主要 Hot 第二快照持平；没有同时通过价值门与机会门的实时线程",
+          "登录内警告与社区特定资格不能由公开主页证明"
         ]
       },
       "strategy_decisions": [
         {
           "priority": "P0",
-          "title": "浏览器被接管即停止",
-          "decision": "继续导航会干扰用户当前操作并破坏可审计采样路径。",
-          "action": "记录 0 样本阻塞批次，等待下次从头重试。",
-          "target": "Chrome 原页研究",
-          "evidence": ["运行记录/2026-10-04.md"]
+          "title": "修复假阳性停止条件",
+          "decision": "单次标签切换不能证明用户接管浏览器。",
+          "action": "研究使用独立 Chrome 窗口；只有实际冲突、验证码、登录失效或正文不可读才停止。",
+          "target": "研究可靠性",
+          "evidence": [
+            "运行记录/2026-10-04.md"
+          ]
         },
         {
           "priority": "P0",
-          "title": "旧证据不冒充当日机会",
-          "decision": "10 月 3 日的 Top/Hot、分数与回复树不能证明 10 月 4 日势能。",
-          "action": "value_comments 保持 blocked 且 items 为空。",
-          "target": "实时评论机会",
-          "evidence": ["中台/每日情报包/2026-10-04.json"]
+          "title": "对外提交保留当次确认",
+          "decision": "自动化覆盖学习、筛选、起草、追踪和复盘；评论代表用户发言。",
+          "action": "提交前锁定精确账号、URL、最终正文，确认后原样提交一次。",
+          "target": "五账号评论闭环",
+          "evidence": [
+            "运营资料/账号养护/统一任务入口.md"
+          ]
         },
         {
           "priority": "P1",
-          "title": "核心与发现标签以注册表为准",
-          "decision": "NoteTaking、Solopreneur、docker 实际为 discovery，运行记录文本不能覆盖源字段。",
-          "action": "下轮从注册表读取 source_priority 生成 6＋2 队列。",
-          "target": "社区轮换",
-          "evidence": ["联动/社区注册表.json"]
+          "title": "升级研究不等于发布许可",
+          "decision": "AIAssisted 与 Evernote 相关且活跃，但规则列表不完整。",
+          "action": "进入 Top/Hot 轮换，互动状态保持 pending。",
+          "target": "发现池",
+          "evidence": [
+            "社区档案/AIAssisted.md",
+            "社区档案/Evernote.md"
+          ]
         },
         {
           "priority": "P1",
-          "title": "阻塞批次仍应进入日期看板",
-          "decision": "明确的 0 能区分没有运行与运行后没有可用证据。",
-          "action": "保留当天日期、限制、下一实验和真实计数。",
-          "target": "看板与审计",
-          "evidence": ["运行记录/2026-10-04.md"]
+          "title": "暂停连续低信息入口",
+          "decision": "PersonalKnowledgeMgmt 连续三次列表重复且 0 评论。",
+          "action": "暂停常规轮换，仅低频检查恢复信号。",
+          "target": "核心池资源",
+          "evidence": [
+            "社区档案/PersonalKnowledgeMgmt.md"
+          ]
+        },
+        {
+          "priority": "P1",
+          "title": "广域语感与运营分离",
+          "decision": "woodworking/Cooking 的短答、幽默和普通分样本只证明结构差异。",
+          "action": "只更新语感基准，不进入账号分配或选题。",
+          "target": "真人感学习",
+          "evidence": [
+            "技能迭代/广域语感基准.md"
+          ]
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "title": "长期创作评论更依赖具体节奏",
+          "detail": "Blogging 的 15/12 分回复用固定节奏与窄领域边界，不是泛励志。 评论优先补一个可检查约束。",
+          "evidence": [
+            "pc5uow4",
+            "pc6hlkj"
+          ]
+        },
+        {
+          "title": "配置问题先判断层级",
+          "detail": "patreon 回复把账号级 18+ 与内容/预览设置分开。 付费内容案例先画配置层级和预览矩阵。",
+          "evidence": [
+            "p8ov24h",
+            "p8qdoh0"
+          ]
+        },
+        {
+          "title": "产品回应需要逐项映射和承诺边界",
+          "detail": "Evernote 19 分回复逐项回应并明确不能承诺的部分。 Buildin 对外回应需引用自有路线图和明确未知。",
+          "evidence": [
+            "pdfla44",
+            "pdhdcj4",
+            "pdi39vv"
+          ]
+        },
+        {
+          "title": "高分与自然语感不能画等号",
+          "detail": "同批包含 116 分具体动作、20 分幽默、0–4 分同样自然的普通回复。 按功能和上下文学习，不按表面短句归因。",
+          "evidence": [
+            "pdkj4of",
+            "pdl40fa",
+            "pcogfcx"
+          ]
+        }
+      ],
       "learning_updates": [
-        {"skill": "高价值评论", "insight": "无当前规则、回复树和双快照；不生成候选或草稿。"},
-        {"skill": "社区语言风格", "insight": "无目标社区新样本；动态学习层保持不变。"},
-        {"skill": "真人感语言", "insight": "无可用内容原子；不做表面润色或结构推断。"},
-        {"skill": "广域语感", "insight": "新增 0，累计 31；未用运营样本或旧材料补数。"}
+        {
+          "skill": "高价值评论",
+          "insight": "新增指标频率、配置层级、人工复核和产品回应边界；Hot 持平且账号逐线程资格未知，实时机会为零。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "新增 AIAssisted/Evernote 低到中置信语域；productivity 为 AI 评论硬阻塞。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "同批回复只完成一个不同动作，不统一补成接题—框架—限定—总结。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 6 条，累计 37；高分和普通分并列，结构学习与运营分配隔离。"
+        }
       ],
       "evidence_health": {
-        "verified": "Chrome Reddit 首页一度可读、登录显示 Ok_Army_9681，以及随后研究标签被连续切换的阻塞事实",
-        "comparison": "无 10 月 4 日可比帖子或评论样本",
-        "gap": "8 个计划入口的 Top/month、Hot、规则、评论树、两次快照与广域样本全部缺失",
-        "confidence": "阻塞事实高 / 当日内容与实时机会不可用"
+        "verified": "Chrome 原页的 8 个入口、40 条列表、7 个非空帖子、16 条评论、规则/置顶与第二 Hot 快照；五个 BitBrowser 登录身份和公开 karma",
+        "comparison": "16 条运营评论含相对高分、普通分和 0 分反例；广域含高分与 4 分普通对照",
+        "gap": "登录内警告、社区特定资格、当前 Hot/New 开放缺口和自有账号参与需逐线程核验",
+        "confidence": "原页事实高 / 结构判断中 / 语言因果与实时 Karma 机会低"
       },
       "counts": {
-        "listing_records": 0,
-        "candidates": 0,
+        "listing_records": 40,
+        "candidates": 40,
         "duplicates_skipped": 0,
         "cross_list_duplicates": 0,
         "irrelevant_skipped": 0,
-        "deep_posts": 0,
-        "comments": 0,
-        "new_post_cards": 0,
-        "new_comment_cards": 0,
+        "deep_posts": 8,
+        "comments": 16,
+        "new_post_cards": 7,
+        "new_comment_cards": 16,
         "updated_post_cards": 0,
         "updated_comment_cards": 0,
-        "profiles": 0,
-        "profiles_created": 0,
-        "profiles_updated": 0,
-        "communities_deep_read": 0,
-        "communities_failed": 8,
-        "communities_upgraded": 0,
-        "communities_paused": 0,
+        "profiles": 8,
+        "profiles_created": 2,
+        "profiles_updated": 6,
+        "communities_deep_read": 8,
+        "communities_failed": 0,
+        "communities_upgraded": 2,
+        "communities_paused": 1,
         "rule_feedback_processed": 0,
-        "failed": 1,
-        "broad_voice_samples": 0,
+        "failed": 0,
+        "broad_voice_samples": 6,
         "downstream_live_candidates": 0,
         "karma_priority_candidates": 0
       },
-      "coverage": [],
-      "rule_changes": [],
+      "coverage": [
+        "核心 · Blogging：1 帖/2 评论；规则复核完成",
+        "核心 · ContentCreators：1 帖/2 评论；指标频率对照",
+        "核心 · Substack：1 帖/2 评论；坚持门槛与低分反例",
+        "核心 · patreon：1 帖/2 评论；配置层级",
+        "核心 · productivity：1 帖/3 评论；AI 评论禁令",
+        "核心 · PersonalKnowledgeMgmt：空线程暂停证据",
+        "发现 · AIAssisted：1 帖/2 评论；升级研究",
+        "发现 · Evernote：1 帖/3 评论；升级研究"
+      ],
+      "rule_changes": [
+        "productivity：再次确认 AI-generated posts/comments 均禁止，保持只读研究",
+        "AIAssisted、Evernote：完整独立规则列表仍缺失，互动 pending"
+      ],
       "limitations": [
-        "没有 10 月 4 日社区内容、规则或评论树证据",
-        "没有双快照、答案覆盖、预计位置或账号参与去重",
-        "没有新增广域语感样本",
-        "今日不得从旧材料推导新策略或写作方向"
+        "五账号公开主页不能证明没有登录内警告",
+        "没有同时通过双快照势能、答案缺口、社区规则、账号资格和排他去重的实时线程",
+        "AIAssisted、Evernote 研究升级不等于互动许可",
+        "作者经历、产品身份、路线图和效果数字未独立验证"
       ],
       "next_queue": [
-        "核心：Blogging、ContentCreators、Substack、patreon、productivity、PersonalKnowledgeMgmt",
-        "发现：AIAssisted、Evernote",
-        "广域：Chrome 空闲后再选不同功能样本；不复用今天已切换页面"
+        "评论：从当前 Hot/New 逐账号筛选，首批最多提供高置信精确确认项",
+        "账号：继续只读核验近期评论可见性和社区特定资格",
+        "研究：用新入口替换 PersonalKnowledgeMgmt 的常规轮换位",
+        "追踪：确认发布后立即登记 comment ID/permalink，再跑 24h/72h/7d"
       ],
       "source_record": "学习增长/运行记录/2026-10-04.md"
     },
@@ -207,7 +293,10 @@
           "decision": "prompt 口头要求不足以证明版本正确或内容被使用。",
           "action": "用版本/日期握手、阻断、通知和重试形成可审计门。",
           "target": "Agent 与知识库工作流",
-          "evidence": ["帖子/1ww2ucc.md", "评论/pdi07yc.md"]
+          "evidence": [
+            "帖子/1ww2ucc.md",
+            "评论/pdi07yc.md"
+          ]
         },
         {
           "priority": "P0",
@@ -215,7 +304,10 @@
           "decision": "文本搬走仍可能失去 source URL、附件搜索、OCR、链接或属性。",
           "action": "建立逐项验收与只读归档/回退清单。",
           "target": "Notion/Evernote 迁移内容",
-          "evidence": ["帖子/1wsmohv.md", "评论/pcya0qr.md"]
+          "evidence": [
+            "帖子/1wsmohv.md",
+            "评论/pcya0qr.md"
+          ]
         },
         {
           "priority": "P1",
@@ -223,7 +315,10 @@
           "decision": "知识过期或置信度不足时，模型建议可能放大风险。",
           "action": "展示出处、更新时间、置信度和升级条件；不借用未核验效果数字。",
           "target": "企业知识与客服场景",
-          "evidence": ["帖子/1wvyl47.md", "评论/pdg0t3p.md"]
+          "evidence": [
+            "帖子/1wvyl47.md",
+            "评论/pdg0t3p.md"
+          ]
         },
         {
           "priority": "P1",
@@ -231,7 +326,10 @@
           "decision": "业务分类、国家资格与谁向谁付款是产品依赖，不是上线末期的管道细节。",
           "action": "先取官方书面资格并设计不依赖支付的最小验证面。",
           "target": "内容付费与创作者平台",
-          "evidence": ["帖子/1wv58fr.md", "评论/pd8u28u.md"]
+          "evidence": [
+            "帖子/1wv58fr.md",
+            "评论/pd8u28u.md"
+          ]
         },
         {
           "priority": "P1",
@@ -239,20 +337,72 @@
           "decision": "elearning 已升级研究，Notiontemplates 仍受限；两者权限状态不同。",
           "action": "更新注册表供下游只读消费，value_comments 继续为空。",
           "target": "社区管线",
-          "evidence": ["社区档案/elearning.md", "社区档案/NotionTemplates.md"]
+          "evidence": [
+            "社区档案/elearning.md",
+            "社区档案/NotionTemplates.md"
+          ]
         }
       ],
       "findings": [
-        {"title": "一个可检查门比完整 Agent 框架更有用", "detail": "版本握手与 IF 阻断直接回答陈旧上下文风险；仍需真实运行复现。", "use_for": "Agent/MCP 内容", "confidence": "中", "evidence": ["1ww2ucc", "pdi07yc"]},
-        {"title": "迁移质量经常坏在正文之外", "detail": "source URL、附件、OCR、链接与属性决定资料是否仍可判断和使用。", "use_for": "迁移验收", "confidence": "中", "evidence": ["1wsmohv", "pcya0qr"]},
-        {"title": "娱乐高分只学习共享对象关系", "detail": "ChatGPT 161 分短评与 -5 分绝对否定形成信息增量对照，但不构成 B2B 策略。", "use_for": "表达层校准", "confidence": "低到中", "evidence": ["1wvxh5k", "pdfzen4", "pdfpbme"]},
-        {"title": "技术产品帖的边界本身是价值", "detail": "elearning 的开源 SCORM 帖明确做什么、不做什么与失败日志；不能外推为 Buildin 能力。", "use_for": "技术发布结构", "confidence": "中", "evidence": ["1wsfwmc", "pcl9x33"]}
+        {
+          "title": "一个可检查门比完整 Agent 框架更有用",
+          "detail": "版本握手与 IF 阻断直接回答陈旧上下文风险；仍需真实运行复现。",
+          "use_for": "Agent/MCP 内容",
+          "confidence": "中",
+          "evidence": [
+            "1ww2ucc",
+            "pdi07yc"
+          ]
+        },
+        {
+          "title": "迁移质量经常坏在正文之外",
+          "detail": "source URL、附件、OCR、链接与属性决定资料是否仍可判断和使用。",
+          "use_for": "迁移验收",
+          "confidence": "中",
+          "evidence": [
+            "1wsmohv",
+            "pcya0qr"
+          ]
+        },
+        {
+          "title": "娱乐高分只学习共享对象关系",
+          "detail": "ChatGPT 161 分短评与 -5 分绝对否定形成信息增量对照，但不构成 B2B 策略。",
+          "use_for": "表达层校准",
+          "confidence": "低到中",
+          "evidence": [
+            "1wvxh5k",
+            "pdfzen4",
+            "pdfpbme"
+          ]
+        },
+        {
+          "title": "技术产品帖的边界本身是价值",
+          "detail": "elearning 的开源 SCORM 帖明确做什么、不做什么与失败日志；不能外推为 Buildin 能力。",
+          "use_for": "技术发布结构",
+          "confidence": "中",
+          "evidence": [
+            "1wsfwmc",
+            "pcl9x33"
+          ]
+        }
       ],
       "learning_updates": [
-        {"skill": "高价值评论", "insight": "一个版本门、元数据字段、人工升级或最小验证面即可完成评论功能；所有 Hot 缺第二快照，不生成候选。"},
-        {"skill": "社区语言风格", "insight": "8 个社区的表达单位不同：n8n 要代码/日志，PKMS 要保留对象，elearning 要接口/边界，Notiontemplates 只作低置信研究。"},
-        {"skill": "真人感语言", "insight": "161/9/8、1–4 与 -5 分样本没有统一表面节奏；自然度来自具体对象和必要动作，不来自短、小写或第一人称。"},
-        {"skill": "广域语感", "insight": "新增 0，累计 31；ERR_BLOCKED_BY_CLIENT 后不使用运营评论或错误页补数。"}
+        {
+          "skill": "高价值评论",
+          "insight": "一个版本门、元数据字段、人工升级或最小验证面即可完成评论功能；所有 Hot 缺第二快照，不生成候选。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "8 个社区的表达单位不同：n8n 要代码/日志，PKMS 要保留对象，elearning 要接口/边界，Notiontemplates 只作低置信研究。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "161/9/8、1–4 与 -5 分样本没有统一表面节奏；自然度来自具体对象和必要动作，不来自短、小写或第一人称。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 0，累计 31；ERR_BLOCKED_BY_CLIENT 后不使用运营评论或错误页补数。"
+        }
       ],
       "evidence_health": {
         "verified": "现有 Chrome 原页的 8 个 Top/month、Hot、代表原帖/评论树、n8n/elearning 规则、Notiontemplates 受限状态及永久链接",
@@ -373,7 +523,11 @@
           "decision": "语料版本、评测键或抽取切片失效会让 RAG 指标失真。",
           "action": "先固定 ground truth、版本和失败切片，修复后复测，再谈模型或产品。",
           "target": "Agent / RAG 内容",
-          "evidence": ["1wfzp1a", "p9qwt7m", "p9q7cnz"]
+          "evidence": [
+            "1wfzp1a",
+            "p9qwt7m",
+            "p9q7cnz"
+          ]
         },
         {
           "priority": "P0",
@@ -381,7 +535,11 @@
           "decision": "视觉高分仍不提供互动许可；vibecoding 明确阻塞 fully generated AI slop。",
           "action": "只保留共享对象的结构观察，不生成可提交稿。",
           "target": "互动安全",
-          "evidence": ["1wmqakt", "pb90inq", "pb8xmzp"]
+          "evidence": [
+            "1wmqakt",
+            "pb90inq",
+            "pb8xmzp"
+          ]
         },
         {
           "priority": "P1",
@@ -389,7 +547,12 @@
           "decision": "设计控制、自然发现、地区收款和退出路径可能给出不同答案。",
           "action": "内容只回答已验证的局部，不写统一最佳平台。",
           "target": "创作者与迁移内容",
-          "evidence": ["1wj6wwz", "page852", "pah7dac", "paxcai3"]
+          "evidence": [
+            "1wj6wwz",
+            "page852",
+            "pah7dac",
+            "paxcai3"
+          ]
         },
         {
           "priority": "P1",
@@ -397,7 +560,11 @@
           "decision": "单个账号看到功能不等于资格、审核和回退已经闭环。",
           "action": "核验官方资格、订单/权限状态、资产路径、申诉与回退。",
           "target": "内容付费能力",
-          "evidence": ["1wgfn65", "p9tvlcz", "p9vclg2"]
+          "evidence": [
+            "1wgfn65",
+            "p9tvlcz",
+            "p9vclg2"
+          ]
         },
         {
           "priority": "P1",
@@ -405,7 +572,12 @@
           "decision": "产品名式极短回答可以自然，但没有适配条件。",
           "action": "只学习与共享对象的连接，不把短句或高分当效果公式。",
           "target": "Skill 学习",
-          "evidence": ["pcw8fat", "pcw96la", "pcs0uqy", "pctxsxg"]
+          "evidence": [
+            "pcw8fat",
+            "pcw96la",
+            "pcs0uqy",
+            "pctxsxg"
+          ]
         }
       ],
       "findings": [
@@ -414,35 +586,60 @@
           "detail": "re-index 后的旧评测键会污染总体指标；表格、公式等失败类型还需独立切片。",
           "use_for": "Agent / 知识库实测",
           "confidence": "中",
-          "evidence": ["p9qwt7m", "p9q7cnz"]
+          "evidence": [
+            "p9qwt7m",
+            "p9q7cnz"
+          ]
         },
         {
           "title": "平台便利与所有权是不同目标",
           "detail": "预制平台提高可发现性，也可能牺牲设计控制；地区支付资格是另一道门。",
           "use_for": "创作者迁移与内容所有权",
           "confidence": "中低",
-          "evidence": ["page852", "pah7dac", "paxcai3"]
+          "evidence": [
+            "page852",
+            "pah7dac",
+            "paxcai3"
+          ]
         },
         {
           "title": "功能发布不等于可持续交付",
           "detail": "托管、泄露路径、审核误伤和回退都可能改变创作者的真实可用性。",
           "use_for": "内容付费产品验收",
           "confidence": "中低",
-          "evidence": ["p9tvlcz", "p9vclg2"]
+          "evidence": [
+            "p9tvlcz",
+            "p9vclg2"
+          ]
         },
         {
           "title": "视觉幽默依赖共享对象",
           "detail": "高分短梗离开图片和社区共同语境后不可迁移，也不提供 B2B 结论。",
           "use_for": "语言审校边界",
           "confidence": "中低",
-          "evidence": ["pb90inq", "pb8xmzp"]
+          "evidence": [
+            "pb90inq",
+            "pb8xmzp"
+          ]
         }
       ],
       "learning_updates": [
-        {"skill": "高价值评论", "insight": "新增评测工件、平台取舍、rollout 失败态和删除节点更新边界。"},
-        {"skill": "社区语言风格", "insight": "更新 6 个核心社区；Rag、vibecoding 完成研究升级，后者互动仍阻塞。"},
-        {"skill": "真人感语言", "insight": "回复长度由一个必要动作决定；不同观点不合并成完整咨询稿。"},
-        {"skill": "广域语感", "insight": "新增 3 社区 6 条、累计 31；普通分、幽默与技术建议分开学习。"}
+        {
+          "skill": "高价值评论",
+          "insight": "新增评测工件、平台取舍、rollout 失败态和删除节点更新边界。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "更新 6 个核心社区；Rag、vibecoding 完成研究升级，后者互动仍阻塞。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "回复长度由一个必要动作决定；不同观点不合并成完整咨询稿。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 3 社区 6 条、累计 31；普通分、幽默与技术建议分开学习。"
+        }
       ],
       "evidence_health": {
         "verified": "Chrome Reddit 原页的 47 条列表、8 篇原帖、16 条运营评论、6 条广域评论、当前规则和两次 Hot 快照",
@@ -563,7 +760,9 @@
           "decision": "一分或一条回复的变化只证明线程仍有活动。",
           "action": "完整回复方向已覆盖时保持 no_new_live_candidate，不生成换词稿。",
           "target": "价值评论",
-          "evidence": ["运行记录/2026-09-29.md"]
+          "evidence": [
+            "运行记录/2026-09-29.md"
+          ]
         },
         {
           "priority": "P0",
@@ -571,7 +770,10 @@
           "decision": "NewTubers 只明确禁止 AI-written posts，不等于允许 AI 评论。",
           "action": "评论范围继续 blocked_pending_rules；marketing 直接 blocked_by_rules。",
           "target": "互动安全",
-          "evidence": ["社区档案/NewTubers.md", "社区档案/marketing.md"]
+          "evidence": [
+            "社区档案/NewTubers.md",
+            "社区档案/marketing.md"
+          ]
         },
         {
           "priority": "P1",
@@ -579,7 +781,10 @@
           "decision": "文档、公式、数据库和内部工作流是不同替代任务。",
           "action": "推荐前先固定不能丢的行为、同步、备份与升级边界。",
           "target": "私有化与迁移内容",
-          "evidence": ["帖子/1wjwyp0.md", "评论/pav0pfv.md"]
+          "evidence": [
+            "帖子/1wjwyp0.md",
+            "评论/pav0pfv.md"
+          ]
         },
         {
           "priority": "P1",
@@ -587,7 +792,10 @@
           "decision": "高吞吐不等于团队理解、审批和恢复已完成。",
           "action": "内容与演示同时展示人工判断、回滚和责任。",
           "target": "产品内容",
-          "evidence": ["帖子/1wm5c21.md", "评论/pb4w69z.md"]
+          "evidence": [
+            "帖子/1wm5c21.md",
+            "评论/pb4w69z.md"
+          ]
         },
         {
           "priority": "P1",
@@ -595,7 +803,9 @@
           "decision": "没有完整评论树就不能记录首句、节奏和普通分对照。",
           "action": "本日广域增量记 0，累计保持 25。",
           "target": "Skill 学习",
-          "evidence": ["技能迭代/广域语感基准.md"]
+          "evidence": [
+            "技能迭代/广域语感基准.md"
+          ]
         }
       ],
       "findings": [
@@ -604,35 +814,58 @@
           "detail": "窄屏、展开态与媒体比例需要分开验收；70% 等页面表现未独立复现。",
           "use_for": "产品演示与前端验收",
           "confidence": "中",
-          "evidence": ["pantpzb", "papz4t9"]
+          "evidence": [
+            "pantpzb",
+            "papz4t9"
+          ]
         },
         {
           "title": "趋势新闻需要替代解释",
           "detail": "营销岗位下降不能直接归因于 AI；宏观变量与原文分项都要保留。",
           "use_for": "AI 与职业内容",
           "confidence": "中低",
-          "evidence": ["pbn68bt", "pbnbo9s"]
+          "evidence": [
+            "pbn68bt",
+            "pbnbo9s"
+          ]
         },
         {
           "title": "创作投入应前移验证",
           "detail": "编辑工时与播放落差很强，但选题、包装和分发仍是替代解释。",
           "use_for": "创作者工作流",
           "confidence": "中",
-          "evidence": ["paqkgdm", "pavnzmk"]
+          "evidence": [
+            "paqkgdm",
+            "pavnzmk"
+          ]
         },
         {
           "title": "数据维护先保留定义",
           "detail": "邮件分类变化的结构可迁移，但工具定义、误判和原始报表仍缺。",
           "use_for": "数据库与运营流程",
           "confidence": "中低",
-          "evidence": ["p97188m"]
+          "evidence": [
+            "p97188m"
+          ]
         }
       ],
       "learning_updates": [
-        {"skill": "高价值评论", "insight": "新增设备状态、退出动因、趋势限定、责任、发布前验证、获客、分类异常与数据控制功能证据。"},
-        {"skill": "社区语言风格", "insight": "更新 6 个核心社区；Emailmarketing、secondbrain 完成升级。"},
-        {"skill": "真人感语言", "insight": "短回复也必须有线程专属对象；自然但低信息的自荐不过价值门。"},
-        {"skill": "广域语感", "insight": "评论树受阻，新增 0、累计 25；不以列表或运营评论补数。"}
+        {
+          "skill": "高价值评论",
+          "insight": "新增设备状态、退出动因、趋势限定、责任、发布前验证、获客、分类异常与数据控制功能证据。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "更新 6 个核心社区；Emailmarketing、secondbrain 完成升级。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "短回复也必须有线程专属对象；自然但低信息的自荐不过价值门。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "评论树受阻，新增 0、累计 25；不以列表或运营评论补数。"
+        }
       ],
       "evidence_health": {
         "verified": "Chrome Reddit 原页的 48 条列表、8 篇原帖、16 条评论、当前规则和两次 Hot 快照",
@@ -752,7 +985,9 @@
           "decision": "首轮热度和高分不构成当前 Karma 机会。",
           "action": "value_comments=no_new_live_candidate，items 为空；不换浏览器、不用摘要补量。",
           "target": "价值评论",
-          "evidence": ["运行记录/2026-09-28.md"]
+          "evidence": [
+            "运行记录/2026-09-28.md"
+          ]
         },
         {
           "priority": "P0",
@@ -760,7 +995,9 @@
           "decision": "gumroad 旧 Hot 不再代表当前社区活跃。",
           "action": "暂停常规轮换，等待新帖频率恢复信号。",
           "target": "社区管线",
-          "evidence": ["社区档案/gumroad.md"]
+          "evidence": [
+            "社区档案/gumroad.md"
+          ]
         },
         {
           "priority": "P1",
@@ -768,7 +1005,10 @@
           "decision": "543% 与 60k 美元不因热度升级为事实。",
           "action": "先核验旧价、现价、用量、目标函数和退出成本。",
           "target": "内容研究",
-          "evidence": ["帖子/1wapn6r.md", "帖子/1w3m5b1.md"]
+          "evidence": [
+            "帖子/1wapn6r.md",
+            "帖子/1w3m5b1.md"
+          ]
         },
         {
           "priority": "P1",
@@ -776,7 +1016,9 @@
           "decision": "客户催交付与财务付款是不同承诺主体。",
           "action": "以角色—承诺—节点设计 SOP 研究，不提供法律结论。",
           "target": "写作",
-          "evidence": ["评论/pb04jo9.md"]
+          "evidence": [
+            "评论/pb04jo9.md"
+          ]
         },
         {
           "priority": "P1",
@@ -784,7 +1026,9 @@
           "decision": "5 条广域样本只支持长度、节奏和单一动作审校。",
           "action": "不进入社区池、选题库、账号分配或发布候选。",
           "target": "Skill 学习",
-          "evidence": ["技能迭代/广域语感基准.md"]
+          "evidence": [
+            "技能迭代/广域语感基准.md"
+          ]
         }
       ],
       "findings": [
@@ -793,35 +1037,56 @@
           "detail": "selfhosted 评论把涨幅还原为基础价、用量与迁移成本；只作问题拆解，不作供应商结论。",
           "use_for": "成本内容与评论功能",
           "confidence": "中",
-          "evidence": ["p8jx93o"]
+          "evidence": [
+            "p8jx93o"
+          ]
         },
         {
           "title": "构建更容易不等于分发更容易",
           "detail": "SaaS 与 SideProject 样本都把瓶颈转向定位、反馈和分发；需要独立市场证据。",
           "use_for": "创业内容",
           "confidence": "中低",
-          "evidence": ["pcbt9t7", "p9t745b"]
+          "evidence": [
+            "pcbt9t7",
+            "p9t745b"
+          ]
         },
         {
           "title": "付款冲突可按角色拆分",
           "detail": "freelance 回复区分交付催促者和付款责任人；法律后果仍未知。",
           "use_for": "SOP 与客户门户研究",
           "confidence": "中",
-          "evidence": ["pb04jo9"]
+          "evidence": [
+            "pb04jo9"
+          ]
         },
         {
           "title": "研究可信度来自回链",
           "detail": "content_marketing 回复允许 AI 整理，但把主题专家和原始来源留在证据链。",
           "use_for": "研究型内容流程",
           "confidence": "中",
-          "evidence": ["pbe2pt1"]
+          "evidence": [
+            "pbe2pt1"
+          ]
         }
       ],
       "learning_updates": [
-        {"skill": "高价值评论", "insight": "新增成本分母、角色分离、目标函数与来源回链四类功能证据。"},
-        {"skill": "社区语言风格", "insight": "更新/新建 9 个社区；freelance、content_marketing 升级，gumroad 暂停。"},
-        {"skill": "真人感语言", "insight": "极短纠正和长诊断链由动作决定长度；高分笑点不等于信息增量。"},
-        {"skill": "广域语感", "insight": "新增 5、累计 25，覆盖 14 个社区；高分与普通分并列对照。"}
+        {
+          "skill": "高价值评论",
+          "insight": "新增成本分母、角色分离、目标函数与来源回链四类功能证据。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "更新/新建 9 个社区；freelance、content_marketing 升级，gumroad 暂停。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "极短纠正和长诊断链由动作决定长度；高分笑点不等于信息增量。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 5、累计 25，覆盖 14 个社区；高分与普通分并列对照。"
+        }
       ],
       "evidence_health": {
         "verified": "Chrome Reddit 原页的 51 条列表、8 篇原帖、16 条评论、可见规则与永久链接",
@@ -906,8 +1171,8 @@
           "meta": "2 个方向 · 3 类 proof needed"
         },
         "next_test": {
-        "title": "补覆盖与固定任务证据",
-        "detail": "让最近升级社区进入正常轮换，补企业私有化、客户门户与 SOP 偏差；对迁移和 graceful stop 做版本、并发、限额、回退与恢复对照。",
+          "title": "补覆盖与固定任务证据",
+          "detail": "让最近升级社区进入正常轮换，补企业私有化、客户门户与 SOP 偏差；对迁移和 graceful stop 做版本、并发、限额、回退与恢复对照。",
           "meta": "原页优先 · 人工审核 · 可为零"
         }
       },
