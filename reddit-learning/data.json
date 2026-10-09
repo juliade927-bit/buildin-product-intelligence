@@ -1,17 +1,833 @@
 {
-  "updated_at": "2026-10-04T15:45:00+08:00",
+  "updated_at": "2026-10-09T13:42:00+08:00",
   "library_totals": {
-    "posts": 144,
-    "comments": 243,
-    "communities": 75,
-    "index_records": 387,
-    "broad_voice_samples": 37,
-    "community_target": 88,
+    "posts": 167,
+    "comments": 285,
+    "communities": 82,
+    "index_records": 452,
+    "broad_voice_samples": 43,
+    "community_target": 90,
     "core_communities": 39,
-    "discovery_communities": 49,
+    "discovery_communities": 51,
     "p0_first_round_complete": true
   },
   "runs": [
+    {
+      "date": "2026-10-09",
+      "observed_at": "2026-10-09 13:42",
+      "timezone": "Asia/Shanghai",
+      "summary": "反馈优先快扫 20 条、深读/复核 3 帖与 14 条可见评论；修正 Zettelkasten AI 互动硬门，新增并区分 r/microsaas，形成 1 个评论功能与 2 张 HOLD 写帖卡，实时评论候选为 0。",
+      "operations": {
+        "phase": "准备期 / 规则冲突修复 / 无实时可提交批次",
+        "objective": "先关闭会改变互动状态和写帖方法的五条反馈，再用最少同日对照验证可见证明与开放候选政策。",
+        "community_strategy": {
+          "title": "规则硬门优先，近名社区分开",
+          "detail": "Zettelkasten 改为 blocked_by_rules；ProductivityApps 规则升级 verified；r/microsaas 与 r/micro_saas 分开建档。",
+          "meta": "全集 90 · 核心 39 · 发现 51 · active 74 · comment candidates 27"
+        },
+        "comment_strategy": {
+          "title": "只保留可见工件上的证据缺口",
+          "detail": "保留 perum9o 的证明错位功能；泛赞与礼貌感谢进入低信息反例。两帖第二快照持平且账号门未知。",
+          "meta": "0 live candidates · 1 learning pattern · 2 rejected examples"
+        },
+        "post_strategy": {
+          "title": "社区先行，开放比较三个候选",
+          "detail": "可比产品帖决定结构，反自荐只做风险控制；现成素材不加分，旧稿失败不永久排除功能。",
+          "meta": "2 HOLD cards · no publishable draft"
+        },
+        "next_test": {
+          "title": "先做三个 10–15 秒首屏 storyboard",
+          "detail": "三个不同社区痛点各做一张旧动作→新动作故事板；若都需功能清单解释，全部停止。",
+          "meta": "成功信号：首屏可复述改变 · 停止条件：只能解释能力"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [
+          "r/microsaas：规则、New 8 条与 1 帖 10 评论核验后进入研究池"
+        ],
+        "verified": [
+          "r/Zettelkasten Rule 9 当前 Posts & Comments 禁 AI-generated content",
+          "r/ProductivityApps 当前 7 条规则、New 12 条与两篇同日产品帖",
+          "r/microsaas 当前 6 条规则、New 8 条与定位帖评论"
+        ],
+        "comment_observation": [
+          "1x16x3d 两次快照均为 15/4；1x19l9g 两次均为 2/2",
+          "泛赞与 OP 感谢信息增量低；具体用途映射和证明错位才形成学习功能"
+        ],
+        "paused_or_invalid": [],
+        "rule_changes": [
+          "Zettelkasten：blocked_by_rules，修复注册表冲突",
+          "ProductivityApps：规则状态 verified，仍需 10 community karma 与月度自荐门",
+          "microsaas：新入口，禁止低投入推广、重复丢链、黑帽与 DM ME"
+        ],
+        "blocked": [
+          "当前账号社区 karma 与五账号映射未知",
+          "两篇当前帖短间隔势能持平",
+          "两个写帖方向都缺 Buildin 自有对照工件或持续使用数据"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "规则文本覆盖注册表旧状态",
+          "decision": "Zettelkasten Rule 9 明确阻塞 AI-generated Posts & Comments，研究资格不能被下游解释成互动许可。",
+          "action": "社区池写入显式互动阻塞并重建注册表。",
+          "target": "评论规则门",
+          "evidence": ["2026-10-08-zettelkasten-ai-comment-gate-conflict"]
+        },
+        {
+          "priority": "P0",
+          "title": "社区研究先于功能选择",
+          "decision": "不能预设 Agent、付费或迁移，也不能因素材现成提高排序。",
+          "action": "先归纳痛点，再比较至少三个候选的社区中心性、产品真实性和可见证明。",
+          "target": "写帖候选门",
+          "evidence": ["ProductivityApps_深度研究_2026-10-08", "1x16x3d", "1x19l9g"]
+        },
+        {
+          "priority": "P1",
+          "title": "类别词只负责第二层解释",
+          "decision": "microsaas 定位帖评论趋同但分数无分化，只支持三入口低置信实验。",
+          "action": "分别记录入口访问、首个关键动作与数周重复使用；不以点击宣布 PMF。",
+          "target": "定位实验",
+          "evidence": ["1wzmxvc", "pedeg99", "pedk0xf", "pedmv7m", "peeebvf"]
+        }
+      ],
+      "findings": [
+        {
+          "title": "可见界面比能力清单更容易产生采用讨论",
+          "detail": "双屏日程帖让读者直接提出日程/任务分屏用途；本地会议助手的唯一人工回复则指出隐私主张与可见工件错位。",
+          "evidence": ["1x16x3d", "perxh8i", "1x19l9g", "perum9o"]
+        },
+        {
+          "title": "自然短回复也可能没有信息增量",
+          "detail": "泛赞和 OP 的 Thanks 都很自然，却没有补对象、动作或边界；真人感不能替代价值门。",
+          "evidence": ["peqzftj", "per1yb3"]
+        },
+        {
+          "title": "趋同低分反馈不能升级成高赞规律",
+          "detail": "microsaas 定位帖仍为 6/11，10 条可见回复均约 2 分；只能用作 S1 实验假设。",
+          "evidence": ["1wzmxvc"]
+        }
+      ],
+      "learning_updates": [
+        {
+          "skill": "高价值评论",
+          "insight": "新增证明错位功能；泛赞和 OP 礼貌感谢进入低信息反例。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "ProductivityApps 首屏单位是可见改变；microsaas 允许透明、带教训的产品讨论，但当前只支持 S1 定性语气。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "短评论只完成一个具体工件或用途判断即可；自然与礼貌不等于有用。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 0，累计 43；运营样本已满足功能与反例对照，按成本停止。"
+        }
+      ],
+      "evidence_health": {
+        "verified": "Chrome 官方原页规则、20 条 New、3 帖、14 条可见评论与两组第二快照；索引和中台待脚本验收",
+        "comparison": "含当前较高分视觉帖、普通分能力清单帖、具体用途、证明错位、泛赞和礼貌感谢",
+        "gap": "视频未逐帧、产品能力未复现、账号资格与社区 karma 未核验、定位实验无持续使用数据",
+        "confidence": "规则和可见状态高 / 功能迁移中低 / 分数因果和产品方向低"
+      },
+      "counts": {
+        "listing_records": 20,
+        "candidates": 20,
+        "duplicates_skipped": 0,
+        "cross_list_duplicates": 0,
+        "irrelevant_skipped": 18,
+        "deep_posts": 3,
+        "comments": 14,
+        "new_post_cards": 2,
+        "new_comment_cards": 4,
+        "updated_post_cards": 1,
+        "updated_comment_cards": 4,
+        "profiles": 3,
+        "profiles_created": 1,
+        "profiles_updated": 2,
+        "communities_deep_read": 2,
+        "communities_failed": 0,
+        "communities_upgraded": 2,
+        "communities_paused": 0,
+        "rule_feedback_processed": 5,
+        "failed": 0,
+        "broad_voice_samples": 0,
+        "downstream_live_candidates": 0,
+        "learning_patterns": 1,
+        "writing_supply_cards": 2,
+        "usable_supply_cards": 3,
+        "supply_per_deep_read": 1.0,
+        "karma_priority_candidates": 0,
+        "feedback_remaining": 16
+      },
+      "coverage": [
+        "规则回访｜Zettelkasten、ProductivityApps、microsaas",
+        "New 快扫｜ProductivityApps 12 条、microsaas 8 条",
+        "深读/更新｜ProductivityApps 2 帖 4 评论、microsaas 1 帖 10 评论"
+      ],
+      "rule_changes": [
+        "Zettelkasten blocked_by_rules",
+        "ProductivityApps rules verified; self-promo still requires 10 community karma and monthly limit",
+        "microsaas added separately from micro_saas"
+      ],
+      "limitations": [
+        "两篇当前帖第二快照均持平，实时机会为 0",
+        "当前 Chrome 账号不等于五个运营账号完整映射",
+        "视频只核验首帧，作者产品能力未独立复现",
+        "定位帖是 S1 定性反馈，不是高赞规律",
+        "广域语感新增 0"
+      ],
+      "next_queue": [
+        "写帖：做三个不同痛点的 10–15 秒首屏 storyboard，不能自证则全部 HOLD",
+        "评论：只保留能点名一个可见工件和一个未覆盖边界的线程",
+        "反馈：按状态影响处理剩余 16 条 AI/笔记社区反馈",
+        "验证：周日发布前再核对注册表与 r/microsaas / r/micro_saas 区分"
+      ],
+      "source_record": "学习增长/运行记录/2026-10-09.md"
+    },
+    {
+      "date": "2026-10-08",
+      "observed_at": "2026-10-08 13:31",
+      "timezone": "Asia/Shanghai",
+      "summary": "反馈优先快扫 20 条、深读 5 帖并分析 9 评论；处理 7 条下游反馈，发现 3 个候选发布状态滞后。形成 1 个评论功能与 1 张写帖供给卡，实时评论候选为 0。",
+      "operations": {
+        "phase": "准备期 / 状态回填优先 / 无实时可提交批次",
+        "objective": "先修复候选状态与规则缺口，再用最少跨簇浏览补责任边界、主题适配与反例证据。",
+        "community_strategy": {
+          "title": "四问题簇轮换，不设固定社区配额",
+          "detail": "覆盖 Agent、创作者、技术写作、PKM；采纳跨簇轮换与显式淘汰，不把八社区变成配额。",
+          "meta": "全集 89 · 核心 39 · 发现 50 · active 73 · comment candidates 26"
+        },
+        "comment_strategy": {
+          "title": "先回填已发布状态，再开新候选",
+          "detail": "AI_Agents、startups 与 Solopreneur 出现精确草稿可见但本地状态滞后；今日只沉淀责任边界功能和反例。",
+          "meta": "0 live candidates · 1 learning pattern · 3 stale states"
+        },
+        "post_strategy": {
+          "title": "版本治理先于 AI 搜索",
+          "detail": "唯一供给卡要求版本替代关系、所有者、复核日期和同问题检索对照；低分源帖只提供低置信结构。",
+          "meta": "1 方向卡 · 2 写帖反例"
+        },
+        "next_test": {
+          "title": "先做一组冲突版本文档对照",
+          "detail": "准备 Buildin 自有脱敏版本链，标记替代关系、所有者和复核日期；无法展示检索前后差异就停止。",
+          "meta": "成功信号：可复测工件 · 停止条件：只有工具清单"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [],
+        "verified": [
+          "AskReddit、NoStupidQuestions、CasualConversation 当前 AI 规则原页独立复核",
+          "ClaudeAI Rule 2 与相关性移除反馈闭环",
+          "AI_Agents、startups、Notion、Solopreneur、smallbusiness、Substack 候选状态回访"
+        ],
+        "comment_observation": [
+          "三个当日线程第二快照均无新增，不进入 live_candidates",
+          "AI_Agents/startups 精确草稿由 Ok_Army_9681 可见；Solopreneur 精确稿由另一账号可见"
+        ],
+        "paused_or_invalid": [],
+        "rule_changes": [
+          "AskReddit：machine-generated Posts & Comments blocked_by_rules",
+          "NoStupidQuestions：AI 生成顶层回答 blocked_by_rules",
+          "CasualConversation：No AI/ChatGPT Posts & Comments blocked_by_rules",
+          "ClaudeAI：真实 Claude/Anthropic 主题锚点成为写帖硬门"
+        ],
+        "blocked": [
+          "当前研究账号与五个运营账号完整映射未知",
+          "本地 publication_status 与当前永久链接冲突",
+          "唯一写帖卡缺 Buildin 自有工件"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "永久链接优先于本地状态",
+          "decision": "三个候选的精确正文已在原页可见，本地未发布字段已滞后。",
+          "action": "分配前核对 post ID、comment ID、账号与正文 hash。",
+          "target": "帖子排他去重",
+          "evidence": ["pef0v63", "peewsru", "1wzscw1"]
+        },
+        {
+          "priority": "P0",
+          "title": "主题门先于语言优化",
+          "decision": "ClaudeAI 泛 AI 稿沿用高分结构仍因缺社区专属对象被移除。",
+          "action": "删除社区名后仍可无损投往相邻社区的稿件直接淘汰。",
+          "target": "写帖社区适配",
+          "evidence": ["2026-10-07-claudeai-post-removed-insufficient-relevance"]
+        },
+        {
+          "priority": "P1",
+          "title": "跨簇轮换不变成覆盖配额",
+          "decision": "广度用于防止熟悉社区垄断，不替代成本与停止条件。",
+          "action": "继续报告不同问题簇和淘汰项；重复结构后停止。",
+          "target": "研究效率",
+          "evidence": ["运行记录/2026-10-08.md"]
+        }
+      ],
+      "findings": [
+        {
+          "title": "责任边界比完整建议更有增量",
+          "detail": "technicalwriting 普通分回复先分销售主张与写作者职责，再给中性、事实化写法；纯共鸣只承担社交功能。",
+          "evidence": ["pekawnn", "pekeffa", "pekg2rv"]
+        },
+        {
+          "title": "AI 角色设定会把回复引向身份测试",
+          "detail": "AI_Agents 当前最高可见回复是 prompt injection；角色长评与来源猜测不能当真人感或技术证据。",
+          "evidence": ["1x0hukv", "pekro4z", "pekt811", "pekvzpu"]
+        },
+        {
+          "title": "搜索失败可能先是版本治理失败",
+          "detail": "technicalwriting 低分帖把多个当前版本还原为替代关系、所有者和复核日期缺失；结构需自有工件验证。",
+          "evidence": ["1x0bcz3"]
+        }
+      ],
+      "learning_updates": [
+        {
+          "skill": "高价值评论",
+          "insight": "新增责任边界功能；prompt injection、身份表演、纯共鸣与无解释动作进入反例。"
+        },
+        {
+          "skill": "社区语言风格",
+          "insight": "technicalwriting 先说职责与上游输入；Substack 多语言问题拆触达、阅读、订阅、付费。"
+        },
+        {
+          "skill": "真人感语言",
+          "insight": "角色身份、完整小论文和社区泛化不能靠口语化补救。"
+        },
+        {
+          "skill": "广域语感",
+          "insight": "新增 0，累计 43；运营线程已覆盖本轮所需对照，按成本停止。"
+        }
+      ],
+      "evidence_health": {
+        "verified": "Chrome 官方原页规则、20 条 New、5 帖、9 评论、三个第二快照及昨日关键候选状态；索引/中台 JSON 待脚本验收",
+        "comparison": "含相对高互动职业帖、0 分治理帖、普通分责任边界、纯共鸣、prompt injection 与身份长评反例",
+        "gap": "账号归属、已发布状态回填、Buildin 自有版本链、作者经历与产品能力独立核验",
+        "confidence": "规则和可见状态高 / 功能迁移中低 / 措辞因果和账号归属低"
+      },
+      "counts": {
+        "listing_records": 20,
+        "candidates": 20,
+        "duplicates_skipped": 0,
+        "cross_list_duplicates": 0,
+        "irrelevant_skipped": 15,
+        "deep_posts": 5,
+        "comments": 9,
+        "new_post_cards": 5,
+        "new_comment_cards": 9,
+        "updated_post_cards": 0,
+        "updated_comment_cards": 0,
+        "profiles": 4,
+        "profiles_created": 0,
+        "profiles_updated": 4,
+        "communities_deep_read": 3,
+        "communities_failed": 0,
+        "communities_upgraded": 0,
+        "communities_paused": 0,
+        "rule_feedback_processed": 7,
+        "failed": 0,
+        "broad_voice_samples": 0,
+        "downstream_live_candidates": 0,
+        "learning_patterns": 1,
+        "writing_supply_cards": 1,
+        "usable_supply_cards": 2,
+        "supply_per_deep_read": 0.4,
+        "karma_priority_candidates": 0,
+        "stale_candidate_states_found": 3
+      },
+      "coverage": [
+        "规则回访｜AskReddit、NoStupidQuestions、CasualConversation、ClaudeAI",
+        "New 快扫｜AI_Agents、Substack、technicalwriting、PKMS：20 条",
+        "深读｜AI_Agents、technicalwriting、Substack：5 帖 9 评论"
+      ],
+      "rule_changes": [
+        "AskReddit blocked_by_rules",
+        "NoStupidQuestions top-level AI answers blocked_by_rules",
+        "CasualConversation blocked_by_rules",
+        "ClaudeAI topic_anchor_required"
+      ],
+      "limitations": [
+        "三个当日线程第二快照均无新增，实时机会为 0",
+        "当前 Chrome 账号不等于五个运营账号完整映射",
+        "低分源帖只能提供低置信写帖结构",
+        "作者经历与 Agent 身份未独立核验",
+        "广域语感新增 0"
+      ],
+      "next_queue": [
+        "评论：先修复候选 publication_status 与账号/帖子排他去重",
+        "写帖：准备一组冲突版本文档的替代关系与检索前后对照",
+        "反馈：按状态影响优先处理剩余 AI/笔记社区规则",
+        "研究：不重复扫已闭环的大型社区 AI 禁令"
+      ],
+      "source_record": "学习增长/运行记录/2026-10-08.md"
+    },
+    {
+      "date": "2026-10-07",
+      "observed_at": "2026-10-07 11:34",
+      "timezone": "Asia/Shanghai",
+      "summary": "按供给与成本优先流程快审 20 条、深读 GeminiAI/ChatGPT/NotebookLM 3 帖 9 评论；形成 4 个评论学习功能与 2 张写帖方向卡。11:30 同日增量只闭环 founder/CraftDocs 两条新反馈，累计处理 6 条；实时评论候选与广域新增均为 0。",
+      "operations": {
+        "phase": "准备期 / 下游供给已更新 / 无实时可提交批次",
+        "objective": "以最少深读同时供给评论与写帖窗口；重复结构出现后停止，不用覆盖量补数。",
+        "community_strategy": {
+          "title": "规则反馈优先，NotebookLM 升级",
+          "detail": "ObsidianMD 改为互动硬阻塞，docker/freelance/founder 保守待核验；CraftDocs 复核后仍逐帖核验，NotebookLM 进入研究轮换。",
+          "meta": "全集 89 · 核心 39 · 发现 50 · active 73 · comment candidates 26"
+        },
+        "comment_strategy": {
+          "title": "4 个功能供学习，0 个实时机会",
+          "detail": "重排评价对象、最小分叉追问、结果换算和邻近机制扩展进入 learning_patterns；无证据作者归因与语境双关进入 rejected_examples。",
+          "meta": "0 live candidates · 4 learning patterns · 2 rejected"
+        },
+        "post_strategy": {
+          "title": "两张证据优先写帖卡",
+          "detail": "方向聚焦来源缺失和意外价值；每张都列 proof_needed、禁止主张和最低成本停止条件，缺自有工件不成稿。",
+          "meta": "2 方向卡 · 0 产品事实外推"
+        },
+        "next_test": {
+          "title": "先做一组引用位置对照",
+          "detail": "用同一脱敏资料集和提示测试来源引用；没有输出差异截图与引用定位就停止，不扩大样本。",
+          "meta": "成功信号：可复测工件 · 停止条件：只有抽象观点"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [],
+        "verified": [
+          "docker、ObsidianMD、freelance 当前规则原页独立复核",
+          "NotebookLM 完成 4 条规则、Top/week、1 帖 3 评论核验",
+          "founder 与 CraftDocs 当前规则页、侧栏和置顶独立复核"
+        ],
+        "comment_observation": [
+          "NotebookLM 升级为研究社区，互动仍 blocked_pending_rules",
+          "GeminiAI 只建研究档案，完整规则反馈仍待闭环"
+        ],
+        "paused_or_invalid": [],
+        "rule_changes": [
+          "ObsidianMD：明确禁止 AI-generated Posts & Comments，互动 blocked_by_rules",
+          "docker：披露与技术验证条件未逐项满足前 blocked_pending_rules",
+          "freelance：No bots/automated users 对人工确认 AI 辅助范围未说明，blocked_pending_rules",
+          "founder：actual founders、版主审批和公司 flair 的评论适用范围未知，blocked_pending_rules",
+          "CraftDocs：无具体规则条目且置顶未补充互动规则，仍需逐帖实时核验"
+        ],
+        "blocked": [
+          "三个学习帖均已饱和或缺第二快照",
+          "运营账号资格与排他去重未核验",
+          "founder 当前账号审批资格未知；CraftDocs 规则正文缺失"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "供给率替代覆盖量",
+          "decision": "3 篇深读已产出 4 个评论功能和 2 张写帖卡，继续采样的边际价值低。",
+          "action": "结构重复后提前停止，保留调研时间。",
+          "target": "单位深读供给率",
+          "evidence": ["运行记录/2026-10-07.md"]
+        },
+        {
+          "priority": "P0",
+          "title": "学习与实时机会分层",
+          "decision": "高分历史样本不能进入当天 live_candidates。",
+          "action": "评论队列显式分 live_candidates、learning_patterns、rejected_examples。",
+          "target": "评论 karma 机会质量",
+          "evidence": ["中台/窗口队列/value_comments.json"]
+        },
+        {
+          "priority": "P0",
+          "title": "规则反馈先写回上游",
+          "decision": "规则变化会让下游重复研究或误判许可。",
+          "action": "独立核验并处理 6 条反馈，重建注册表。",
+          "target": "下游复用",
+          "evidence": ["联动/下游反馈.jsonl", "联动/社区注册表.json"]
+        },
+        {
+          "priority": "P1",
+          "title": "新增社区不自动互动",
+          "decision": "NotebookLM 满足研究升级门，不等于账号和当前帖子获得许可。",
+          "action": "进入研究轮换，互动保持 blocked_pending_rules。",
+          "target": "发现池",
+          "evidence": ["社区档案/NotebookLM.md"]
+        }
+      ],
+      "findings": [
+        {
+          "title": "重排评价对象比继续争论更有增量",
+          "detail": "GeminiAI 高分短答把订阅判断从模型访问改成存储价值；只支持评论功能，不证明措辞因果。",
+          "evidence": ["pd8df4h", "pd8cbf8"]
+        },
+        {
+          "title": "具体任务到意外风险需要可见验证链",
+          "detail": "鸽舍帖用域名、线下付款测试与卖家失联兑现反差；作者经历和金额不可迁移。",
+          "evidence": ["1wxv26s", "pdxa4jk", "pdycr5v"]
+        },
+        {
+          "title": "来源约束是 AI 笔记工具的核心契约",
+          "detail": "NotebookLM 讨论把抱怨拆成入口、同输入对照、引用位置与替代方案；模型/配额原因仍未知。",
+          "evidence": ["1wxend1", "pdspsgw", "pdsrq05", "pdsvbsv"]
+        }
+      ],
+      "learning_updates": [
+        {"skill":"高价值评论","insight":"新增 4 个功能供给与 2 个高分反例；三帖均不通过实时机会门。"},
+        {"skill":"社区语言风格","insight":"争议帖先缩小评价对象，故障帖先问入口，故事帖可做一次结果换算或邻近机制扩展。"},
+        {"skill":"真人感语言","insight":"过度完整和口号式闭环会触发 AI 代写观感；这不是作者身份证据。"},
+        {"skill":"广域语感","insight":"新增 0，累计 43；当天运营样本已覆盖所需功能，按成本停止。"}
+      ],
+      "evidence_health": {
+        "verified": "Chrome 官方原页的规则、Top/week、3 帖、9 评论、永久链接和观察时分数；同日增量复核 founder/CraftDocs 规则页、侧栏和置顶；注册表/中台 JSON 有效",
+        "comparison": "含高分重框架、普通分澄清、机制补充、轻量幽默与高分不可迁移反例",
+        "gap": "第二快照、运营账号资格、排他去重、GeminiAI 完整规则、founder 评论资格范围、CraftDocs 规则正文和 Buildin 自有写帖工件",
+        "confidence": "规则与可见互动高 / 结构功能中 / 措辞因果和实时机会低"
+      },
+      "counts": {
+        "listing_records": 20,
+        "candidates": 20,
+        "duplicates_skipped": 1,
+        "cross_list_duplicates": 0,
+        "irrelevant_skipped": 16,
+        "deep_posts": 3,
+        "comments": 9,
+        "new_post_cards": 3,
+        "new_comment_cards": 9,
+        "updated_post_cards": 0,
+        "updated_comment_cards": 0,
+        "profiles": 8,
+        "profiles_created": 3,
+        "profiles_updated": 5,
+        "communities_deep_read": 3,
+        "communities_failed": 0,
+        "communities_upgraded": 1,
+        "communities_paused": 0,
+        "rule_feedback_processed": 6,
+        "failed": 0,
+        "broad_voice_samples": 0,
+        "downstream_live_candidates": 0,
+        "learning_patterns": 4,
+        "writing_supply_cards": 2,
+        "karma_priority_candidates": 0
+      },
+      "coverage": [
+        "规则回访｜docker、ObsidianMD、freelance、founder、CraftDocs",
+        "跨社区供给｜GeminiAI、ChatGPT、NotebookLM：3 帖 9 评论",
+        "发现升级｜NotebookLM；动态全集 89=39+50"
+      ],
+      "rule_changes": [
+        "ObsidianMD blocked_by_rules",
+        "docker blocked_pending_manual_verification_and_disclosure",
+        "freelance blocked_pending_scope_verification",
+        "founder blocked_pending_rules",
+        "CraftDocs 保持 candidate_live_check_required，但缺少规则正文不视为许可"
+      ],
+      "limitations": [
+        "三帖均非实时机会，没有第二快照",
+        "未核验运营账号资格和同帖自有账号参与",
+        "founder 资格限制对评论的精确范围未知，CraftDocs 无独立规则条目",
+        "高分受位置、帖势和共同语境混杂",
+        "广域语感新增 0"
+      ],
+      "next_queue": [
+        "评论：只在新 Hot/New 出现回复缺口时映射一个学习功能",
+        "写帖：先做来源引用的最小对照工件",
+        "反馈：跟踪供给被采用或退回原因",
+        "规则：GeminiAI 当前完整规则独立复核"
+      ],
+      "source_record": "学习增长/运行记录/2026-10-07.md"
+    },
+    {
+      "date": "2026-10-06",
+      "observed_at": "2026-10-06 21:02",
+      "timezone": "Asia/Shanghai",
+      "summary": "Chrome old.reddit 原页独立确认 webdev Rule 8 禁止 LLM 生成帖子/评论，互动改为硬阻塞；随后 docker 规则与 opensource 月榜正文为空而停止。今日 0 候选、0 深读、0 评论、0 广域样本。",
+      "operations": {
+        "phase": "准备期 / 规则反馈部分闭环 / Chrome 原页访问阻塞",
+        "objective": "在 Reddit 原页正文恢复后再继续研究；不以旧证据或替代渠道补量。",
+        "community_strategy": {
+          "title": "webdev 改为互动硬阻塞",
+          "detail": "Rule 8 明确覆盖 Posts & Comments 并列出 LLM generated posts or comments；docker、ObsidianMD 反馈仍待独立复核。",
+          "meta": "全集 88 · 核心 39 · 发现 49 · active 72"
+        },
+        "comment_strategy": {
+          "title": "原页不可读，实时队列关闭",
+          "detail": "Hot/New、回复树、运营账号和第二快照缺失；webdev 又有明确 AI 文本规则阻塞，五道门无法成立。",
+          "meta": "0 实时候选 · 0 草稿 · 0 外部互动"
+        },
+        "post_strategy": {
+          "title": "无新证据，不新增方向",
+          "detail": "沿用 2026-10-05 已列的 proof_needed；不把空白页面或下游规则摘要写成内容结论。",
+          "meta": "0 新方向 · writing no_change"
+        },
+        "next_test": {
+          "title": "先恢复可读原页，再补规则与轮换",
+          "detail": "优先复核 docker、ObsidianMD；随后轮换 6 个最久未更新核心入口与 2 个未研究发现入口。",
+          "meta": "成功信号：规则/Top/Hot/原帖/评论树可读 · 停止条件：正文仍空白"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [],
+        "verified": ["webdev Rule 8 官方原页独立复核；社区注册表从唯一上游重建并通过 JSON 校验"],
+        "comment_observation": [],
+        "paused_or_invalid": [],
+        "rule_changes": ["webdev：LLM generated posts or comments 属于会被移除的低质量内容，互动改为 blocked_by_rules"],
+        "blocked": ["docker 规则页与 opensource 月榜正文为空", "docker、ObsidianMD 两条规则反馈仍待独立复核"]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "明确规则从候选池移除",
+          "decision": "webdev 对 LLM 生成帖子与评论有当前明文阻塞。",
+          "action": "研究继续，AI 辅助可提交稿互动关闭。",
+          "target": "互动合规",
+          "evidence": ["社区档案/webdev.md"]
+        },
+        {
+          "priority": "P0",
+          "title": "待核验反馈不自动写回",
+          "decision": "下游规则摘要需要本任务在官方原页独立复核。",
+          "action": "webdev 标记已处理；docker、ObsidianMD 保持 processed=false。",
+          "target": "规则联动",
+          "evidence": ["联动/下游反馈.jsonl"]
+        },
+        {
+          "priority": "P0",
+          "title": "零样本优于伪增量",
+          "decision": "访问失败时不复用旧 Top、旧分数或其他浏览器补量。",
+          "action": "今日所有研究与广域样本计数保持 0。",
+          "target": "研究可信度",
+          "evidence": ["运行记录/2026-10-06.md"]
+        }
+      ],
+      "findings": [],
+      "learning_updates": [
+        {"skill":"高价值评论","insight":"webdev 规则门直接阻塞；其余无当前线程、回复树与两次快照，价值门和机会门不可评估。"},
+        {"skill":"社区语言风格","insight":"只同步 webdev 规则边界；无可比样本，不更新语言模式。"},
+        {"skill":"真人感语言","insight":"无新原文，不进行语言拆解或重塑。"},
+        {"skill":"广域语感","insight":"新增 0，累计 43；不使用运营旧样本补数。"}
+      ],
+      "evidence_health": {
+        "verified": "现有 Chrome 完整读取 webdev 规则并确认 Rule 8；随后 docker 规则与 opensource 月榜正文为空；注册表 JSON 有效",
+        "comparison": "无新帖子或评论对照",
+        "gap": "除 webdev 规则外，Top/Hot、原帖、评论树、运营账号、第二快照与广域样本均缺失",
+        "confidence": "webdev 规则高 / 其他内容与实时机会不可用"
+      },
+      "counts": {
+        "listing_records": 0,
+        "candidates": 0,
+        "duplicates_skipped": 0,
+        "cross_list_duplicates": 0,
+        "irrelevant_skipped": 0,
+        "deep_posts": 0,
+        "comments": 0,
+        "new_post_cards": 0,
+        "new_comment_cards": 0,
+        "updated_post_cards": 0,
+        "updated_comment_cards": 0,
+        "profiles": 1,
+        "profiles_created": 0,
+        "profiles_updated": 1,
+        "communities_deep_read": 0,
+        "communities_failed": 1,
+        "communities_upgraded": 0,
+        "communities_paused": 0,
+        "rule_feedback_processed": 1,
+        "failed": 1,
+        "broad_voice_samples": 0,
+        "downstream_live_candidates": 0,
+        "karma_priority_candidates": 0
+      },
+      "coverage": ["规则回访｜webdev：当前 8 条规则可读；无 Top/Hot 深读", "失败｜docker 规则与 opensource 月榜正文为空，0/6 核心、0/2 发现"],
+      "rule_changes": ["webdev Rule 8 明确阻塞 LLM generated posts or comments；docker、ObsidianMD 仍待独立复核"],
+      "limitations": [
+        "除 webdev 规则外，未读到任何当前 Reddit 帖子、评论或其他规则正文",
+        "未核验当前 Reddit 登录身份或运营账号资格",
+        "无第二快照，不能判断势能或预计评论位置",
+        "广域语感新增 0"
+      ],
+      "next_queue": [
+        "规则回访：docker、ObsidianMD",
+        "核心：opensource、Blogging、ContentCreators、Substack、patreon、productivity",
+        "发现：从 11 个未研究入口中选 2 个补主题空白",
+        "广域：原页恢复后补不同功能与普通分对照"
+      ],
+      "source_record": "学习增长/运行记录/2026-10-06.md"
+    },
+    {
+      "date": "2026-10-05",
+      "observed_at": "2026-10-05 19:03",
+      "timezone": "Asia/Shanghai",
+      "summary": "Chrome Reddit 原页完成 6 核心＋2 发现：40 条列表、8 帖、16 评论；academia 升级、Aivolut 暂停、SaaS AI 文本硬阻塞，处理 3 条反馈并新增 6 条广域语感；实时评论候选为 0。",
+      "operations": {
+        "phase": "准备期 / 研究证据已更新 / 无可提交实时批次",
+        "objective": "在规则、账号与机会门都成立时才把研究转成高价值评论；今天优先修正社区状态和证据口径。",
+        "community_strategy": {
+          "title": "academia 升级，Aivolut 暂停",
+          "detail": "academia 活跃且与组织知识场景相关，进入常规深读但互动 pending；Aivolut 连续内容稀少且促销为主，改低频复核。",
+          "meta": "全集 88 · 核心 39 · 发现 49 · active 72"
+        },
+        "comment_strategy": {
+          "title": "规则先于热度，今日 0 候选",
+          "detail": "SaaS、LocalLLaMA 被 AI 内容规则硬阻塞；SideProject 已饱和且规则缺口；selfhosted 主要答案已覆盖，未通过全部五门。",
+          "meta": "0 实时候选 · 0 草稿 · 0 外部互动"
+        },
+        "post_strategy": {
+          "title": "三个方向进入证据准备",
+          "detail": "Agent 运行时约束、gross-to-net 经济性和隐形协作记录都必须补 Buildin 自有工件，不能把社区主张写成产品事实。",
+          "meta": "3 研究方向 · 3 组 proof_needed"
+        },
+        "next_test": {
+          "title": "先验证一份可撤销审批演示",
+          "detail": "准备真实调用 trace、审批 payload、有效期、撤销和回滚；缺任一关键工件就停止该选题。",
+          "meta": "成功信号：可重复演示 · 停止条件：只有概念稿"
+        }
+      },
+      "community_pipeline": {
+        "new_candidates": [],
+        "verified": [
+          "AI_Agents、LocalLLaMA、SaaS、selfhosted、SideProject、smallbusiness 完成 Top/Hot 与规则回访",
+          "academia 完成存在性、活跃度、侧栏边界与代表帖核验",
+          "3 条下游反馈完成来源复核并标记已处理"
+        ],
+        "comment_observation": [
+          "academia 进入研究轮换，完整规则与账号资格仍 pending",
+          "selfhosted 当前帖保留为已覆盖的低机会观察，不占实时配额"
+        ],
+        "paused_or_invalid": [
+          "Aivolut：Top/month 仅一条当前帖、Hot 混有 5–6 月旧内容且无完整规则"
+        ],
+        "rule_changes": [
+          "SaaS Rule 4 明确覆盖 Posts & Comments，禁止 AI-generated text，改为互动硬阻塞",
+          "SideProject、micro_saas 再次核验仍无独立完整规则文本"
+        ],
+        "blocked": [
+          "没有线程同时通过价值、机会、规则、账号和排他去重门"
+        ]
+      },
+      "strategy_decisions": [
+        {
+          "priority": "P0",
+          "title": "规则门优先于热度",
+          "decision": "高分和相关性不能覆盖社区对 AI 文本的明禁。",
+          "action": "SaaS、LocalLLaMA 只做研究，不生成可提交稿。",
+          "target": "互动合规",
+          "evidence": ["社区档案/SaaS.md", "社区档案/LocalLLaMA.md"]
+        },
+        {
+          "priority": "P0",
+          "title": "五门全部通过才进队列",
+          "decision": "价值、机会、规则、账号和去重任一缺失都不是候选。",
+          "action": "今日保持 0 候选，不用历史 Top 或草稿数量补位。",
+          "target": "comment karma 机会质量",
+          "evidence": ["运行记录/2026-10-05.md"]
+        },
+        {
+          "priority": "P1",
+          "title": "升级研究不等于互动许可",
+          "decision": "academia 的活跃与场景匹配满足研究升级，完整规则仍不足。",
+          "action": "进入 Top/Hot 轮换，互动状态保持 pending。",
+          "target": "发现池",
+          "evidence": ["社区档案/academia.md"]
+        },
+        {
+          "priority": "P1",
+          "title": "暂停低信息入口",
+          "decision": "Aivolut 当前主要提供促销样本，不能支撑常规学习。",
+          "action": "只做低频恢复检查，不进入互动。",
+          "target": "研究资源",
+          "evidence": ["社区档案/Aivolut.md"]
+        },
+        {
+          "priority": "P1",
+          "title": "敏感披露不训练语感",
+          "decision": "健康、疾病和家庭困境不作为风格素材。",
+          "action": "相关帖子从运营深读和广域语感中排除。",
+          "target": "研究伦理",
+          "evidence": ["运行记录/2026-10-05.md"]
+        }
+      ],
+      "findings": [
+        {
+          "title": "运行时约束需要可执行对象",
+          "detail": "审批 payload、有效期、凭据、网关和回滚比抽象 policy 更可验证；仍需 Buildin 自有 trace。",
+          "evidence": ["1wy12ua", "pdyps5w", "pdysjdw"]
+        },
+        {
+          "title": "增长数字必须回到净结果",
+          "detail": "安装量和 gross revenue 不能替代渠道归因、可变成本、人工时间与 net；作者数字未验证。",
+          "evidence": ["1wy4wbu", "pdzjuvr", "pdzmf17", "pdzm6wx"]
+        },
+        {
+          "title": "组织记忆也是可见工作证据",
+          "detail": "支持和协调需要记录范围、产出、影响与责任边界，但职业建议不能外推为通行政策。",
+          "evidence": ["1wpzoid", "pbzrvlg", "pc6gy9n"]
+        }
+      ],
+      "learning_updates": [
+        {"skill": "高价值评论", "insight": "五门筛选后保持 0 候选；高分、普通分和隐藏分按功能而非措辞因果学习。"},
+        {"skill": "社区语言风格", "insight": "技术回复从具体对象进入，商业回复只补一个缺失口径，制度回复分开经历与政策。"},
+        {"skill": "真人感语言", "insight": "每条只完成父帖需要的一次追问、解释或限定，不统一补总结。"},
+        {"skill": "广域语感", "insight": "新增 crochet/3Dprinting 6 条，累计 43；普通分谨慎假设与高分追问并列。"}
+      ],
+      "evidence_health": {
+        "verified": "Chrome 原页的 8 个入口、40 条列表、8 帖、16 评论、规则/侧栏和两次快照",
+        "comparison": "运营评论包含高分、普通分、1 分和隐藏分；广域含 388、62、36、23、22、1 分对照",
+        "gap": "具体运营账号资格、完整规则缺口与 Buildin 自有产品工件",
+        "confidence": "原页事实高 / 结构判断中 / 措辞因果与实时机会低"
+      },
+      "counts": {
+        "listing_records": 40,
+        "candidates": 39,
+        "duplicates_skipped": 1,
+        "cross_list_duplicates": 1,
+        "irrelevant_skipped": 0,
+        "deep_posts": 8,
+        "comments": 16,
+        "new_post_cards": 8,
+        "new_comment_cards": 16,
+        "updated_post_cards": 0,
+        "updated_comment_cards": 0,
+        "profiles": 8,
+        "profiles_created": 2,
+        "profiles_updated": 6,
+        "communities_deep_read": 8,
+        "communities_failed": 0,
+        "communities_upgraded": 1,
+        "communities_paused": 1,
+        "rule_feedback_processed": 3,
+        "failed": 0,
+        "broad_voice_samples": 6,
+        "downstream_live_candidates": 0,
+        "karma_priority_candidates": 0
+      },
+      "coverage": [
+        "核心 · AI_Agents：1 帖/2 评论；运行时约束",
+        "核心 · LocalLLaMA：1 帖/2 评论；安全异常，AI 规则阻塞",
+        "核心 · SaaS：1 帖/3 评论；经济性，AI 规则阻塞",
+        "核心 · selfhosted：1 帖/2 评论；恢复路径",
+        "核心 · SideProject：1 帖/2 评论；购买阻力，规则缺口",
+        "核心 · smallbusiness：1 帖/2 评论；交付证明",
+        "发现 · academia：1 帖/2 评论；升级研究",
+        "发现 · Aivolut：1 帖/1 评论；暂停"
+      ],
+      "rule_changes": [
+        "SaaS：Rule 4 禁止 AI-generated Posts & Comments，互动硬阻塞",
+        "academia：升级研究但完整规则缺口，互动 pending",
+        "SideProject、micro_saas：规则页仍无独立文本"
+      ],
+      "limitations": [
+        "当前研究 Chrome 登录状态不等于运营账号资格",
+        "没有同时通过五门的实时线程",
+        "安全归因、经济数字与职业建议均未独立验证",
+        "Aivolut 暂停结论基于当前低活跃快照，可在恢复信号出现后复核"
+      ],
+      "next_queue": [
+        "评论：下一轮从当前 Hot/New 逐账号筛选，零候选可接受",
+        "写作：先做 Agent 审批与回滚的自有证据演示",
+        "社区：低频复核 Aivolut 恢复信号，继续补 academia 完整规则",
+        "看板：周一至周六本地积累，周日再统一提交"
+      ],
+      "source_record": "学习增长/运行记录/2026-10-05.md"
+    },
     {
       "date": "2026-10-04",
       "observed_at": "2026-10-04 15:40",
